@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive the latest collected datasets at 18:00 KST, without collecting again."""
+"""Archive the latest collected datasets and the day's news-word analysis at 18:00 KST, without collecting again."""
 import argparse
 import csv
 import io
@@ -67,6 +67,22 @@ def export_daily(root=ROOT, destination=DEST, now=None, geos=tuple(GEOS)):
                 rows = [[geo,period,doc['fetched_at'],kind,t['query'],t['value'],t.get('label'),t.get('is_breakout'),t.get('rank_change'),doc.get('compare'),doc.get('comparison_status')] for kind in ('top','rising') for t in doc[kind]]
                 (staged / name).write_bytes(csv_bytes(['국가','기간','수집 UTC','유형','검색어','원본 값','표시값','급등','순위 변동','비교 기간','비교 상태'],rows))
                 manifest['files'].append({'file':name,'source_fetched_at':doc['fetched_at'],'count':len(rows)})
+        analysis = load_json(root / 'analysis' / f'{day}.json')
+        if analysis and analysis.get('date') == day:
+            name = 'ALL-analysis.csv'
+            rows = [[geo, i, w['word'], w['count'], w['rank_change'], w.get('is_new'), w.get('surge'), w['volume'], ' / '.join(w['trends']), g['analyzer'], g['articles'], g['fetched_at']] for geo, g in analysis['geos'].items() for i, w in enumerate(g['words'], 1)]
+            rows += [['ALL', '', f"개념: {c['label']}", c['total'], '', '', '', '', ' / '.join(f'{k} {v}' for k, v in c['counts'].items()), '', '', ''] for c in analysis.get('concepts', [])]
+            rows += [['/'.join(c['geos']), '', f"공통: {c['keyword']}", len(c['geos']), '', '', '', c['volume'], '', '', '', ''] for c in analysis.get('common', [])]
+            (staged / name).write_bytes(csv_bytes(['국가','순위','단어','기사 수','순위 변동','신규','급부상','관련 검색량 합','관련 트렌드','분석기','기사 총수','원본 수집 UTC'], rows))
+            manifest['files'].append({'file': name, 'source_generated_at': analysis['generated_at'], 'count': len(rows)})
+        else:
+            manifest['skipped_analysis'] = f'{day}: missing'
+        weekly = load_json(root / 'analysis' / 'weekly' / f'{day}.json')
+        if weekly:
+            name = 'ALL-weekly.csv'
+            rows = [[geo, i, w['word'], w['count'], w['days'], ' / '.join(w['trends']), weekly['start_date'], weekly['end_date']] for geo, g in weekly['geos'].items() for i, w in enumerate(g['words'], 1)]
+            (staged / name).write_bytes(csv_bytes(['국가','순위','단어','7일 기사 수 합','TOP20 등장 일수','관련 트렌드','시작일','종료일'], rows))
+            manifest['files'].append({'file': name, 'source_generated_at': weekly['generated_at'], 'count': len(rows)})
         write_json(staged / 'manifest.json', manifest)
         staged.rename(target)
     except Exception:

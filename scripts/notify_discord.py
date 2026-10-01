@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Daily KR/JP/US Top 5 and three news articles per keyword at 19:00 KST. Secrets never appear in files under public/."""
+"""Daily KR/JP/US Top 5 and three news articles per keyword at 19:00 KST, then the news-word analysis.
+Secrets never appear in files under public/."""
 import argparse
 import csv
 import io
@@ -84,6 +85,56 @@ def build_payloads(doc, new_keywords, dashboard=''):
     return messages
 
 
+FLAGS = {'KR': '🇰🇷', 'JP': '🇯🇵', 'US': '🇺🇸'}
+
+
+def change_mark(word):
+    if word.get('surge'):
+        return ' 🔥'
+    if word.get('is_new'):
+        return ' 🆕'
+    change = word.get('rank_change')
+    return f' ▲{change}' if change and change > 0 else f' ▼{-change}' if change and change < 0 else ''
+
+
+def build_analysis_payloads(analysis, weekly=None, dashboard='', top=10):
+    """News-word TOP10 per country, surging words, shared keywords and concepts; weekly TOP10 on Sundays."""
+    if not analysis or not analysis.get('geos'):
+        return []
+    link = f'\n{dashboard}?view=analysis' if dashboard and urlparse(dashboard).scheme in ('https', 'http') else ''
+    content = f"📊 **구글 트렌드 by 코덱스 · {analysis['date']} · 뉴스 단어 분석**\n최근 24시간 트렌드에 붙은 기사 제목의 단어 · 숫자는 그 단어가 나온 기사 수{link}"
+    colors = {'KR': 0x23724D, 'JP': 0xD25A66, 'US': 0x377AC2}
+    embeds = []
+    for geo in COUNTRIES:
+        g = analysis['geos'].get(geo)
+        if not g:
+            continue
+        lines = [f"{i}. **{md(w['word'], 40)}** {w['count']}건{change_mark(w)}" for i, w in enumerate(g['words'][:top], 1)]
+        shares = ' · '.join(f"{c['name']} {c['pct']}%" for c in g['categories'][:3])
+        lines.append(f"분야: {shares}\n기사 {g['articles']}건 · 분석기 {g['analyzer']}")
+        embeds.append({'title': f'{COUNTRIES[geo]} · 뉴스 단어 TOP {top}', 'description': '\n'.join(lines)[:4000], 'color': colors[geo]})
+    surging = [f"{FLAGS[geo]} {md(w['word'], 40)} {w['count']}건" for geo in COUNTRIES for w in analysis['geos'].get(geo, {}).get('words', []) if w.get('surge')]
+    if surging:
+        embeds.append({'title': '🔥 급부상 단어', 'description': '\n'.join(surging[:15]), 'color': 0xE07A1F})
+    extra = [f"{''.join(FLAGS[g] for g in c['geos'])} {md(c['keyword'], 60)}" for c in analysis.get('common', [])[:8]]
+    concepts = [f"{md(c['label'], 30)}: " + ' · '.join(f"{FLAGS[g]} {n}" for g, n in c['counts'].items()) for c in analysis.get('concepts', []) if sum(1 for n in c['counts'].values() if n) >= 2][:8]
+    if extra or concepts:
+        parts = (['**국가 공통 검색어**', *extra] if extra else []) + (['**같은 개념 · 나라별 기사 수**', *concepts] if concepts else [])
+        embeds.append({'title': '🌏 3개국 비교', 'description': '\n'.join(parts)[:4000], 'color': 0x6B7280})
+    messages = [{'username': '구글 트렌드 by 코덱스', 'content': content, 'allowed_mentions': {'parse': []}, 'embeds': embeds}]
+    if weekly and weekly.get('geos'):
+        week = []
+        for geo in COUNTRIES:
+            words = weekly['geos'].get(geo, {}).get('words', [])[:top]
+            if words:
+                week.append({'title': f'{COUNTRIES[geo]} · 주간 TOP {top}', 'color': colors[geo],
+                             'description': '\n'.join(f"{i}. **{md(w['word'], 40)}** {w['count']}건 · {w['days']}일" for i, w in enumerate(words, 1))})
+        if week:
+            messages.append({'username': '구글 트렌드 by 코덱스', 'allowed_mentions': {'parse': []}, 'embeds': week,
+                             'content': f"🗓️ **주간 뉴스 단어 · {weekly['start_date']} ~ {weekly['end_date']}** ({weekly['days']}일 합산)"})
+    return messages
+
+
 def build_csv(doc):
     output = io.StringIO()
     writer = csv.writer(output)
@@ -94,10 +145,10 @@ def build_csv(doc):
     return ('\ufeff' + output.getvalue()).encode()
 
 
-def send(hook, payload, doc, attach=True):
+def send(hook, payload, doc=None, attach=True):
     if not re.fullmatch(r'https://(?:canary\.|ptb\.)?discord(?:app)?\.com/api/webhooks/\d+/[A-Za-z0-9_-]+', hook):
         raise ValueError('Invalid Discord webhook URL')
-    files = {'files[0]': (f"trends-{doc['geo']}-24h.csv", build_csv(doc), 'text/csv'),
+    files = {} if not doc else {'files[0]': (f"trends-{doc['geo']}-24h.csv", build_csv(doc), 'text/csv'),
              'files[1]': (f"trends-{doc['geo']}-24h.json", json.dumps(doc, ensure_ascii=False).encode(), 'application/json')}
     if not attach or sum(len(v[1]) for v in files.values()) > 7 * 1024 * 1024:
         files = {}
@@ -156,6 +207,13 @@ def main():
             new = {t['keyword'] for t in doc['trends']} - set(baseline) if baseline is not None else set()
             for i, payload in enumerate(build_payloads(doc, new, os.environ.get('DASHBOARD_URL', ''))):
                 payloads.append({'geo':geo, 'payload':payload, 'attach':i == 0})
+        analysis = load_json(args.output / f'analysis/{day}.json')
+        if analysis and now - datetime.fromisoformat(analysis['generated_at'].replace('Z', '+00:00')) <= timedelta(hours=6):
+            weekly = load_json(args.output / f'analysis/weekly/{day}.json')
+            for payload in build_analysis_payloads(analysis, weekly, os.environ.get('DASHBOARD_URL', '')):
+                payloads.append({'geo':None, 'payload':payload, 'attach':False})
+        else:
+            print('News-word analysis missing or stale; analysis message skipped.')
         receipt = {'created_at':stamp(now), 'docs':docs, 'parts':payloads, 'sent_parts':[], 'completed':False}
     if args.dry_run:
         print(json.dumps(receipt['parts'], ensure_ascii=False, indent=2))
@@ -171,7 +229,7 @@ def main():
         # Persist an in-flight marker before sending: crashes must not trigger blind duplicates.
         receipt['uncertain'] = i + 1
         write_json(args.state, records)
-        send(hook, part['payload'], receipt['docs'][part['geo']], attach=part['attach'])
+        send(hook, part['payload'], receipt['docs'].get(part['geo']), attach=part['attach'])
         receipt['sent_parts'].append(i)
         receipt.pop('uncertain', None)
         write_json(args.state, records)

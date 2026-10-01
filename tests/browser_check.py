@@ -54,6 +54,22 @@ with sync_playwright() as p:
     page.wait_for_function("!document.querySelector('#refresh').disabled")
     assert page.locator('#rows tr').count()>0
     page.screenshot(path=str(OUT/'explore-desktop.png'),full_page=True)
+    page.locator('[data-view=analysis]').click()
+    page.wait_for_function("document.querySelector('#heading').textContent.includes('오늘의 단어') && !document.querySelector('#refresh').disabled")
+    assert page.locator('.word-list > li').count()>=10
+    assert page.locator('#results').is_hidden() and page.locator('.analysis-meta .analyzer').count()==1
+    page.locator('.word-list .word').first.click()
+    assert page.locator('.word-more').count()==1
+    page.screenshot(path=str(OUT/'analysis-desktop.png'),full_page=True)
+    page.locator('#geo').select_option('JP')
+    page.wait_for_function("document.querySelector('#status').textContent.includes('일본')")
+    page.locator('#geo').select_option('KR')
+    page.locator('.word-list .word').first.click()
+    page.locator('.word-more .related-chips button').first.click()
+    page.wait_for_function("document.querySelector('#heading').textContent.includes('지금') && !document.querySelector('#refresh').disabled")
+    assert page.locator('#search').input_value() and page.locator('#rows tr').count()>0
+    page.locator('[data-view=analysis]').click()
+    page.wait_for_function("!document.querySelector('#refresh').disabled")
     page.locator('#theme').click()
     page.screenshot(path=str(OUT/'dark-mode.png'))
     page.set_viewport_size({'width':390,'height':844})
@@ -66,4 +82,4 @@ with sync_playwright() as p:
     assert page.locator('#detail').is_visible()
     assert not errors, errors
     browser.close()
-print('Browser checks passed: real data, detail, search, CSV/JSON, history, countries, Explore, theme, mobile, deep links.')
+print('Browser checks passed: real data, detail, search, CSV/JSON, history, countries, Explore, analysis tab, theme, mobile, deep links.')

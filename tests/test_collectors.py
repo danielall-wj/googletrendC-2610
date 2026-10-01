@@ -12,7 +12,7 @@ from google_trends import normalize_rows, parse_rpc, parse_html
 from news import parse_trends_rss, parse_news_rss, safe_url
 from explore import parse_ranked, previous_range, shift_months
 from storage import save_trends, archive_history, build_index
-from notify_discord import build_payloads, build_csv, select_slot, delivery_date
+from notify_discord import build_payloads, build_csv, select_slot, delivery_date, build_analysis_payloads
 
 FIXTURES = Path(__file__).parent / 'fixtures'
 ROW = ['테스트', None, 'KR', [1790746200], None, None, 50000, None, 1000, ['테스트', '관련'], [9], [], '테스트']
@@ -114,6 +114,20 @@ class DiscordTests(unittest.TestCase):
                 self.assertEqual(m['allowed_mentions'],{'parse':[]})
                 self.assertLessEqual(sum(len(e['title'])+len(e['description']) for e in m['embeds']),6000)
 
+    def test_analysis_message_marks_and_weekly(self):
+        word=lambda w,**k:dict({'word':w,'count':4,'rank_change':None,'is_new':False,'surge':False},**k)
+        geo=lambda words:{'words':words,'categories':[{'name':'스포츠','pct':60}],'articles':10,'analyzer':'kiwi'}
+        analysis={'date':'2026-10-04','geos':{'KR':geo([word('손흥민',rank_change=2),word('아시안게임',is_new=True,surge=True)]),'US':geo([word('trump',rank_change=-1)])},
+                  'common':[{'keyword':'mlb','geos':['KR','JP'],'volume':1}],'concepts':[{'label':'인공지능','counts':{'KR':2,'US':0,'JP':1}}]}
+        weekly={'start_date':'2026-09-28','end_date':'2026-10-04','days':7,'geos':{'KR':{'words':[{'word':'손흥민','count':20,'days':5}]}}}
+        messages=build_analysis_payloads(analysis,weekly,'https://example.com')
+        text='\n'.join(e['title']+e['description'] for m in messages for e in m['embeds'])
+        self.assertEqual(len(messages),2)
+        for mark in ('▲2','🔥','▼1','🇰🇷🇯🇵 mlb','인공지능','주간 TOP 10','20건 · 5일'):self.assertIn(mark,text)
+        self.assertIn('?view=analysis',messages[0]['content'])
+        self.assertTrue(all(m['allowed_mentions']=={'parse':[]} and len(m['embeds'])<=10 for m in messages))
+        self.assertEqual(build_analysis_payloads(None),[])
+
     def test_kst_schedule(self):
         self.assertEqual(select_slot(datetime(2026,10,1,10,tzinfo=timezone.utc)),'daily')
         for hour in (3,9,13):
@@ -150,6 +164,20 @@ class ArchiveTests(unittest.TestCase):
             export_daily(root,root/'archive',now,('JP',))
             self.assertEqual((result/'manifest.json').read_bytes(),before)
             self.assertIn("'=SUM",csv_bytes(['x'],[['=SUM(1)']]).decode())
+
+    def test_archive_includes_analysis_csv_when_present(self):
+        from archive_csv import export_daily
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);self.seed(root)
+            write_json(root/'analysis/2026-10-01.json',{'date':'2026-10-01','generated_at':'2026-10-01T08:07:00Z','common':[],'concepts':[],
+                       'geos':{'JP':{'analyzer':'mecab','articles':5,'fetched_at':'2026-10-01T08:07:00Z','words':[{'word':'台風','count':3,'rank_change':None,'is_new':True,'surge':True,'volume':100,'trends':['台風']}]}}})
+            result=export_daily(root,root/'archive',datetime(2026,10,1,9,tzinfo=timezone.utc),('JP',))
+            self.assertIn('台風',(result/'ALL-analysis.csv').read_text(encoding='utf-8-sig'))
+            self.assertFalse((result/'ALL-weekly.csv').exists())
+            (root/'analysis/2026-10-01.json').unlink()
+            empty=export_daily(root,root/'other',datetime(2026,10,1,9,tzinfo=timezone.utc),('JP',))
+            self.assertFalse((empty/'ALL-analysis.csv').exists())
+            self.assertIn('skipped_analysis',load_json(empty/'manifest.json'))
 
     def test_stale_archive_does_not_leave_partial_result(self):
         from archive_csv import export_daily

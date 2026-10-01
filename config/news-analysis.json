@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "stopwords": {
+    "KR": ["오늘","어제","내일","이번","지난","관련","통해","대한","위해","때문","경우","이후","전후","최근","현재","당시","사실","이유","모습","상황","문제","사람","사진","영상","기자","뉴스","속보","단독","종합","포토","인터뷰","현장","공개","발표","보도","기준","예정","오전","오후","올해","지난해","가능","최초","최대","최고","새로운","자신","우리","여기","그것","소식","시작","마지막","정도","진짜","다시","과연","이것","논란","확인"],
+    "JP": ["今日","昨日","明日","今回","前回","今年","昨年","来年","現在","最新","関連","理由","結果","場合","可能","予定","写真","動画","ニュース","速報","独占","記者","記事","報道","発表","公開","話題","注目","自分","自身","今後","以上","以下","一方","一部","今回","本当","最後","最初","内容","詳細","まとめ","こちら","もの","こと","ため","さん","ちゃん","よう","ところ","たち"],
+    "US": ["a","an","the","and","or","but","if","then","than","for","from","to","of","in","on","at","by","with","as","is","are","was","were","be","been","being","will","would","could","should","may","might","can","has","have","had","do","does","did","not","no","so","it","its","this","that","these","those","they","their","them","he","his","him","she","her","we","our","you","your","who","what","when","where","why","how","about","after","before","over","under","into","out","up","down","more","most","less","all","some","any","new","latest","breaking","news","live","update","updates","today","yesterday","tomorrow","says","said","say","watch","video","photos","photo","report","reports","first","last","just","now","here","there","could","back","get","gets","got","day","year","years","time","times","week","weeks","month","months","one","two","three","also","still","much","many","make","makes","made","know","need","see","look","take","takes","taken"]
+  },
+  "concepts": [
+    {"id":"ai","label":"인공지능","aliases":{"KR":["인공지능","AI"],"JP":["人工知能","AI"],"US":["AI","artificial intelligence"]}},
+    {"id":"semiconductor","label":"반도체","aliases":{"KR":["반도체"],"JP":["半導体"],"US":["semiconductor","semiconductors"]}},
+    {"id":"interest-rate","label":"금리","aliases":{"KR":["금리"],"JP":["金利"],"US":["interest rate","interest rates"]}},
+    {"id":"inflation","label":"인플레이션","aliases":{"KR":["인플레이션","물가"],"JP":["インフレ","インフレーション","物価"],"US":["inflation"]}},
+    {"id":"election","label":"선거","aliases":{"KR":["선거"],"JP":["選挙"],"US":["election","elections"]}},
+    {"id":"baseball","label":"야구","aliases":{"KR":["야구"],"JP":["野球"],"US":["baseball"]}},
+    {"id":"soccer","label":"축구","aliases":{"KR":["축구"],"JP":["サッカー"],"US":["soccer"]}},
+    {"id":"basketball","label":"농구","aliases":{"KR":["농구"],"JP":["バスケットボール","バスケ"],"US":["basketball"]}},
+    {"id":"earthquake","label":"지진","aliases":{"KR":["지진"],"JP":["地震"],"US":["earthquake","earthquakes"]}},
+    {"id":"typhoon","label":"태풍","aliases":{"KR":["태풍"],"JP":["台風"],"US":["typhoon","typhoons"]}},
+    {"id":"climate","label":"기후","aliases":{"KR":["기후"],"JP":["気候"],"US":["climate"]}},
+    {"id":"war","label":"전쟁","aliases":{"KR":["전쟁"],"JP":["戦争"],"US":["war","wars"]}},
+    {"id":"tariff","label":"관세","aliases":{"KR":["관세"],"JP":["関税"],"US":["tariff","tariffs"]}},
+    {"id":"oil","label":"석유","aliases":{"KR":["석유","원유"],"JP":["石油","原油"],"US":["crude oil","petroleum"]}},
+    {"id":"bitcoin","label":"비트코인","aliases":{"KR":["비트코인","bitcoin","BTC"],"JP":["ビットコイン","bitcoin","BTC"],"US":["bitcoin","BTC"]}},
+    {"id":"samsung","label":"삼성","aliases":{"KR":["삼성","삼성전자"],"JP":["サムスン","Samsung"],"US":["Samsung"]}},
+    {"id":"nvidia","label":"엔비디아","aliases":{"KR":["엔비디아","NVIDIA"],"JP":["エヌビディア","NVIDIA"],"US":["Nvidia"]}},
+    {"id":"google","label":"구글","aliases":{"KR":["구글","Google"],"JP":["グーグル","Google"],"US":["Google"]}},
+    {"id":"openai","label":"OpenAI","aliases":{"KR":["오픈AI","오픈에이아이","OpenAI"],"JP":["オープンAI","OpenAI"],"US":["OpenAI"]}},
+    {"id":"chatgpt","label":"ChatGPT","aliases":{"KR":["챗GPT","챗지피티","ChatGPT"],"JP":["チャットGPT","ChatGPT"],"US":["ChatGPT"]}},
+    {"id":"china","label":"중국","aliases":{"KR":["중국"],"JP":["中国"],"US":["China","Chinese"]}},
+    {"id":"japan","label":"일본","aliases":{"KR":["일본"],"JP":["日本"],"US":["Japan","Japanese"]}},
+    {"id":"korea","label":"한국","aliases":{"KR":["한국","대한민국"],"JP":["韓国"],"US":["South Korea","South Korean"]}},
+    {"id":"usa","label":"미국","aliases":{"KR":["미국"],"JP":["米国","アメリカ"],"US":["United States","USA","U.S."]}},
+    {"id":"russia","label":"러시아","aliases":{"KR":["러시아"],"JP":["ロシア"],"US":["Russia","Russian"]}},
+    {"id":"ukraine","label":"우크라이나","aliases":{"KR":["우크라이나"],"JP":["ウクライナ"],"US":["Ukraine","Ukrainian"]}},
+    {"id":"taiwan","label":"대만","aliases":{"KR":["대만"],"JP":["台湾"],"US":["Taiwan","Taiwanese"]}},
+    {"id":"olympics","label":"올림픽","aliases":{"KR":["올림픽"],"JP":["オリンピック","五輪"],"US":["Olympics","Olympic"]}},
+    {"id":"worldcup","label":"월드컵","aliases":{"KR":["월드컵"],"JP":["ワールドカップ"],"US":["World Cup"]}},
+    {"id":"nuclear","label":"원자력","aliases":{"KR":["원자력","원전"],"JP":["原子力","原発"],"US":["nuclear power","nuclear plant"]}}
+  ]
+}

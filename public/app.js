@@ -2,9 +2,12 @@ const $ = s => document.querySelector(s);
 const names = { KR: '대한민국', US: '미국', JP: '일본' };
 const periods = { '7d': ['지난 1주', 'now 7-d'], '1m': ['지난 1개월', 'today 1-m'], '3m': ['지난 3개월', 'today 3-m'], '12m': ['지난 1년', 'today 1-y'] };
 const params = new URLSearchParams(location.search);
-const state = { view: params.get('view') === 'explore' ? 'explore' : 'trending', geo: names[params.get('geo')] ? params.get('geo') : 'KR', hours: [4,12,24,48,168].includes(Number(params.get('hours'))) ? Number(params.get('hours')) : 24, period: periods[params.get('period')] ? params.get('period') : '1m', type: params.get('type') === 'rising' ? 'rising' : 'top', category: params.get('cat') || 'all', query: params.get('q') || '' };
+const views = ['trending','explore','analysis'];
+const flags = { KR:'🇰🇷', US:'🇺🇸', JP:'🇯🇵' };
+const analyzers = { kiwi:'형태소 분석 · Kiwi', mecab:'형태소 분석 · MeCab', rules:'규칙 기반 분석' };
+const state = { view: views.includes(params.get('view')) ? params.get('view') : 'trending', scope: params.get('scope') === 'weekly' ? 'weekly' : 'daily', day: params.get('day') || '', geo: names[params.get('geo')] ? params.get('geo') : 'KR', hours: [4,12,24,48,168].includes(Number(params.get('hours'))) ? Number(params.get('hours')) : 24, period: periods[params.get('period')] ? params.get('period') : '1m', type: params.get('type') === 'rising' ? 'rising' : 'top', category: params.get('cat') || 'all', query: params.get('q') || '' };
 let index = null, data = null, visible = [], requestId = 0, historyId = 0, snapshots = [], historical = false, nextCheck = Date.now() + 300000;
-let selectedKeyword = null;
+let selectedKeyword = null, analysisIndex = null, analysis = null, openWord = null;
 const fmt = new Intl.NumberFormat('ko-KR');
 const dateFmt = new Intl.DateTimeFormat('ko-KR', { timeZone:'Asia/Seoul', month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false });
 const date = value => value ? dateFmt.format(new Date(value)) : '—';
@@ -14,24 +17,25 @@ function el(tag,text,cls) { const node=document.createElement(tag); if(text!==un
 function link(label,href) { const a=el('a',label);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a; }
 function safeUrl(value) { try { const u=new URL(value);return ['https:','http:'].includes(u.protocol) ? u.href : null; } catch{return null;} }
 function sourceUrl(){ return state.view==='explore' ? `https://trends.google.co.kr/explore?geo=${state.geo}&date=${encodeURIComponent(periods[state.period][1])}` : `https://trends.google.co.kr/trending?geo=${state.geo}&hours=${state.hours===12?24:state.hours}`; }
-function updateUrl(){ const p=new URLSearchParams({view:state.view,geo:state.geo});if(state.view==='explore'){p.set('period',state.period);p.set('type',state.type);}else{p.set('hours',state.hours);if(state.category!=='all')p.set('cat',state.category);}if(state.query)p.set('q',state.query);history.replaceState(null,'',`${location.pathname}?${p}${location.hash}`); }
+function updateUrl(){ const p=new URLSearchParams({view:state.view,geo:state.geo});if(state.view==='analysis'){p.set('scope',state.scope);if(state.day)p.set('day',state.day);}else if(state.view==='explore'){p.set('period',state.period);p.set('type',state.type);}else{p.set('hours',state.hours);if(state.category!=='all')p.set('cat',state.category);}if(state.query)p.set('q',state.query);history.replaceState(null,'',`${location.pathname}?${p}${location.hash}`); }
 async function json(path){ const response=await fetch(`./data/${path}`,{cache:'no-store',signal:AbortSignal.timeout(20000)});if(!response.ok)throw new Error(response.status===404?'이 국가·기간의 수집 데이터가 아직 없습니다.':`데이터 요청 오류 (${response.status})`);return response.json(); }
 function configure(){
-  const explore=state.view==='explore';
+  const explore=state.view==='explore',analysisView=state.view==='analysis';
+  for(const node of ['.stats','.toolbar','#results','#source'])$(node).hidden=analysisView;$('#analysis').hidden=!analysisView;$('#analysis-day').hidden=!analysisView;
   document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===state.view)));
-  $('#heading').textContent=explore?'사람들이 많이 검색한 검색어':'지금, 무엇을 찾고 있나요?';
-  $('#subtitle').textContent=explore?'한 주부터 일 년까지, 관심의 흐름을 살펴보세요.':'검색으로 읽는 세상의 관심사.';
+  $('#heading').textContent=analysisView?'뉴스 제목으로 읽는 오늘의 단어':explore?'사람들이 많이 검색한 검색어':'지금, 무엇을 찾고 있나요?';
+  $('#subtitle').textContent=analysisView?'최근 24시간 트렌드에 붙은 기사 제목에서 많이 나온 단어입니다.':explore?'한 주부터 일 년까지, 관심의 흐름을 살펴보세요.':'검색으로 읽는 세상의 관심사.';
   $('#region-label').textContent=`${names[state.geo]} · ${state.geo}`;$('#geo').value=state.geo;$('#search').value=state.query;
   $('#source').href=sourceUrl();$('#periods').replaceChildren();
-  const values=explore?Object.entries(periods).map(([key,v])=>[key,v[0]]):[4,12,24,48,168].map(h=>[h,h===168?'7일':`${h}시간`]);
-  for(const [value,label] of values){const b=el('button',label);b.setAttribute('aria-pressed',String(explore?state.period===value:state.hours===value));b.addEventListener('click',()=>{if(explore)state.period=value;else state.hours=value;resetHistory();updateUrl();configure();load();});$('#periods').append(b);}
-  $('#explore-controls').hidden=!explore;$('#categories').hidden=explore;$('#sort').hidden=explore;$('#active-control').hidden=explore;$('#history-toggle').hidden=explore;
+  const values=analysisView?[['daily','일간'],['weekly','주간 (7일)']]:explore?Object.entries(periods).map(([key,v])=>[key,v[0]]):[4,12,24,48,168].map(h=>[h,h===168?'7일':`${h}시간`]);
+  for(const [value,label] of values){const b=el('button',label);b.setAttribute('aria-pressed',String(analysisView?state.scope===value:explore?state.period===value:state.hours===value));b.addEventListener('click',()=>{if(analysisView){state.scope=value;state.day='';}else if(explore)state.period=value;else state.hours=value;resetHistory();updateUrl();configure();load();});$('#periods').append(b);}
+  $('#explore-controls').hidden=!explore;$('#categories').hidden=explore||analysisView;$('#sort').hidden=explore;$('#active-control').hidden=explore;$('#history-toggle').hidden=explore;
   $('#stat-label-1').textContent=explore?'상위 검색어':'조회된 검색어';$('#stat-label-2').textContent=explore?'급상승 검색어':'현재 상승 중';$('#stat-label-3').textContent=explore?'상위 검색어 1위':'가장 많이 검색한 키워드';
   document.querySelectorAll('[data-type]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.type===state.type)));
   $('#metric-note').textContent=state.type==='top'?'관심도는 최고 항목을 100으로 둔 상대 점수입니다. 순위 변동은 직전 같은 길이의 달력 일자 구간과 비교한 자체 계산값으로, Google 화면의 변화율과 다릅니다.':'직전 비교 기간 대비 검색 증가율입니다. ‘급등’은 5,000% 초과 증가를 뜻하며 실제 검색 횟수가 아닙니다.';
 }
 function renderCategories(){
-  const container=$('#categories');container.replaceChildren();if(!data||state.view==='explore')return;
+  const container=$('#categories');container.replaceChildren();if(!data||state.view!=='trending')return;
   const present=new Set(data.trends.flatMap(t=>t.categories));
   const choices=[['all','전체'],...Object.entries(index?.categories||{}).filter(([id])=>present.has(Number(id)))];
   for(const id of present)if(!index?.categories?.[id])choices.push([String(id),`기타 (${id})`]);
@@ -74,11 +78,71 @@ function warnings(){
   $('#warning').textContent=notes.join(' ');$('#warning').hidden=!notes.length;
 }
 async function load(){
+  if(state.view==='analysis')return loadAnalysis();
   const id=++requestId;data=null;render();$('#refresh').disabled=true;$('#warning').hidden=true;$('#status').textContent='Google 트렌드 수집본을 불러오는 중입니다…';
   const path=state.view==='explore'?`explore/${state.geo}/${state.period}.json`:`latest/${state.geo}/${state.hours===12?24:state.hours}.json`;
   try{const [meta,body]=await Promise.all([json('index.json'),json(path)]);if(id!==requestId)return;index=meta;data=body;renderCategories();render();warnings();nextCheck=Date.now()+300000;openHash();}
   catch(error){if(id!==requestId)return;$('#status').textContent='데이터를 불러오지 못했습니다.';$('#warning').textContent=`${error.message} Google 원문을 이용하거나 잠시 후 새로고침하세요.`;$('#warning').hidden=false;}
   finally{if(id===requestId)$('#refresh').disabled=false;}
+}
+async function loadAnalysis(){
+  const id=++requestId;$('#refresh').disabled=true;$('#warning').hidden=true;$('#status').textContent='뉴스 단어 분석을 불러오는 중입니다…';
+  try{
+    analysisIndex=await json('analysis/index.json');if(id!==requestId)return;
+    const days=state.scope==='weekly'?analysisIndex.weekly:analysisIndex.days;
+    const select=$('#analysis-day');select.replaceChildren();for(const day of [...days].reverse()){const opt=el('option',state.scope==='weekly'?`${day} 까지 7일`:day);opt.value=day;select.append(opt);}
+    if(!days.length)throw new Error(state.scope==='weekly'?'주간 분석은 일요일에 처음 만들어집니다.':'아직 분석 결과가 없습니다.');
+    if(!days.includes(state.day))state.day=days.at(-1);select.value=state.day;updateUrl();
+    analysis=await json(`analysis/${state.scope==='weekly'?'weekly/':''}${state.day}.json`);if(id!==requestId)return;
+    renderAnalysis();nextCheck=Date.now()+300000;
+  }catch(error){if(id!==requestId)return;analysis=null;$('#analysis').replaceChildren();$('#status').textContent='분석 결과를 불러오지 못했습니다.';$('#warning').textContent=error.message;$('#warning').hidden=false;}
+  finally{if(id===requestId)$('#refresh').disabled=false;}
+}
+function sparkline(series){
+  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg'),w=72,h=22,max=Math.max(1,...series.map(v=>v||0));svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.setAttribute('class','spark');
+  svg.setAttribute('role','img');svg.setAttribute('aria-label',`최근 ${series.length}일 기사 수 ${series.map(v=>v??'기록 없음').join(', ')}`);
+  const step=w/(series.length-1||1),points=series.map((v,i)=>[i*step,h-2-((v||0)/max)*(h-4),v]);
+  const line=document.createElementNS(ns,'polyline');line.setAttribute('points',points.filter(p=>p[2]!==null).map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' '));svg.append(line);
+  const last=points.at(-1),dot=document.createElementNS(ns,'circle');dot.setAttribute('cx',last[0]);dot.setAttribute('cy',last[1]);dot.setAttribute('r',2.5);svg.append(dot);return svg;
+}
+function changeBadge(w,hasPrev){
+  if(w.surge)return el('span','🔥 급부상','badge surge');if(!hasPrev)return el('span','—','change');if(w.is_new)return el('span','NEW','badge new');
+  return w.rank_change?el('span',`${w.rank_change>0?'▲':'▼'} ${Math.abs(w.rank_change)}`,w.rank_change>0?'change growth':'change negative'):el('span','—','change');
+}
+function goTrend(keyword,geo=state.geo){const d=$('#detail');if(d.open)d.close();Object.assign(state,{view:'trending',geo,hours:24,category:'all',query:keyword});resetHistory();updateUrl();configure();load();scrollTo({top:0,behavior:'smooth'});}
+function trendChips(trends){const chips=el('div',undefined,'related-chips');for(const t of trends){const b=el('button',t);b.title='실시간 24시간 목록에서 찾기';b.addEventListener('click',()=>goTrend(t));chips.append(b);}return chips;}
+function renderAnalysis(){
+  const box=$('#analysis');box.replaceChildren();const weekly=state.scope==='weekly';const g=analysis?.geos?.[state.geo];
+  if(!g){box.append(el('p','이 국가의 분석 결과가 없습니다.','muted'));$('#status').textContent='분석 결과 없음';return;}
+  const meta=el('div',undefined,'analysis-meta');
+  if(weekly)meta.append(el('span',`${analysis.start_date} ~ ${analysis.end_date} · ${analysis.days}일 합산`));
+  else{meta.append(el('span',analyzers[g.analyzer]||g.analyzer,`badge analyzer ${g.analyzer}`),el('span',`기사 ${fmt.format(g.articles)}건 · 트렌드 ${fmt.format(g.trends)}개 · 원본 수집 ${fullDate(g.fetched_at)} KST`));if(!g.has_prev)meta.append(el('span','어제 분석이 없어 순위 변동은 내일부터 표시됩니다.','muted'));}
+  box.append(meta);
+  const surging=weekly?[]:g.words.filter(w=>w.surge);
+  if(surging.length){const strip=el('div',undefined,'surge-strip');strip.append(el('strong','🔥 급부상'));for(const w of surging){const b=el('button',`${w.word} ${w.count}건`);b.addEventListener('click',()=>{openWord=w.word;renderAnalysis();});strip.append(b);}box.append(strip);}
+  const grid=el('div',undefined,'analysis-grid');const main=el('section',undefined,'panel');main.append(el('h2',weekly?'주간 단어 TOP 20':'뉴스 단어 TOP 20'),el('p',weekly?'7일 동안 매일의 기사 수를 더했습니다. 일수는 그 단어가 일간 TOP 20에 든 날입니다.':'숫자는 그 단어가 나온 기사 수입니다. 단어를 누르면 기사와 관련 트렌드가 펼쳐집니다.','muted'));
+  const list=el('ol',undefined,'word-list');const max=Math.max(1,...g.words.map(w=>w.count));
+  g.words.forEach((w,i)=>{
+    const item=el('li',undefined,w.surge?'surge':'');const row=el('div',undefined,'word-row');row.append(el('span',String(i+1).padStart(2,'0'),'rank'));
+    const b=el('button',w.word,'word');b.setAttribute('aria-expanded',String(openWord===w.word));b.addEventListener('click',()=>{openWord=openWord===w.word?null:w.word;renderAnalysis();});row.append(b);
+    const meter=el('meter');meter.min=0;meter.max=max;meter.value=w.count;meter.setAttribute('aria-label',`기사 ${w.count}건`);row.append(meter,el('span',weekly?`${w.count}건 · ${w.days}일`:`${w.count}건`,'count'));
+    if(!weekly){row.append(w.series?sparkline(w.series):el('span'),changeBadge(w,g.has_prev));}item.append(row);
+    if(openWord===w.word){const more=el('div',undefined,'word-more');
+      if(w.articles?.length){const ul=el('ul',undefined,'word-articles');for(const a of w.articles){const url=safeUrl(a.url);const li=el('li');li.append(url?link(a.title,url):el('span',a.title),el('small',` ${a.source||''}`));ul.append(li);}more.append(ul);}
+      if(w.trends?.length){more.append(el('p','관련 트렌드 · 누르면 실시간 목록에서 찾습니다','muted'),trendChips(w.trends));}
+      if(!weekly&&w.volume)more.append(el('p',`관련 트렌드 검색량 합 ${volume(w.volume)}`,'muted'));item.append(more);}
+    list.append(item);
+  });
+  main.append(list);grid.append(main);
+  const side=el('div',undefined,'analysis-side');
+  if(!weekly){
+    const share=el('section',undefined,'panel');share.append(el('h2','분야 비중'),el('p','트렌드 카테고리 첫 항목 기준','muted'));for(const c of g.categories.slice(0,8)){const row=el('div',undefined,'share-row');const m=el('meter');m.min=0;m.max=100;m.value=c.pct;m.setAttribute('aria-label',`${c.name} ${c.pct}%`);row.append(el('span',c.name),m,el('b',`${c.pct}%`));share.append(row);}side.append(share);
+    if(analysis.common?.length){const common=el('section',undefined,'panel');common.append(el('h2','국가 공통 검색어'),el('p','2개국 이상에서 동시에 뜬 검색어','muted'));const chips=el('div',undefined,'related-chips');for(const c of analysis.common){const b=el('button',`${c.geos.map(x=>flags[x]).join('')} ${c.keyword}`);b.addEventListener('click',()=>goTrend(c.keyword,c.geos.includes(state.geo)?state.geo:c.geos[0]));chips.append(b);}common.append(chips);side.append(common);}
+    if(analysis.concepts?.length){const concepts=el('section',undefined,'panel');concepts.append(el('h2','같은 개념 · 3개국 비교'),el('p','AI·인공지능·人工知能처럼 나라별 표현을 묶어 센 기사 수','muted'));const table=el('table',undefined,'concept-table');const head=el('tr');for(const t of ['개념','🇰🇷','🇺🇸','🇯🇵']){const th=el('th',t);th.scope='col';head.append(th);}table.append(head);
+      for(const c of analysis.concepts.slice(0,12)){const tr=el('tr');tr.append(el('td',c.label));for(const geo of ['KR','US','JP']){const n=c.counts[geo]||0;tr.append(el('td',n?String(n):'·',geo===state.geo?'current':n?'':'muted'));}table.append(tr);}concepts.append(table);side.append(concepts);}
+  }
+  grid.append(side);box.append(grid);
+  $('#status').textContent=`${names[state.geo]} · ${weekly?`주간 ${analysis.end_date}`:`일간 ${analysis.date}`} · 생성 ${fullDate(analysis.generated_at)} KST`;
 }
 function resetHistory(){historical=false;snapshots=[];historyId++;$('#history').hidden=true;$('#history-toggle').setAttribute('aria-expanded','false');}
 async function showHistory(){
@@ -126,9 +190,10 @@ function download(kind){if(!data)return;const explore=state.view==='explore';con
  else{const header=explore?['검색어','순위','상대 점수 또는 증가율','표시값','급등','순위 변동','신규 진입','유형','국가','기간','비교 기간','비교 상태','수집 시각']:['검색어','검색량 하한','증가율 %','시작 UTC','종료 UTC','카테고리','관련 키워드','뉴스 URL','국가','조회 시간','원본 시간','수집 시각'];const rows=visible.map(t=>explore?[t.query,t.rank,t.value,t.label,t.is_breakout,t.rank_change,t.is_new,state.type,state.geo,state.period,data.compare,data.comparison_status,data.fetched_at]:[t.keyword,t.volume,t.increase_pct,t.started_at,t.ended_at,t.categories.map(id=>index.categories[id]||id).join(' / '),t.related.join(' / '),t.news.map(n=>n.url).join(' / '),state.geo,state.hours,data.hours,data.fetched_at]);body='\uFEFF'+[header,...rows].map(row=>row.map(csvCell).join(',')).join('\r\n');mime='text/csv;charset=utf-8';}
  const url=URL.createObjectURL(new Blob([body],{type:mime}));const a=el('a');a.href=url;a.download=`trends-${state.geo}-${explore?state.period+'-'+state.type:state.hours+'h'}-${data.fetched_at.slice(0,10)}.${kind}`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
-document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;resetHistory();updateUrl();configure();load();}));
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;openWord=null;resetHistory();updateUrl();configure();load();}));
 document.querySelectorAll('[data-type]').forEach(b=>b.addEventListener('click',()=>{state.type=b.dataset.type;updateUrl();configure();render();}));
-$('#geo').addEventListener('change',e=>{state.geo=e.target.value;state.category='all';resetHistory();updateUrl();configure();load();});
+$('#geo').addEventListener('change',e=>{state.geo=e.target.value;state.category='all';openWord=null;if(state.view==='analysis'&&analysis){updateUrl();configure();renderAnalysis();return;}resetHistory();updateUrl();configure();load();});
+$('#analysis-day').addEventListener('change',e=>{state.day=e.target.value;openWord=null;updateUrl();load();});
 $('#search').addEventListener('input',e=>{state.query=e.target.value.trim();updateUrl();render();});$('#sort').addEventListener('change',render);$('#only-active').addEventListener('change',render);
 $('#refresh').addEventListener('click',()=>{resetHistory();load();});$('#history-toggle').addEventListener('click',showHistory);$('#history-date').addEventListener('change',loadHistory);$('#history-range').addEventListener('input',showSnapshot);$('#back-live').addEventListener('click',()=>{resetHistory();load();});
 $('#export-csv').addEventListener('click',()=>download('csv'));$('#export-json').addEventListener('click',()=>download('json'));
