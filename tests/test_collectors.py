@@ -110,7 +110,7 @@ class DiscordTests(unittest.TestCase):
             self.assertEqual(len(cards),5)
             self.assertTrue(all(e['description'].count('· [')==3 for e in cards))
             for m in messages:
-                self.assertIn('구글 트렌드 코덱스',m['content'])
+                self.assertIn('구글 트렌드 by 코덱스',m['content'])
                 self.assertEqual(m['allowed_mentions'],{'parse':[]})
                 self.assertLessEqual(sum(len(e['title'])+len(e['description']) for e in m['embeds']),6000)
 

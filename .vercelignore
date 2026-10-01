@@ -15,3 +15,6 @@ trends.js
 test-results
 
 archives
+
+.deploy/
+.pytest_cache/

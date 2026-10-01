@@ -50,12 +50,12 @@ def build_payloads(doc, new_keywords, dashboard=''):
     rows = sorted(doc['trends'], key=lambda t: t['volume'], reverse=True)[:5]
     collected = datetime.fromisoformat(doc['fetched_at'].replace('Z', '+00:00')).astimezone(KST)
     messages, embeds = [], []
-    base = f"📈 **구글 트렌드 코덱스 · {collected:%Y-%m-%d} · {COUNTRIES[geo]} · 최근 24시간 TOP 5**\n수집 {collected:%m/%d %H:%M} KST · 검색어별 뉴스 최대 3건"
+    base = f"📈 **구글 트렌드 by 코덱스 · {collected:%Y-%m-%d} · {COUNTRIES[geo]} · 최근 24시간 TOP 5**\n수집 {collected:%m/%d %H:%M} KST · 검색어별 뉴스 최대 3건"
     if dashboard and urlparse(dashboard).scheme in ('https', 'http'):
         base += f'\n{dashboard}'
     def flush():
         if embeds:
-            messages.append({'username':'구글 트렌드 코덱스', 'content': base, 'allowed_mentions': {'parse': []}, 'embeds': list(embeds)})
+            messages.append({'username':'구글 트렌드 by 코덱스', 'content': base, 'allowed_mentions': {'parse': []}, 'embeds': list(embeds)})
             embeds.clear()
     for rank, trend in enumerate(rows, 1):
         title = f"{rank}. {trend['keyword']}"[:230] + (' 🆕' if trend['keyword'] in new_keywords else '')
@@ -80,7 +80,7 @@ def build_payloads(doc, new_keywords, dashboard=''):
         embeds.append(embed)
     flush()
     if not messages:
-        messages.append({'username':'구글 트렌드 코덱스', 'content':base+'\n현재 검색어가 없습니다.', 'allowed_mentions':{'parse':[]}})
+        messages.append({'username':'구글 트렌드 by 코덱스', 'content':base+'\n현재 검색어가 없습니다.', 'allowed_mentions':{'parse':[]}})
     return messages
 
 

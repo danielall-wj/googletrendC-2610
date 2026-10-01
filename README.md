@@ -1,4 +1,4 @@
-# 지금, 트렌드
+# 구글 트렌드 by 코덱스
 
 Google Trends의 실제 데이터를 수집하는 정적 대시보드입니다. 한국·미국·일본의 실시간 인기 검색어, 관련 뉴스, Explore 상위·급상승 검색어, 수집 히스토리를 제공합니다.
 
@@ -59,7 +59,7 @@ GitHub Actions 스케줄은 지연되거나 누락될 수 있으므로 정확한
 
 ## Discord
 
-발행 제목은 **구글 트렌드 코덱스**이며 분할 메시지마다 표시합니다.
+발행 제목은 **구글 트렌드 by 코덱스**이며 분할 메시지마다 표시합니다.
 
 매일 19시 한국 시간에 **한국·일본·미국 각각 최근 24시간 검색량 TOP 5**와 **검색어별 관련 뉴스 최대 3건**을 보냅니다. 총 15개 검색어·최대 45개 기사입니다. 3건 미만이면 실제 확보된 개수를 표시합니다. 국가별 카드가 Discord 글자 수 제한을 넘으면 여러 메시지로 분할하며, CSV/JSON 첨부는 각 국가 첫 메시지에만 포함합니다. 이번 발송 구성은 TOP 5·뉴스 중심이며 별도 Explore 요약 카드는 보내지 않습니다.
 
@@ -80,7 +80,13 @@ cp .env.example .env.local  # 최초 설정 시에만; 이미 설정된 파일�
 
 ## GitHub / Vercel 연결
 
-**로컬 구현과 실제 데이터 수집·Discord 테스트 발송은 완료했습니다. 아직 이 폴더에 원격 저장소가 연결되지 않아 예약 실행·Vercel 공개 배포는 활성화되지 않았습니다.** 로컬 서버를 켜는 것만으로 수집·발송 예약이 실행되지는 않습니다.
+**코덱스 전용 비공개 저장소와 Vercel 프로젝트를 연결했습니다.**
+
+- GitHub: https://github.com/frontierall/googletrendC-2610
+- 사이트: https://googletrendc-2610.vercel.app
+- Actions: https://github.com/frontierall/googletrendC-2610/actions
+
+`googletrend-2610` 클로드 프로젝트와 별개입니다. 자동 수집·18시 CSV 보관·19시 발송은 이 새 저장소에서 실행됩니다. 아래는 설정 재현 방법입니다.
 
 1. 개인 계정 소유의 비공개 GitHub 저장소를 만들고 이 폴더를 올립니다. `.env.local`과 `.venv`는 포함하지 않습니다.
 2. 저장소 Settings → Secrets and variables → Actions에 다음을 설정합니다.
