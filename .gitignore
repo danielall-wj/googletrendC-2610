@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.vercel/
+.env*
+!.env.example
+node_modules/
+test-results/
+.DS_Store
+public/data/**/*.tmp
+
+.deploy/
+
+.pytest_cache/

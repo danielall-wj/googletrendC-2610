@@ -1,0 +1,14 @@
+{
+  "name": "korea-trends-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "python3 -m unittest discover -s tests -p \"test_*.py\""
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

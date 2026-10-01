@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>트렌드 수집기 계획서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f5; --surface:#ffffff; --surface-2:#f0efec; --text:#1d1d1b; --muted:#6b6a66;
+  --border:#e2e0db; --accent:#1a73e8; --accent-soft:#e8f0fe; --good:#188038; --good-soft:#e6f4ea;
+  --warn:#b06000; --warn-soft:#fef7e0; --bad:#c5221f; --bad-soft:#fce8e6; --code-bg:#f3f2ef;
+  --shadow:0 1px 2px rgba(0,0,0,.05),0 2px 8px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161615; --surface:#1f1f1d; --surface-2:#2a2a27; --text:#ecebe8; --muted:#a09e98;
+    --border:#34332f; --accent:#8ab4f8; --accent-soft:#1f2c42; --good:#81c995; --good-soft:#1b3024;
+    --warn:#fdd663; --warn-soft:#3a3120; --bad:#f28b82; --bad-soft:#3f2322; --code-bg:#262623;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161615; --surface:#1f1f1d; --surface-2:#2a2a27; --text:#ecebe8; --muted:#a09e98;
+  --border:#34332f; --accent:#8ab4f8; --accent-soft:#1f2c42; --good:#81c995; --good-soft:#1b3024;
+  --warn:#fdd663; --warn-soft:#3a3120; --bad:#f28b82; --bad-soft:#3f2322; --code-bg:#262623;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 "Noto Sans KR",system-ui,sans-serif}
+code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.86em}
+code{background:var(--code-bg);padding:.1em .35em;border-radius:4px}
+pre{background:var(--code-bg);border:1px solid var(--border);border-radius:8px;padding:14px 16px;overflow-x:auto;line-height:1.55;margin:12px 0}
+pre code{background:none;padding:0}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:40px 16px 80px}
+header.top{margin-bottom:32px}
+.eyebrow{color:var(--muted);font-size:13px;letter-spacing:.02em}
+h1{font-size:30px;line-height:1.3;margin:6px 0 10px}
+h2{font-size:21px;margin:0 0 14px;padding-top:8px}
+h3{font-size:16px;margin:22px 0 8px}
+.lede{color:var(--muted);max-width:720px;margin:0}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin:22px 0 0}
+nav.toc a{font-size:13px;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 12px}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+section{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:26px 26px 22px;margin:18px 0;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border:1px solid var(--border);border-radius:10px;padding:14px 16px;background:var(--bg)}
+.card h4{margin:0 0 4px;font-size:14px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);font-weight:500;font-size:13px}
+.tbl{overflow-x:auto}
+.pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--surface-2);color:var(--muted);white-space:nowrap}
+.pill.ok{background:var(--good-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.info{background:var(--accent-soft);color:var(--accent)}
+ul.check{list-style:none;padding:0;margin:8px 0}
+ul.check li{padding-left:24px;position:relative;margin:4px 0}
+ul.check li::before{content:"";position:absolute;left:2px;top:.55em;width:12px;height:12px;border:1.5px solid var(--muted);border-radius:3px}
+.muted{color:var(--muted)}
+.callout{border-left:3px solid var(--accent);background:var(--accent-soft);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:14px}
+.callout.warn{border-color:var(--warn);background:var(--warn-soft)}
+
+/* architecture diagram */
+.arch{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin:10px 0 6px}
+.arch .node{flex:1 1 170px;border:1px solid var(--border);background:var(--bg);border-radius:10px;padding:12px 14px;min-width:150px}
+.arch .node b{display:block;font-size:14px}
+.arch .node span{font-size:13px;color:var(--muted)}
+.arch .arrow{flex:0 0 34px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:20px}
+.arch .node.hl{border-color:var(--accent);background:var(--accent-soft)}
+
+/* phases */
+.phase{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--border)}
+.phase:first-of-type{border-top:0}
+.phase .ph{font-weight:700}
+.phase .ph small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+
+/* ===== MOCKUP ===== */
+.mock-frame{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg);margin-top:12px}
+.mock-bar{display:flex;align-items:center;gap:6px;padding:8px 12px;background:var(--surface-2);border-bottom:1px solid var(--border);font-size:12px;color:var(--muted)}
+.mock-bar i{width:10px;height:10px;border-radius:50%;background:var(--border);display:inline-block}
+.mock-bar .url{margin-left:10px;background:var(--surface);border-radius:6px;padding:2px 10px;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.app{padding:18px}
+.app-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.app-head h3{margin:0;font-size:18px}
+.app-head .meta{font-size:12px;color:var(--muted)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--good);margin-right:5px;vertical-align:middle}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 10px}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:none;color:var(--text);padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button.on{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .seg button.on{color:#111}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .seg button.on{color:#111}}
+select,input[type=search]{font:inherit;font-size:13px;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 10px}
+input[type=search]{min-width:160px;flex:1}
+.btn{font:inherit;font-size:13px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{font-size:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:999px;padding:3px 10px;cursor:pointer}
+.chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.hist{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin-bottom:12px}
+.hist input{flex:1;accent-color:var(--accent)}
+.list{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.row{display:grid;grid-template-columns:34px minmax(0,1.6fr) 110px 110px 90px;gap:10px;align-items:center;padding:10px 14px;border-top:1px solid var(--border);cursor:pointer}
+.row:first-child{border-top:0}
+.row.head{cursor:default;font-size:12px;color:var(--muted);background:var(--surface-2)}
+.row:not(.head):hover{background:var(--surface-2)}
+.row .rk{color:var(--muted);font-size:13px}
+.row .kw{font-weight:500;min-width:0}
+.row .kw small{display:block;font-weight:400;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .vol{font-size:14px}
+.row .vol small{display:block;color:var(--good);font-size:12px}
+.row .when{font-size:12px;color:var(--muted)}
+.new{font-size:10px;font-weight:700;color:#fff;background:var(--bad);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:2px}
+.row .kw .chev{display:inline-block;color:var(--muted);font-size:11px;margin-right:6px;transition:transform .15s}
+.row.open .kw .chev{transform:rotate(90deg);color:var(--accent)}
+.row.open{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.row.open:hover{background:var(--accent-soft)}
+.detail{display:none;grid-column:1/-1;cursor:default;margin:6px 0 4px}
+.row.open .detail{display:block}
+.d-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,1fr);gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px}
+.d-sec{font-size:12px;font-weight:700;color:var(--muted);margin:0 0 8px;letter-spacing:.02em}
+.d-side .d-sec{margin-top:14px}
+.d-side .d-sec:first-child{margin-top:0}
+.news{display:grid;gap:8px}
+.news a{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:var(--bg)}
+.news a:hover{border-color:var(--accent)}
+.news .th{flex:0 0 40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#fff}
+.news .tt{font-size:14px;line-height:1.45;font-weight:500}
+.news .src{font-size:12px;color:var(--muted);margin-top:2px}
+.more{display:inline-block;margin-top:8px;font-size:13px;text-decoration:none}
+dl.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:13px}
+dl.facts dt{color:var(--muted)}
+dl.facts dd{margin:0}
+.rel{display:flex;flex-wrap:wrap;gap:6px}
+.rel button{font:inherit;font-size:12px;border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:999px;padding:2px 10px;cursor:pointer}
+.rel button:hover{border-color:var(--accent);color:var(--accent)}
+.spark{display:flex;gap:3px;align-items:flex-end;height:28px}
+.spark i{flex:1;background:var(--border);border-radius:2px;height:30%}
+.spark i.on{background:var(--accent);height:100%}
+.spark-l{font-size:12px;color:var(--muted);margin-top:4px}
+.d-act{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.d-act a{font-size:12px;text-decoration:none;border:1px solid var(--border);border-radius:8px;padding:5px 10px;color:var(--text);background:var(--bg)}
+.d-act a:hover{border-color:var(--accent);color:var(--accent)}
+.viewtabs{display:flex;gap:4px;border-bottom:1px solid var(--border);margin:-4px 0 14px}
+.viewtabs button{font:inherit;font-size:14px;font-weight:500;background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);padding:6px 12px 8px;cursor:pointer}
+.viewtabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
+.ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ex-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.ex-card header{display:flex;justify-content:space-between;align-items:flex-start;padding:14px 16px 8px}
+.ex-card header h4{margin:0;font-size:16px}
+.ex-card header small{display:block;color:var(--muted);font-size:12px}
+.ex-row{display:grid;grid-template-columns:24px minmax(0,1fr) 96px 64px;gap:10px;align-items:center;padding:8px 16px;border-top:1px solid var(--border);font-size:14px;cursor:pointer}
+.ex-row.head{cursor:default;font-size:12px;color:var(--muted)}
+.ex-row:not(.head):hover{background:var(--surface-2)}
+.ex-row.open{background:var(--accent-soft)}
+.ex-row .n{color:var(--muted);font-size:12px}
+.ex-row .q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{height:6px;border-radius:3px;background:var(--surface-2);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.bar.rise i{background:var(--good)}
+.chg{font-size:12px;text-align:right;white-space:nowrap}
+.chg.up{color:var(--good)} .chg.down{color:var(--bad)} .chg.same{color:var(--muted)}
+.chg .newb{font-size:10px;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:0 5px}
+.hot{font-size:11px;font-weight:700;color:#fff;background:var(--bad);border-radius:4px;padding:1px 6px}
+.ex-act{grid-column:1/-1;display:none;gap:6px;flex-wrap:wrap;padding:2px 0 4px 34px}
+.ex-row.open .ex-act{display:flex}
+.ex-act a{font-size:12px;text-decoration:none;border:1px solid var(--border);border-radius:8px;padding:4px 10px;color:var(--text);background:var(--surface)}
+.ex-more{display:block;width:100%;border:0;border-top:1px solid var(--border);background:none;color:var(--accent);font:inherit;font-size:13px;padding:9px;cursor:pointer}
+@media (max-width:720px){.ex-grid{grid-template-columns:1fr}.ex-row{grid-template-columns:22px minmax(0,1fr) 70px 56px;padding:8px 12px}}
+.empty{padding:26px;text-align:center;color:var(--muted);font-size:14px}
+.anno{font-size:12px;color:var(--muted);margin-top:10px}
+.anno b{color:var(--accent);font-weight:500}
+
+@media (max-width:720px){
+  .grid2{grid-template-columns:1fr}
+  section{padding:20px 16px}
+  .phase{grid-template-columns:1fr;gap:4px}
+  .row{grid-template-columns:26px minmax(0,1fr) 84px}
+  .row .when,.row .cat{display:none}
+  .d-grid{grid-template-columns:1fr}
+  .arch .arrow{flex-basis:100%;transform:rotate(90deg);height:26px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">작업 계획서 · 2026-10-01 · v0.3 초안 (비공개 저장소 + Vercel Hobby · 탐색 추가)</div>
+  <h1>Google 트렌드 급상승 검색어 수집기</h1>
+  <p class="lede">GitHub Actions가 2시간마다 Google 트렌드 “실시간 인기 검색어”(KR, 4/24/48/168시간)를 가져와 비공개 저장소에 JSON으로 커밋합니다. 커밋이 올라가면 Vercel이 이를 감지해 정적 웹페이지를 자동 배포합니다. 서버도 DB도 없이 무료로 운영하는 구조입니다.</p>
+  <nav class="toc">
+    <a href="#goal">1. 목표·범위</a><a href="#arch">2. 아키텍처</a><a href="#source">3. 데이터 소스</a>
+    <a href="#schema">4. 데이터 스키마</a><a href="#explore">3-1. 탐색 데이터</a><a href="#mockup">5. 목업 UI</a><a href="#tree">6. 디렉터리 구조</a>
+    <a href="#action">7. 워크플로</a><a href="#phases">8. 작업 단계</a><a href="#risk">9. 리스크</a><a href="#decide">10. 결정할 것</a>
+  </nav>
+</header>
+
+<section id="goal">
+  <h2>1. 목표와 범위</h2>
+  <div class="grid2">
+    <div class="card"><h4>기간별 트렌드 조회</h4><p>4시간 / 24시간 / 48시간 / 7일 탭. 검색어, 검색량(예: 5만+), 상승률, 시작 시각, 진행 중·종료 상태, 관련 검색어를 보여줍니다.</p></div>
+    <div class="card"><h4>관련 뉴스 기사</h4><p>트렌드를 펼치면 관련 기사 제목, 언론사, 링크, 썸네일이 나옵니다. 수집할 때 함께 가져와 저장합니다.</p></div>
+    <div class="card"><h4>카테고리 필터 · 정렬 · 검색</h4><p>연예/스포츠/정치 등 카테고리 칩, 검색량순·최신순·상승률순 정렬, 키워드 검색. 모두 브라우저에서 처리합니다.</p></div>
+    <div class="card"><h4>자동 새로고침 + NEW 표시</h4><p>페이지가 5분마다 최신 JSON을 다시 읽습니다. 직전 스냅샷에 없던 검색어에는 NEW 배지를 붙입니다.</p></div>
+    <div class="card" style="border-color:var(--accent)"><h4>탐색: 상위 · 급상승 검색어 <span class="pill info">v0.3 추가</span></h4><p>지난 1주 / 1개월 / 3개월 / 1년 동안 가장 많이 검색된 검색어 25개와 급상승 검색어를 보여줍니다. 직전 같은 길이 기간과 비교한 순위 변동도 표시합니다.</p></div>
+    <div class="card"><h4>CSV / JSON 내보내기</h4><p>지금 필터가 적용된 목록을 파일로 내려받습니다. 원본 JSON 경로도 공개 URL로 바로 쓸 수 있습니다.</p></div>
+    <div class="card"><h4>국가 선택 · 히스토리</h4><p>KR 외 US, JP 등을 선택할 수 있습니다. 수집할 때마다 스냅샷을 쌓아 두고, 타임라인 슬라이더로 과거 시점을 봅니다.</p></div>
+  </div>
+  <p class="muted" style="margin-top:14px;font-size:14px"><b>범위 밖(v1):</b> 로그인, 알림(메일/슬랙), 검색어별 관심도 그래프(Explore API), 자체 서버/DB.</p>
+</section>
+
+<section id="arch">
+  <h2>2. 아키텍처</h2>
+  <div class="arch">
+    <div class="node"><b>⏰ GitHub Actions (cron)</b><span>2시간마다 + 수동 실행</span></div>
+    <div class="arrow">→</div>
+    <div class="node hl"><b>🐍 scripts/fetch_trends.py</b><span>트렌드 목록 + 뉴스 수집 → 정규화</span></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>📁 public/data/ (git 커밋)</b><span>비공개 저장소에 push</span></div>
+    <div class="arrow">→</div>
+    <div class="node hl"><b>▲ Vercel (Hobby)</b><span>push 감지 → 정적 사이트 자동 배포</span></div>
+  </div>
+  <h3>설계 결정</h3>
+  <div class="tbl"><table>
+    <tr><th>항목</th><th>선택</th><th>이유</th></tr>
+    <tr><td>저장소</td><td>GitHub <b>비공개</b> 저장소 (개인 계정 소유)</td><td>코드 비공개. Vercel Hobby는 조직(Organization) 소유 비공개 저장소는 연결할 수 없어 개인 계정 소유여야 함</td></tr>
+    <tr><td>수집 언어</td><td>Python 3.12 (표준 라이브러리 + <code>requests</code>)</td><td>의존성이 적고 Actions 러너에 기본 설치되어 있음</td></tr>
+    <tr><td>데이터 저장</td><td>같은 저장소의 <code>public/data/</code> 폴더</td><td>DB가 필요 없음. git 이력이 곧 히스토리 백업. <code>public/</code> 아래라 그대로 정적 파일로 제공됨</td></tr>
+    <tr><td>프론트엔드</td><td>Vanilla JS + 단일 HTML (빌드 없음)</td><td>규모가 작아 프레임워크 불필요. Vercel이 빌드 없이 <code>public/</code>을 바로 배포</td></tr>
+    <tr><td>배포</td><td>Vercel Git 연동 (Framework: Other, 출력 폴더 <code>public</code>)</td><td>push마다 자동 배포되어 Actions에 배포 단계가 필요 없음 → Actions 사용 시간 절약, 토큰·시크릿도 필요 없음</td></tr>
+    <tr><td>주기</td><td>2시간 (<code>7 */2 * * *</code>)</td><td>비공개 저장소의 Actions 무료 한도는 월 2,000분. 2시간 주기면 월 360회 × 약 2분 = 약 720분으로 여유 있음. 정각에 몰리면 지연되기 쉬워 7분으로 어긋나게 설정</td></tr>
+    <tr><td>캐시</td><td><code>vercel.json</code>에서 <code>/data/*</code>는 <code>max-age=0, must-revalidate</code></td><td>새로 배포하면 최신 JSON이 바로 보이도록 함. HTML/JS는 기본 캐시 유지</td></tr>
+  </table></div>
+  <div class="callout">Vercel Hobby 한도: 하루 배포 100회, 월 대역폭 100GB, 개인·비상업 용도에 한함. 이 프로젝트는 하루 12회 정도 배포하므로 충분합니다.</div>
+</section>
+
+<section id="source">
+  <h2>3. 데이터 소스 <span class="pill ok">2026-10-01 호출 검증 완료</span></h2>
+  <div class="tbl"><table>
+    <tr><th>용도</th><th>엔드포인트</th><th>비고</th></tr>
+    <tr><td>트렌드 목록</td><td><code>POST trends.google.co.kr/_/TrendsUi/data/batchexecute</code><br>RPC <code>i0OFE</code>, 인자 <code>[null,null,"KR",0,"ko",24,1]</code></td><td>트렌드 페이지가 내부에서 쓰는 API. 4/24/48/168시간 모두 응답 확인(KR 24시간 기준 121건). <span class="pill warn">비공식</span></td></tr>
+    <tr><td>탐색: 상위·급상승</td><td><code>GET /trends/api/explore</code> → 응답의 <code>RELATED_QUERIES</code> 위젯 토큰으로 <code>GET /trends/api/widgetdata/relatedsearches</code></td><td>검색어 없이 전체 기준으로 조회. 자세한 내용은 <a href="#explore">3-1</a>. <span class="pill warn">비공식</span></td></tr>
+    <tr><td>관련 뉴스</td><td><code>news.google.com/rss/search?q=&lt;검색어&gt;&amp;hl=ko&amp;gl=KR</code></td><td>검색어마다 기사 상위 3건. 트렌드 응답에는 뉴스 ID만 있고 기사 본문을 주는 RPC는 아직 찾지 못해 대체 경로로 씀</td></tr>
+    <tr><td>썸네일 보강</td><td><code>trends.google.co.kr/trending/rss?geo=KR</code></td><td>상위 10건만 대표 이미지와 기사가 있음. 가능하면 이 값을 우선 사용</td></tr>
+  </table></div>
+  <h3>i0OFE 응답 항목 매핑 (배열 인덱스)</h3>
+<pre><code>["지게차", null, "KR", [1790746200], null, null, 50000, null, 1000, ["지게차"], [9], [[4852210126,"ko","KR"]], "지게차"]
+   [0] 검색어           [3][0] 시작 시각(unix)   [4][0] 종료 시각(null이면 진행 중)
+   [6] 검색량 하한(50000 → "5만+")   [8] 상승률 %(1000 → "1,000%+")
+   [9] 관련 검색어      [10] 카테고리 ID 목록   [11] 뉴스 ID 목록</code></pre>
+  <p class="muted" style="font-size:14px">카테고리 ID: 1 자동차 · 2 뷰티/패션 · 3 비즈니스/금융 · 4 엔터테인먼트 · 5 음식 · 6 게임 · 7 건강 · 8 취미 · 9 직업/교육 · 10 법/정부 · 11 기타 · 13 반려동물 · 14 정치 · 15 과학 · 16 쇼핑 · 17 스포츠 · 18 기술 · 19 여행/교통 · 20 기후. 실제 응답과 대조한 결과 일치합니다(지게차→9, 국군의 날→10, 허경환→4).</p>
+</section>
+
+<section id="explore">
+  <h2>3-1. 탐색 데이터: 상위 · 급상승 검색어 <span class="pill ok">2026-10-01 호출 검증 완료</span></h2>
+  <p style="margin:0 0 10px">Google 트렌드 탐색 페이지(<code>explore?geo=KR&amp;date=today 1-m</code> 등)의 “사람들이 많이 검색한” 영역에 나오는 데이터입니다. 새 탐색 화면은 로그인해야 보이지만, 기존 탐색 API를 쓰면 로그인 없이 같은 데이터를 받을 수 있습니다.</p>
+  <div class="tbl"><table>
+    <tr><th>기간</th><th>탐색 페이지 주소의 <code>date</code></th><th>API <code>time</code> 값</th><th>비교용 직전 기간(순위 변동 계산)</th><th>검증 결과</th></tr>
+    <tr><td>지난 1주</td><td><code>now 7-d</code></td><td><code>now 7-d</code></td><td>그 전 7일 (<code>YYYY-MM-DD YYYY-MM-DD</code>)</td><td>상위 25 · 급상승 25</td></tr>
+    <tr><td>지난 1개월</td><td><code>today 1-m</code></td><td><code>today 1-m</code></td><td>그 전 1개월</td><td>상위 25 · 급상승 17</td></tr>
+    <tr><td>지난 3개월</td><td><code>today 3-m</code></td><td><code>today 3-m</code></td><td>그 전 3개월</td><td>상위 25 · 급상승 11</td></tr>
+    <tr><td>지난 1년</td><td><code>today 1-y</code></td><td><code>today 12-m</code></td><td>그 전 12개월</td><td>상위 25 · 급상승 25</td></tr>
+  </table></div>
+  <h3>호출 순서</h3>
+<pre><code>1) GET https://trends.google.co.kr/explore?geo=KR&amp;hl=ko          # 세션 쿠키 NID 받기 (없으면 429)
+2) GET /trends/api/explore?hl=ko&amp;tz=-540&amp;req=
+       {"comparisonItem":[{"geo":"KR","time":"today 1-m"}],"category":0,"property":""}
+   → widgets 중 id == "RELATED_QUERIES" 의 request, token
+3) GET /trends/api/widgetdata/relatedsearches?hl=ko&amp;tz=-540&amp;req=&lt;request&gt;&amp;token=&lt;token&gt;
+   → default.rankedList[0] = 상위 검색어  { query, value(0~100 관심도) }
+     default.rankedList[1] = 급상승 검색어 { query, value(증가율 %), formattedValue("+3,750%" | "급등") }
+   (응답 앞의 )]}' 접두어는 잘라내고 파싱)</code></pre>
+  <div class="callout"><b>“변경” 열:</b> Google 새 탐색 화면의 “변경 −30%”는 API에서 받을 수 없습니다. 대신 직전 같은 길이 기간의 상위 25개를 한 번 더 받아서 <b>순위 변동(▲3 / ▼1 / NEW)</b>으로 보여줍니다. 목업의 순위 변동은 이 방식으로 계산한 실제 값입니다.</div>
+  <div class="callout warn"><b>카테고리 · 검색 유형:</b> <code>category</code>(예: 스포츠 20, 엔터테인먼트 3)와 <code>property</code>(""=웹, <code>news</code>, <code>youtube</code>, <code>images</code>, <code>froogle</code>=쇼핑)를 바꿔 조회할 수 있습니다. 조합마다 요청이 늘어나므로 v1에서는 “모든 카테고리 · 웹 검색”만 수집하고, 나머지는 v2에서 검토합니다.</div>
+  <h3>수집 주기</h3>
+  <p style="margin:0">기간이 1주 이상이라 하루에 한 번이면 충분합니다. 2시간마다 도는 워크플로 안에서 <b>오늘 날짜 파일이 이미 있으면 건너뛰도록</b> 합니다. 하루 요청 수는 4개 기간 × (explore + relatedsearches) × (현재 + 직전 기간) = 16회이고, 요청 사이에 1.5초 간격을 둡니다.</p>
+</section>
+
+<section id="schema">
+  <h2>4. 저장 데이터 스키마</h2>
+  <p style="margin:0 0 6px">국가·기간 조합마다 파일 하나씩. 프론트는 <code>latest/</code>만 읽고, 히스토리를 볼 때만 <code>history/</code>를 읽습니다.</p>
+<pre><code>// public/data/latest/KR/24.json   → https://…vercel.app/data/latest/KR/24.json
+{
+  "geo": "KR", "hours": 24,
+  "fetched_at": "2026-10-01T09:07:12Z",
+  "count": 121,
+  "trends": [
+    {
+      "keyword": "국군의 날",
+      "started_at": "2026-09-30T20:00:00Z",
+      "ended_at": null,                  // null = 진행 중
+      "volume": 50000,
+      "increase_pct": 1000,
+      "related": ["국군 의 날", "국군 의 날 공휴일"],
+      "categories": [10],
+      "news": [
+        { "title": "…", "source": "연합뉴스", "url": "https://…",
+          "published_at": "2026-10-01T01:10:00Z", "image": "https://…|null" }
+      ]
+    }
+  ]
+}
+
+// public/data/history/KR/2026-10-01.jsonl   ← 하루 1파일, 수집 1회 = 1줄
+{"fetched_at":"2026-10-01T09:07:12Z","hours":24,"trends":[["국군의 날",50000,1000,[10],"2026-09-30T20:00:00Z",null], …]}
+
+// public/data/explore/KR/1m.json   ← 7d / 1m / 3m / 12m, 하루 1회 갱신
+{ "geo": "KR", "period": "1m", "time": "today 1-m", "fetched_at": "2026-10-01T00:07:00Z",
+  "compare": "2026-08-01 2026-08-31",
+  "top":     [ { "query": "날씨", "value": 100, "rank_change": 0 },
+               { "query": "제미 나이", "value": 27, "rank_change": 3 },  // null = 신규 진입
+               … 25개 ],
+  "rising":  [ { "query": "한국 대 에콰도르", "value": 3750, "label": "+3,750%" },
+               { "query": "용 혜인", "value": 250000, "label": "급등" }, … ] }
+// public/data/history/explore/KR/2026-10.jsonl   ← 월 1파일, 하루 1줄
+
+// public/data/index.json  ← 프론트가 가장 먼저 읽는 목록
+{ "geos": ["KR","US","JP"], "hours": [4,24,48,168], "updated_at": "…",
+  "history_days": {"KR": ["2026-09-30","2026-10-01"]} }</code></pre>
+  <div class="callout">히스토리에는 뉴스를 빼고 압축한 튜플만 저장합니다. 3개국 × 2시간 주기로 하루 약 80~130KB가 쌓이는 규모라 저장소가 크게 부담되지 않습니다. 90일이 지난 파일은 월 단위 <code>.jsonl.gz</code>로 묶습니다.</div>
+</section>
+
+<section id="mockup">
+  <h2>5. 목업 UI <span class="pill info">직접 조작해 볼 수 있음</span></h2>
+  <p class="muted" style="margin:0;font-size:14px">2026-10-01에 받은 실제 KR 24시간 데이터 14건으로 만든 목업입니다. 탭, 카테고리 칩, 정렬, 검색, 행 펼치기(뉴스), 히스토리 슬라이더, 내보내기가 동작합니다. 상세 패널의 뉴스는 실제 기사이고, 다른 기간/국가 데이터는 예시입니다. 위쪽 <b>“🔎 탐색”</b> 탭에는 같은 날 받은 실제 상위·급상승 검색어 4개 기간 데이터와 실제로 계산한 순위 변동이 들어 있습니다.</p>
+
+  <div class="mock-frame">
+    <div class="mock-bar"><i></i><i></i><i></i><span class="url">https://googletrend-2610.vercel.app/</span></div>
+    <div class="app">
+      <div class="viewtabs" id="m-view"><button data-v="rt" class="on">🔥 실시간 인기</button><button data-v="ex">🔎 탐색 (상위·급상승)</button></div>
+      <div id="v-rt">
+      <div class="app-head">
+        <h3>🔥 실시간 인기 검색어</h3>
+        <div class="meta"><span class="dot"></span>마지막 수집 <b id="m-fetched">18:07</b> · 다음 새로고침 <span id="m-countdown">5:00</span></div>
+      </div>
+
+      <div class="toolbar">
+        <select id="m-geo" aria-label="국가"><option value="KR">🇰🇷 대한민국</option><option value="US">🇺🇸 미국</option><option value="JP">🇯🇵 일본</option></select>
+        <div class="seg" id="m-hours" role="tablist">
+          <button data-h="4">4시간</button><button data-h="24" class="on">24시간</button><button data-h="48">48시간</button><button data-h="168">7일</button>
+        </div>
+        <input type="search" id="m-q" placeholder="검색어 찾기…">
+        <select id="m-sort" aria-label="정렬"><option value="vol">검색량순</option><option value="new">최신순</option><option value="inc">상승률순</option></select>
+        <button class="btn" id="m-csv">⬇ CSV</button><button class="btn" id="m-json">⬇ JSON</button>
+      </div>
+
+      <div class="chips" id="m-chips"></div>
+
+      <div class="hist">
+        <span>🕘 히스토리</span>
+        <input type="range" id="m-hist" min="0" max="23" value="23" aria-label="시점 선택">
+        <span id="m-hist-label" class="mono">현재</span>
+      </div>
+
+      <div class="list" id="m-list"></div>
+      <div class="anno"><b>①</b> 행을 누르면 관련 검색어와 뉴스가 펼쳐집니다 · <b>②</b> NEW = 직전 수집에 없던 검색어 · <b>③</b> 회색 “종료” = 검색량 급증이 끝난 트렌드</div>
+      </div>
+      <div id="v-ex" hidden>
+        <div class="app-head">
+          <h3>🔎 사람들이 많이 검색한 검색어</h3>
+          <div class="meta"><span class="dot"></span>기준일 <b>2026-10-01</b> · 매일 1회 갱신</div>
+        </div>
+        <div class="toolbar">
+          <select aria-label="국가"><option>🇰🇷 대한민국</option></select>
+          <div class="seg" id="x-period">
+            <button data-p="7d">지난 1주</button><button data-p="1m" class="on">지난 1개월</button><button data-p="3m">지난 3개월</button><button data-p="12m">지난 1년</button>
+          </div>
+          <select aria-label="카테고리" title="v2에서 지원 예정" disabled><option>모든 카테고리</option></select>
+          <select aria-label="검색 유형" title="v2에서 지원 예정" disabled><option>웹 검색</option></select>
+          <button class="btn" id="x-csv">⬇ CSV</button>
+        </div>
+        <div class="ex-grid">
+          <div class="ex-card"><header><div><h4>상위 검색어</h4><small id="x-top-sub"></small></div></header><div id="x-top"></div></div>
+          <div class="ex-card"><header><div><h4>급상승 검색어</h4><small id="x-rise-sub"></small></div></header><div id="x-rise"></div></div>
+        </div>
+        <div class="anno"><b>①</b> 검색 관심도 = 이 기간 가장 많이 검색된 검색어를 100으로 둔 상대값 · <b>②</b> 순위 변동 = 직전 같은 길이 기간의 순위와 비교 · <b>③</b> 급등 = 증가율 5,000% 이상 · 검색어를 누르면 바로가기 링크가 나옵니다</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tree">
+  <h2>6. 디렉터리 구조</h2>
+<pre><code>googletrend-2610/
+├─ .github/workflows/
+│  └─ fetch.yml              # cron 수집 → 커밋·push (배포는 Vercel이 자동)
+├─ scripts/
+│  ├─ fetch_trends.py        # 엔트리포인트 (--geo KR,US,JP --hours 4,24,48,168)
+│  ├─ google_trends.py       # batchexecute 호출·파싱
+│  ├─ explore.py             # 탐색 상위·급상승 (NID 쿠키 → explore → relatedsearches)
+│  ├─ news.py                # Google 뉴스 RSS 조회
+│  ├─ storage.py             # latest/history/index 쓰기, 오래된 파일 묶기
+│  └─ categories.py          # 카테고리 ID → 한글 이름
+├─ tests/
+│  ├─ fixtures/i0OFE_KR_24.txt   # 실제 응답 스냅샷
+│  └─ test_parse.py
+├─ public/                   # Vercel이 그대로 배포하는 정적 사이트
+│  ├─ index.html
+│  ├─ app.js
+│  ├─ style.css
+│  └─ data/                  # Actions가 커밋하는 수집 결과
+│     ├─ index.json
+│     ├─ latest/{geo}/{hours}.json
+│     ├─ explore/{geo}/{7d|1m|3m|12m}.json
+│     └─ history/{geo}/{date}.jsonl
+├─ vercel.json               # 출력 폴더 public, /data/* 캐시 헤더
+├─ .vercelignore             # scripts/, tests/, docs/ 는 배포에서 제외
+├─ docs/plan.html            # 이 문서
+├─ requirements.txt
+└─ README.md</code></pre>
+</section>
+
+<section id="action">
+  <h2>7. 워크플로·배포 설정 초안</h2>
+  <h3>.github/workflows/fetch.yml</h3>
+<pre><code>name: fetch-trends
+on:
+  schedule: [{ cron: "7 */2 * * *" }]  # 2시간마다 7분 (UTC)
+  workflow_dispatch:
+
+permissions: { contents: write }
+concurrency: { group: fetch-trends, cancel-in-progress: false }
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: python scripts/fetch_trends.py --geo KR,US,JP --hours 4,24,48,168
+      - run: python scripts/explore.py --geo KR --periods 7d,1m,3m,12m --once-per-day
+        continue-on-error: true   # 탐색 수집이 실패해도 실시간 데이터는 커밋
+      - name: Commit &amp; push (push되면 Vercel이 자동 배포)
+        run: |
+          git config user.name  "${{ vars.COMMIT_NAME }}"
+          git config user.email "${{ vars.COMMIT_EMAIL }}"   # 본인 GitHub noreply 이메일
+          git add public/data
+          git diff --cached --quiet || git commit -m "data: $(date -u +%FT%H:%MZ)"
+          git pull --rebase &amp;&amp; git push</code></pre>
+  <h3>vercel.json</h3>
+<pre><code>{
+  "outputDirectory": "public",
+  "headers": [
+    { "source": "/data/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
+  ]
+}</code></pre>
+  <div class="callout warn"><b>Hobby 플랜 주의:</b> 비공개 저장소에서는 커밋 작성자가 Vercel 계정과 연결된 본인 GitHub 계정이어야 배포가 진행됩니다. <code>github-actions[bot]</code> 같은 봇 이름으로 커밋하면 “commit author did not have contributing access” 오류로 배포가 막힙니다. 그래서 커밋 작성자를 본인 GitHub noreply 이메일(<code>ID+username@users.noreply.github.com</code>)로 설정합니다. 이 방법이 막히면 대안으로 Actions에서 <code>vercel deploy --prod --token $VERCEL_TOKEN</code>으로 직접 배포하고, 이 경우 실행 1회당 약 30초가 더 듭니다.</div>
+</section>
+
+<section id="phases">
+  <h2>8. 작업 단계</h2>
+  <div class="phase"><div class="ph">Phase 1<small>수집기</small></div><div>
+    <ul class="check">
+      <li><code>google_trends.py</code>: batchexecute 호출, <code>)]}'</code> 접두어 제거, 이중 JSON 파싱, 필드 정규화</li>
+      <li><code>news.py</code>: 검색어별 Google 뉴스 RSS 최신순 상위 3건 (동시 요청 5개 제한, 0.2초 간격). 같은 기사가 여러 매체에 실리는 경우가 많아 제목 앞 30자 기준으로 중복 제거</li>
+      <li>트렌드 RSS로 상위 10건 이미지 보강</li>
+      <li>실제 응답을 fixture로 저장하고 파서 단위 테스트 작성</li>
+      <li>로컬에서 <code>python scripts/fetch_trends.py</code> 실행 → <code>data/</code> 생성 확인</li>
+    </ul></div></div>
+  <div class="phase"><div class="ph">Phase 1-b<small>탐색 수집기</small></div><div>
+    <ul class="check">
+      <li><code>explore.py</code>: 쿠키 받기 → explore → relatedsearches, 429가 오면 쿠키를 새로 받아 1회 재시도</li>
+      <li>4개 기간 + 직전 기간 조회 → 순위 변동 계산 → <code>explore/{geo}/{period}.json</code></li>
+      <li>하루 1회 제한(<code>--once-per-day</code>), 실패하면 기존 파일 유지</li>
+      <li>응답 fixture 저장 + 파서 테스트</li>
+    </ul></div></div>
+  <div class="phase"><div class="ph">Phase 2<small>저장·히스토리</small></div><div>
+    <ul class="check">
+      <li><code>latest/{geo}/{hours}.json</code>, <code>history/{geo}/{date}.jsonl</code>, <code>index.json</code> 쓰기</li>
+      <li>경로는 모두 <code>public/data/</code> 아래</li>
+      <li>NEW 판정용으로 직전 스냅샷 키워드 목록을 <code>latest</code>에 <code>prev_keywords</code>로 함께 저장</li>
+      <li>90일이 지난 히스토리를 월 단위 gzip으로 묶기</li>
+    </ul></div></div>
+  <div class="phase"><div class="ph">Phase 3<small>웹 UI</small></div><div>
+    <ul class="check">
+      <li>목업 기준으로 <code>web/index.html · app.js · style.css</code> 구현</li>
+      <li>국가/기간 탭, 카테고리 칩, 정렬, 검색 (선택 상태는 URL 쿼리에 반영: <code>?geo=KR&amp;hours=24&amp;cat=4</code>)</li>
+      <li>키워드 상세 패널: 관련 뉴스 3건, 트렌드 정보(상태·시작·경과/지속·검색량·상승률·카테고리), 관련 검색어 칩(누르면 그 검색어로 검색), 수집 이력 막대(히스토리 기반), Google 트렌드·검색 바로가기</li>
+      <li>상세 패널 딥링크 <code>#open=키워드</code>, NEW 배지, 5분 자동 새로고침(탭이 보일 때만)</li>
+      <li>CSV(UTF-8 BOM, 엑셀 한글 호환) / JSON 내보내기</li>
+      <li>히스토리 슬라이더: 날짜 선택 → jsonl 로드 → 시점별 목록 표시</li>
+      <li>상단 화면 전환 “실시간 인기 / 탐색” (URL: <code>?view=explore&amp;period=1m</code>)</li>
+      <li>탐색 화면: 기간 탭(1주/1개월/3개월/1년), 상위 검색어(관심도 막대 + 순위 변동), 급상승 검색어(증가율 막대 + 급등 배지), 검색어를 누르면 바로가기(Google 트렌드·뉴스·검색), CSV 내보내기</li>
+      <li>다크 모드, 모바일 레이아웃</li>
+    </ul></div></div>
+  <div class="phase"><div class="ph">Phase 4<small>자동화·배포</small></div><div>
+    <ul class="check">
+      <li>GitHub 비공개 저장소 생성 → Vercel에서 Import (Framework: Other, 출력 폴더 <code>public</code>)</li>
+      <li><code>fetch.yml</code>, <code>vercel.json</code>, <code>.vercelignore</code> 작성, 저장소 변수 <code>COMMIT_NAME</code>·<code>COMMIT_EMAIL</code> 등록</li>
+      <li><code>workflow_dispatch</code>로 수동 실행 → 커밋 → Vercel 자동 배포까지 확인 (봇 커밋이 막히면 CLI 배포로 전환)</li>
+      <li>실패 알림: 연속 실패 시 이슈 자동 생성</li>
+      <li>README에 사용법과 데이터 URL 정리</li>
+    </ul></div></div>
+</section>
+
+<section id="risk">
+  <h2>9. 리스크와 대응</h2>
+  <div class="tbl"><table>
+    <tr><th>리스크</th><th>영향</th><th>대응</th></tr>
+    <tr><td>비공식 API 형식 변경</td><td><span class="pill bad">높음</span></td><td>파서가 실패하면 기존 <code>latest</code>를 덮어쓰지 않고 워크플로를 실패 처리 → 이슈 생성. 백업 경로로 트렌드 RSS(상위 10건)만이라도 저장</td></tr>
+    <tr><td>탐색 API 429 (쿠키·IP 기반 제한)</td><td><span class="pill warn">중간</span></td><td>쿠키를 먼저 받고 하루 16회만 호출. 실패하면 전날 데이터를 유지하고 화면에 “기준일”을 표시. 계속 막히면 Actions에서 Playwright 헤드리스 브라우저로 호출하는 방식으로 전환</td></tr>
+    <tr><td>GitHub 러너 IP 차단·요청 제한</td><td><span class="pill warn">중간</span></td><td>요청 수 최소화(국가 3 × 기간 4 = 12회 + 뉴스). 429 응답이면 지수 백오프로 재시도. 뉴스는 캐시해서 이미 가져온 키워드는 다시 조회하지 않음</td></tr>
+    <tr><td>cron 지연·누락</td><td><span class="pill">낮음</span></td><td>화면에 수집 시각을 표시해 오래된 데이터임을 알 수 있게 함. 3시간 넘게 갱신이 없으면 경고 배너 표시</td></tr>
+    <tr><td>Actions 무료 한도(월 2,000분) 초과</td><td><span class="pill">낮음</span></td><td>2시간 주기 기준 월 약 720분. 뉴스는 이미 가져온 키워드면 다시 조회하지 않고, <code>timeout-minutes: 10</code>으로 실행이 길어지는 것을 막음</td></tr>
+    <tr><td>Vercel Hobby에서 봇 커밋 배포가 막힘</td><td><span class="pill warn">중간</span></td><td>커밋 작성자를 본인 계정으로 설정. 그래도 안 되면 Actions에서 Vercel CLI로 직접 배포</td></tr>
+    <tr><td>저장소 용량 증가</td><td><span class="pill">낮음</span></td><td>히스토리 압축 저장 + 월 단위 gzip. 연간 100MB 미만 예상</td></tr>
+    <tr><td>Google 이용약관</td><td><span class="pill warn">중간</span></td><td>개인·비상업용, 낮은 빈도로만 수집. 페이지에 출처(Google 트렌드) 표기와 원본 링크 제공</td></tr>
+  </table></div>
+</section>
+
+<section id="decide">
+  <h2>10. 구현 전에 정할 것</h2>
+  <div class="tbl"><table>
+    <tr><th>질문</th><th>제안 기본값</th></tr>
+    <tr><td>수집할 국가</td><td>KR, US, JP (나중에 <code>--geo</code>에 추가만 하면 됨)</td></tr>
+    <tr><td>수집 주기</td><td>2시간 (비공개 저장소의 Actions 한도 고려). 1시간으로 줄이면 월 약 1,440분으로 한도 안이지만 여유가 적음</td></tr>
+    <tr><td>저장소 공개 여부 · 배포</td><td><span class="pill ok">결정됨</span> 비공개(Private) 저장소 + Vercel Hobby</td></tr>
+    <tr><td>사이트 접근 제한</td><td>제한 없음(URL을 아는 사람은 누구나 볼 수 있음). 막으려면 Vercel Deployment Protection을 쓰는데, Hobby에서는 미리보기 배포에만 적용됨</td></tr>
+    <tr><td>뉴스 기사 수</td><td>검색어당 3건</td></tr>
+    <tr><td>GitHub 저장소 이름·위치</td><td><code>googletrend-2610</code> (현재 폴더 이름)</td></tr>
+  </table></div>
+</section>
+
+<p class="muted" style="text-align:center;font-size:13px">데이터 출처: Google 트렌드 · 이 문서는 구현 전 계획 초안입니다</p>
+</div>
+
+<script>
+(function(){
+  const CAT={1:"자동차",2:"뷰티/패션",3:"비즈니스",4:"엔터테인먼트",5:"음식",6:"게임",7:"건강",8:"취미",9:"직업/교육",10:"법/정부",11:"기타",13:"반려동물",14:"정치",15:"과학",16:"쇼핑",17:"스포츠",18:"기술",19:"여행",20:"기후"};
+  // Real sample: KR, 24h, fetched 2026-10-01
+  const BASE=[{"k":"지게차","t":1790746200,"end":null,"v":50000,"inc":1000,"rel":["지게차"],"cat":[9]},{"k":"허경환","t":1790749800,"end":null,"v":20000,"inc":1000,"rel":["허경환","성현주"],"cat":[4]},{"k":"빈곤","t":1790724600,"end":null,"v":20000,"inc":1000,"rel":["빈곤"],"cat":[11]},{"k":"할머니","t":1790716800,"end":null,"v":20000,"inc":1000,"rel":["할머니"],"cat":[11]},{"k":"국군의 날","t":1790719200,"end":null,"v":50000,"inc":1000,"rel":["국군의 날","국군 의 날","국군 의 날 공휴일"],"cat":[10]},{"k":"추경호","t":1790752800,"end":null,"v":10000,"inc":1000,"rel":["추경호","계엄"],"cat":[10]},{"k":"베트남","t":1790755200,"end":null,"v":10000,"inc":1000,"rel":["베트남"],"cat":[3]},{"k":"심우정","t":1790752200,"end":null,"v":5000,"inc":1000,"rel":["심우정"],"cat":[10]},{"k":"서정희","t":1790777400,"end":null,"v":2000,"inc":1000,"rel":["서정희"],"cat":[11]},{"k":"이혼","t":1790737800,"end":1790769000,"v":20000,"inc":1000,"rel":["이혼"],"cat":[4]},{"k":"이동국","t":1790764800,"end":1790786400,"v":5000,"inc":1000,"rel":["이동국"],"cat":[4]},{"k":"wnba playoffs","t":1790781600,"end":null,"v":500,"inc":900,"rel":["wnba playoffs"],"cat":[17]},{"k":"김형은","t":1790782800,"end":null,"v":500,"inc":1000,"rel":["김형은"],"cat":[4]},{"k":"송일국","t":1790770200,"end":1790781000,"v":5000,"inc":1000,"rel":["송일국"],"cat":[4]}];
+  const NEWS={"지게차": [{"title": "\"이거 하나면 먹고산다\"…전 세대 '원픽' 자격증 뭐길래", "src": "edaily.co.kr", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbXUwc0JNOEN3RldGMHFTYnBtbGZHRkRtbVFxbXZUVFFQUm9TN1dVTGdOa1BEXzBOWHVEWXJfVjNYdUt6OWJHSVRpbWZZUmZzc3REeGlBNTZTdFZad1B6RzF0UXkwM1AxaExwQ1R3MkR4UE42VHh3emFudTNfT1A0Tg?oc=5", "t": 1790762865}, {"title": "“나이 들어도 월 500만원 번다”…연예인들도 따둔다는 ‘인기 1위’ 자격증은", "src": "서울경제", "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA3MWJkbDBEbGQxakNZTGtCMnRmSURzMTNsMTdLVmtBRHZLTWxfYTN2amJ3N09PRGhVbjMzd3hYSmtHazVBajhuTXlISHMxajdWeWfSAVNBVV95cUxOdTlYOWRmaXljSWI2aW8wN2Zya2gyZDR2WnRCNHVlbzhybHpZbzFiQlV5UVRWVmxoR2VheG95akNYWVZmeGdvU2t6NmtCV2pWd05DRQ?oc=5", "t": 1790757756}, {"title": "20대부터 60대까지 선호 1위 자격증은 ‘지게차운전’", "src": "애드뉴스인천", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE54TTFUTWZPNFE2MjdZMEtyTElGUXVVTzRieUd2NlBvNkpadVZrZFloRXF3YUo4dnFhaUZUV0hUZklpY0I1Wjd0LTZCR0x3Q3JPRC1tUkd0WUVPUXhwVGR2UFYzMWFpTUhKc1JJ?oc=5", "t": 1790754360}], "허경환": [{"title": "\"허경환과 자주 잤다\" 성현주, 신인 시절 충격 고백…신동엽 \"그 얘기까지 한다고?\" ('짠한형')", "src": "텐아시아", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9aN3kwOFFtd0htMC1Fb3c1RVhOMVppTUFZMTZmSlFaeGZKaUNBb2xoNUJUeld1UzVYTEkxeVg5OFM2UEFEbWpwSGFGdlFRUThPRm1WVG4yM3dCZzQ?oc=5", "t": 1790773140}, {"title": "성현주 “허경환, 우리 집에서 자주 잤다”…오해 부른 한마디에 현장 초토화 : 연예", "src": "재경일보", "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1DWTduX0Y2MXRBMklnaDFuV3NMRWtySGdXUFVMSHFmNXdIdjhFRGxsNHdPdVhiR2c2eVBJS2RzeUlTVU9wUGI1N09hOA?oc=5", "t": 1790751780}, {"title": "\"허경환과 집에서 자주 잤다\" 깜짝 폭로 유부녀 누구? 알고보니[스타이슈]", "src": "starnewskorea.com", "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE13SjM5UElhNkd5MGFtNkpfM3d5c0ZmR29jUTlyVUc4RFYzeTNPNW5LMDNpWXdnNzIxd2V3ODRkX0hzMmc5MV85c0liZEI0YmRUU1YzSkRTbGxmT0haWFdfdW1fTXFnYjZWWGhZYk5LVHRSUlU?oc=5", "t": 1790732239}], "빈곤": [{"title": "“엄마처럼 살지 않을거야” 2030 여성도 빈곤을 배운다…연금제도, 노동환경 개선해야 [고령여성의 빈곤청구서]", "src": "v.daum.net", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE95eTYxRVI3ZUtRamVPWU91WWZJaG9sYkxBNUpDTDdqT0Vidkx5SklGV3RpMGswcHB6OTN3aGJnUENFbjBTYXJRbTk5YjBpbkk?oc=5", "t": 1790772420}, {"title": "“결혼하고 애 낳으면 일터에서 밀려나” 한국 고유의 구조적 차별…국제사회가 본 한국 고령여성의 빈곤 [고령여성의 빈곤청구서]", "src": "v.daum.net", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4b3UxUkhCUWs4RFZSZThWcHBCbVozeG1IanVSM3o0azJCQlJpaHRyOUJ6cXp6RUUyRGNlTkoxM1ZSRDBtaGk5SWJLWGpiSTQ?oc=5", "t": 1790768820}], "할머니": [{"title": "스마일강릉 스마일 할머니 수료식 개최", "src": "강원도민일보", "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VTkR1VWtqbGZpckpUbU4yc1EtREV0X2g2ckcwckxoX2dLWDhxWkJDWjZQYmxIb0RWRm9sb3ozUGxCSUIxRXpqLTBzVkxkV1Jnd1dMRlp5dzFhbXo2NHJuSDZSNUtyS0E?oc=5", "t": 1790757413}, {"title": "나눔의집 신임 대표이사에 원행 스님…“할머니 뜻 받들어 기릴 것”", "src": "법보신문", "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5DdmZITjV6TkJmRkNaN0ZJR2tpMkpkQk5zVTZJTGxyYmdDaS1wNFV6Y0V6ZTNoUEh5Nlh4eDlvZTFqLURWVWc5U1pPU1ctc2JXMVBYVUVlS0k2TEM3X3F1ODlEcjlsOTF4?oc=5", "t": 1790749351}, {"title": "할머니의 옷장을 탐한 손녀, 27 SS 돌체앤가바나 컬렉션", "src": "W Korea", "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxONjVqRWpDbTllQVRUeHplaWJ4dTZ1bFh4em1RU3l6VWt5UDA1RWlBTzFCYUxtTW5uSzhPWXhRS1RocnR6N0w2Y0Vvd0hSdlJTQ0RPWVhMSXI0c3Jhcl9pNTM2dVoybzg4ckthSG5UTi1zUzFoZU9waFhXRGZQQVk4OU95M1lEX2REVG5mLUVQZ1ZlQkswcmZtS3NRMkpMdjFHMDkxeVJ4Tzg2OXZXaFBLMUZtd0pGSXZhV2tBMlhzWUllT19JVDgyel92RFpldlcxV3h2VXAyalFWZzNNTzlGZGRTWmpmd3NnVldhZTZGVDkyXzVaN2xremM2Xy1VR3Q0RGtxUEhsWjFlNnF1ZXhMUkdydWowNWZ4RlZRaVk4dS1UcUkzaFVGX2VrS2x0UkNjaFdETS1keVNYUEctZE9semtRa24xRkVSelE?oc=5", "t": 1790748175}], "국군의 날": [{"title": "국군의 날 \"쉬는날도 아닌데 태극기 달아야되나?\"", "src": "gukjenews.com", "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE03Wk1DUjh6ZUh4b0tOaVlJSW9RUk9wQ015ZjJBX2I0MGpLM1ZHdU44cHdpUVZwdFRvQUxULTU1UTJNZ3l1dS05SzFjRFdYZ2lraGpUZVBqS3B4ZWNCbjJzRTA5bFhsa1FrMWdhQURR?oc=5", "t": 1790781420}, {"title": "10월 1일 국군의 날 공휴일 빨간날 아닌이유 \"재지정 여부 갑론을박\"", "src": "gukjenews.com", "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5TQVloT1l2OXFRX3F5QnF5cFI0RWIyR1dTZkxrZjhiSWxpOUNuYzRmNDI2X3FhWGlHaEJpQlVMUF9IODNNNGJqeVl1NWJxYW1Ma000amp1dGpVX3FZekdRRm5xODVRcHQ3aEdJd3JB?oc=5", "t": 1790781300}, {"title": "[국군의 날]70여년째 기다리는 귀환…“마지막 선배 전우까지 가족의 품으로”", "src": "강원일보", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE51V3A5eHFoMGR4UDlGYmVMV3VGaGhsbTBRdjV3aGQ4elV4UWZYT0hldVFZSFhXeV84VnR2TWpEcjZ1b25vRWN6WGRBUFFPRnBvTUpIcm5GcldWbWM?oc=5", "t": 1790780400}], "추경호": [{"title": "징역 20년 구형된 추경호···대구 지역사회 “사법리스크에 시정까지 흔들”", "src": "뉴스민", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE13dDNha3N1bFZWczJ5TlIwTlNaaEdhbEY2ZUxsTWJUYXRsbHl3dzdUSW9QbWtYTnVaSTJFNFZhNzBZYzZLdzB2Sm84QzJIZ28?oc=5", "t": 1790780047}, {"title": "추경호 20년 구형에…민주 \"당연한 결과\"·국힘 \"정치보복\"", "src": "연합뉴스TV", "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sUGlJalNQaVB1LW9lNlJmdGRXa3RGMnBNMEwwemRGNHJaSEZxRHE2cFd1MGJCNDlzY0RMdG9VamxtNFhhMmxRX1FhcjlVZ0s1dllfc1F5YzZld3hWck03OXZVeWR1MTA?oc=5", "t": 1790776920}, {"title": "'계엄해제 표결 방해' 추경호 징역 20년 구형...\"내란 가담 vs 정치 구형\"", "src": "YTN", "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DTExqTkNDNHY4TWFqVzFlMzFPWUFYRlJNaXBVWkVUTjRqMXJIT2VPeVFScVUyZFhFOS1XTGFuWDFuUTBUNVZjd0QtMVBldWF2SW1RbTZPekYybkdyLVE?oc=5", "t": 1790773020}], "베트남": [{"title": "2026년 동남아시아 펜칵실랏 선수권 대회: 베트남이 종합 1위를 차지했습니다.", "src": "Vietnam.vn", "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbEJFazRIUk9MYjJLcTIwcGx1Tm83UlhhTHJiM2M3Y1FSWGQ5OFo3Tmp2aHdvLUV4a00yY2o0NDFnNmUxN2tWc1V5YVA3Nmo0WFVvZnpQOWt4NFZXY1VEMkhRei02eWZzZk41ajJkX3JPcTE2MjVwV3BCSkgyVUgwU3hvTURNS1Y5Mms3NXJwOTJGX01CQmY5bGMxVUN4a1hCR0E?oc=5", "t": 1790785115}, {"title": "인도네시아 언론이 베트남의 창의성 없는 경기 운영을 비판했다.", "src": "Vietnam.vn", "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNVNCZzV0T3dNR2M1MmdwQ09NUmJOMWtxdnp3V2dHeUdGRGVDS09McXBkSGNhWmpFb1h3S3ZMMGdZaDdEOVg3ZTEyQTJWc0NoS0twWXZvSmhiSHpXYlFnX01aU0Vib1pET0lTaEtlVThvOWoxTTdYT2d3XzFQYmtobmhFZTBwNmZZ?oc=5", "t": 1790784853}, {"title": "베트남 당·국가 지도자들이 중국의 국경일을 축하했습니다.", "src": "Vietnam.vn", "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLTVxSTllamc3TGJOTnJOWnFIclBodnVjRVBWb0d3SWM1dkJqUDBzNlU1bnVIWmdXM2tZTm9JWVpqckFGR0lUSWRmVklPM2w2T3FmSHhQRmJUdHFkQTFCM001cGIxNDVVYjl0eTJoT1dFZVo3V1FVWTk3UDFsUDJpNFllQm1MZ2EwaVMyejFKSjR2MGs?oc=5", "t": 1790782566}], "심우정": [{"title": "심우정 전 검찰총장 ‘내란 가담’ 재판 시작…혐의 전면 부인", "src": "BBS불교방송", "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBHaWU5VXhLTkVVRjFnbHBzXzcxa0tUejRBSlNfZ1JzV2JTQmc2djNTRXFZaEpNcmJuYlFUbWk4S3dzZDVOVHBBRW0wUnp6R21YbFlJMDc2cU01bG9xdmwzWkFmQzZwX1poUFlV?oc=5", "t": 1790750098}, {"title": "심우정 전 검찰총장 ‘내란 가담’ 재판 시작…혐의 모두 부인", "src": "KBS 뉴스", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5a2RjajhLRUtTbWNJWEpvb1I2LWZwZTNwTkRBYktMTXB6QTBlUWN2WkpEUjVrWl9sNnNXaEM4VnhGRS0telVaUVhIN2pqaXZGTzR2V3hSSW5FT28?oc=5", "t": 1790744160}, {"title": "심우정 전 검찰총장, ‘계엄 합수본 검사 파견 검토’ 혐의 전면 부인", "src": "시사저널", "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZZzZDNF9UbFZGVE1qSVY0SXpGT0V2VzY5dmJOLU9HVFdmZnFtMmI4SmFPeG5ESVRwRFNGMGxHS0VUVEVMeVNJcHFWNm9xRDFpZlVRMU5VMFRpTjZpMzRJQnJaV0JlTVNxOEt0TzYySdIBc0FVX3lxTE04ODgzQXg3eGp2UGFMaVRNRVZfRy1ienRLNERPRVNBeElHSi1jT2Fsa1M5bGpIQ0FLNjlXZzIwVkthX3h1X3M2eC1aRWdtU052ekFRV0lpSExDbjhvSktrVDUyZEZnRHVMRTg0ZTBUWG9JMjQ?oc=5", "t": 1790743359}], "서정희": [{"title": "서정희, 65세에 시술 고백 \"변화가 나답다\"", "src": "뉴시스", "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FS05xNUFJUHlwa3A1WkFGdlNkZGl0UGFKWWlmeWh6djZQVVdNR3p0ZFF2UHFHMmRLNi1vY2VvYmdMWjVaNDdHcE5ONXpkVjh2Y0psWHBSUzhuZEtDemdVNdIBeEFVX3lxTE9DTkQwcWNVYWpvLTN3MksyVXV1RUI3TERzbHZZRGlmc0ZlRWdSSmlCSkdiTWYycG9VaGZBWElVQWFFSXdCUWJFbTlOUjFuNjF0UkY5c1FQdmdSUDZFTzNDMnV6UGpzVGpicmJwUDBCMzNfdFhGWmJ3VA?oc=5", "t": 1790780400}, {"title": "'63세' 서정희, \"얼굴에 뭐 했냐\"는 질문에 시술 솔직 고백 \"얼굴 변화 크더라...너무 만족\"", "src": "조이뉴스24", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5HckEtelY4Y2xTSGJCN0otT2xRMnVReXRPZzF1MlpKZG96ODVtQ3R0QnFwOVZKSGU4NWcxWm5leTFPSzBxb2V1Y2w4dHRDU1U?oc=5", "t": 1790774378}], "이혼": [{"title": "“이혼하거나 좋아지거나” 박미선 유방암 고백에 이봉원이 보인 반응 (라스)", "src": "iMBC 연예", "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hYW9PSTNXMEg2dFpQM3dlWTM5aVJ3LU1IN0RtNnZXWHVGZmd0WmRPZmdTeENJSk9lVW96Qi1pM1A1QzRvUjFiZEdxNk5qb1NteW10MG9HdENOamgzd19YOA?oc=5", "t": 1790785860}, {"title": "김연자, 이혼으로 1000억 잃은 사연 “전남편이 관리…돈 없다더라” (유퀴즈)", "src": "iMBC 연예", "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5TFBuT1k3NTRrNlo0MUhlQzlWZllTNGJMRDFKUTJsb3NoQzVRbV95UjRFUC1JSHl2ZzJvMm44UzRXU3Iza25XWEFWcVFXbnJqVVRJRkVvY05PcHhaNC1VTQ?oc=5", "t": 1790783160}, {"title": "'개코와 이혼' 김수미, 중3아들 초3딸 언급..\"음악+미술 배우는 중\" [라스][★밤TView]", "src": "starnewskorea.com", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNU2MtTjBtcUtkV3JvUGE5Xy1aRUxUbEhnVnpaVVh5TDlLUkxvb3pBWlFfX0gtdWZBRXQ1ampWVHJiTGhvSjlvSUo4N0RPWTg0ODMtYTA1Wm96VXlieHFST2NHQlA1X2RoYUw2alYyZW4zbFBBTWxITV8wN2JYZ2NMOA?oc=5", "t": 1790779978}], "이동국": [{"title": "‘이동국 딸’ 재시만 예쁜 줄 알았더니…중학생 설아도 미모 폭발", "src": "서울신문", "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR0UxdGpmUWoyNHNxaDh5V192SVp3Unp1ZW41cjBvWldQZU8wNUtZd3hfdWViUnBXc3VnU2xhc0UwMmE3N1hibWRCdUltamVwTWJOXzhwODBiTW9JVW1lQWY2eHlVdVRzTXVlR0FSWmU3ZC1TZTdPYno1d2JSWUNscERUNXlqUQ?oc=5", "t": 1790756346}, {"title": "이동국 딸 설아, 중1 맞아? 인형 미모 근황…풀메이크업도 찰떡 [★해시태그]", "src": "xportsnews.com", "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9BSWpta1ZyTzFsQlRyckJhaFNVVnU5Tll2Wl94LUYwcnFxNlBkRFBQR2pUNkFJeTBOWV9ZNU9RaEh1aHB3N2NTVW4zWncyeXByakh3ZQ?oc=5", "t": 1790727320}, {"title": "[20년 전 그때] 이동국, 독일 재활 마치고 귀국", "src": "전국매일신문", "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ubmxRTnBoMDRFeFNyY0tMaF9GNnBSaGZPQUxEOFFGZkVtamZTMlVqUk5OSkdkX1o3MTFKOGtvNjJZeFp5dmF1MzVsaW5ZbWxEQ0ZpMXdmc0tzLXJDQVJpMEVwTkVRNGh3Wmd0ZVNB?oc=5", "t": 1790722800}], "wnba playoffs": [{"title": "내가 부러워하는 남의 인생! 알고 보면 별거 없다.. 막돼먹은 영애씨 시즌8 20화 Famiglia Nel Bosco (lMPqzqieW6)", "src": "Unisba Media", "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTExndmdRQ09MT3lVWmIwUXhhWWR0TTduckFLOU41bjIxdXlXUGNJV2ctcjFHNjlJc2NNTy1kUmh5Tlo2TkZUblE3Q2dlR3FmT2w5cktkNnA2d19kVXpqcDhheHhZeTFkSnUtcGVpaUFjc0MyZjVyV1JkR2pmbFJmcVB1RmJpQQ?oc=5", "t": 1790714574}, {"title": "Season 6 Courtside Report | NBA 2K26", "src": "NBA 2K", "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB0NUJDdGpMUDFrdENic1JnTTdVbWduWDRwTjc0T1NvMTAtdDE4WDl2Q0t0d1dXUVJyejd5OThaRDVCVl9JSEJ3aGlMeXk4aEdKR3J2X1hJUzZaWC02VTB6eU9jX1RxOTQ?oc=5", "t": 1775070067}, {"title": "NBA뛰어넘는 WNBA! 그 비결은?", "src": "조선일보", "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HOU1WRlNzZm1nYVcyWXlneWlYZmlPb2N4WjlRM0d5UzVmRkVRRldfM0VvZjdQb01QUXZ0TURzZmQ0X3MydUd6dEFpZ2dBSWpNRExod3J5ODZUdnpFTS1YQ0I3RUQ5dW55WC11X2ZmNm1vZ1FpVzAyUGZRNnB4UQ?oc=5", "t": 1758178800}], "김형은": [{"title": "심진화, 첫 월세방 떠올리며 먹먹…\"故 김형은 보낸 보험금으로\" - 머니투데이", "src": "머니투데이", "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9LQ1JNRGxBb294Slp6VEw1a3JJV3ZsM2FaWlNublk0WDVxX0d6ZVdZT3NWOVdaR2J3a1pScGNtbFI3S25NcWM3UjRkbWhmMkg0Rkc0RFdJbzN6NlZPbWFMaTVrRjRZZDFWRWFncUY5MERwcmvSAXhBVV95cUxOTXZvbWRsRE9NWUhpZzNpNjlzWl8zTDEwU0pBN0cyZmpuVndLTDdMOHFyZTVEOWpIZlQ5S3JrbXRfMmRfY1c3eE50OXI4ekc1THl3NGc2MGZMMHlyTFRxa0UyRVNzdmprUk1XNEZESmF1cTF4ZmJYUG0?oc=5", "t": 1790776552}, {"title": "심진화, 故김형은 잃고 받은 첫 목돈…\"교통사고 보험금으로 보증금 마련\"", "src": "스포츠조선", "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNb01lcXk4SW1EOFdMbmR3dlZNeWdsWnEydng1Nmxxa2ZwQklyTmdRRVQxQ1F0S1VxenRlR0JxYWlHWXpBQ196d1RhRm5FNE5USllBbTBWVl9wMW9GcjJxN3VaZndxTExLSzdLOHpZMFFmM1VWZ3pIZXVQQnJTekdXNDZoUXU?oc=5", "t": 1790772998}, {"title": "심진화, 故김형은 잃고 30만원 월세방 보증금 얻어..\"내 인생 첫 목돈\" ('A급 장영란')", "src": "v.daum.net", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHVWVQRU9mUmZFUlNISnhwQ1pCdklxeURIVVVfMlQtRjdOekZ4SFFSUnZPZGg3TzFRYnVOWDdGOGpXTkZNR05uUnJLNDlXZGc?oc=5", "t": 1790770273}], "송일국": [{"title": "송일국 \"삼둥이 모두 중2병…매일 기도하며 사는 중\" : 연예", "src": "재경일보", "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5YT1VCanFxbS1VNkV0QWd6c0VJcENaS1hPdDZWb1k0cDlWNnMzYTE3clhNb3REM1Y1ai1GTTBtZ28zbmprbDUzTW1tWQ?oc=5", "t": 1790648100}, {"title": "'판사♥' 송일국, 중2된 '삼둥이' 사춘기에 고통…박명수 \"본인이 낳았으니 책임져야\"", "src": "v.daum.net", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GTTJ2R3pfdl9RTU9USTRXYi1fSnVGNWVEbEg1Y2VhZkNCLTBXeTBWc00zcGV6VTU0bXlZYzRvM0JZZUhIUGdoeWNFem1WQVU?oc=5", "t": 1790602250}, {"title": "송일국, 사춘기 삼둥이 근황에 한숨 \"너무 스트레스...하루하루 기도하고 있어\"", "src": "조이뉴스24", "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rbFJxeldNMURfMElKZ0wxamJ6QkR5VXVqeDFPTUJ3Z2dNR1ZYZGZRRUtJX3lPSXNPeVNleFBCRjZ2SjR3SXRvaUFGVmc1eVk?oc=5", "t": 1790601173}]};
+  const NEWKW=new Set(["김형은","wnba playoffs","서정희"]);
+  const US=[{"k":"wnba playoffs","t":1790781600,"end":null,"v":200000,"inc":1000,"rel":["liberty","aces"],"cat":[17]},{"k":"government shutdown","t":1790740000,"end":null,"v":500000,"inc":1000,"rel":["shutdown news"],"cat":[14]},{"k":"iphone 18","t":1790760000,"end":null,"v":100000,"inc":800,"rel":["apple event"],"cat":[18]},{"k":"taylor swift","t":1790770000,"end":1790785000,"v":200000,"inc":500,"rel":["eras"],"cat":[4]}];
+  const JP=[{"k":"台風","t":1790750000,"end":null,"v":100000,"inc":1000,"rel":["台風 進路"],"cat":[20]},{"k":"大谷翔平","t":1790770000,"end":null,"v":200000,"inc":1000,"rel":["ドジャース"],"cat":[17]},{"k":"日経平均","t":1790745000,"end":null,"v":50000,"inc":600,"rel":["株価"],"cat":[3]}];
+  const SRC=["연합뉴스","한국경제","머니투데이","SBS 뉴스","조선일보","스포츠동아"];
+
+  const st={geo:"KR",h:24,q:"",sort:"vol",cat:null,hist:23,open:new Set()};
+  const $=id=>document.getElementById(id);
+
+  function dataset(){
+    let d=st.geo==="US"?US:st.geo==="JP"?JP:BASE;
+    const now=1790786400;
+    if(st.h===4) d=d.filter(x=>x.t>now-4*3600-6000);
+    if(st.h>=48) d=d.concat([{"k":"추석 연휴","t":now-40*3600,"end":now-30*3600,"v":100000,"inc":1000,"rel":["추석 고속도로"],"cat":[19]},{"k":"프로야구 순위","t":now-36*3600,"end":now-28*3600,"v":20000,"inc":500,"rel":["kbo"],"cat":[17]}].filter(()=>st.geo==="KR"));
+    if(st.h===168) d=d.concat([{"k":"아이폰 18","t":now-120*3600,"end":now-100*3600,"v":200000,"inc":1000,"rel":["아이폰 18 출시일"],"cat":[18]}].filter(()=>st.geo==="KR"));
+    if(st.hist<23){ // older snapshot: drop the most recent trends
+      const cut=now-(23-st.hist)*3600;
+      d=d.filter(x=>x.t<cut).map(x=>({...x,end:x.end&&x.end>cut?null:x.end}));
+    }
+    return d;
+  }
+  function filtered(){
+    let d=dataset();
+    if(st.cat) d=d.filter(x=>x.cat.includes(st.cat));
+    if(st.q){const q=st.q.toLowerCase();d=d.filter(x=>x.k.toLowerCase().includes(q)||x.rel.some(r=>r.toLowerCase().includes(q)));}
+    const s={vol:(a,b)=>b.v-a.v||b.t-a.t,new:(a,b)=>b.t-a.t,inc:(a,b)=>b.inc-a.inc||b.v-a.v}[st.sort];
+    return d.slice().sort(s);
+  }
+  const fmtV=v=>v>=10000?(v/10000).toLocaleString("ko-KR")+"만+":v.toLocaleString("ko-KR")+"+";
+  function ago(t){const m=Math.round((1790786400-t)/60);return m<60?m+"분 전":Math.round(m/60)+"시간 전";}
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+  const COLORS=["#1a73e8","#188038","#c5221f","#b06000","#9334e6","#007b83"];
+  const kst=t=>new Date(t*1000).toLocaleString("ko-KR",{timeZone:"Asia/Seoul",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false});
+  const dur=s=>{const h=Math.floor(s/3600),m=Math.round(s%3600/60);return h?`${h}시간${m?" "+m+"분":""}`:`${m}분`;};
+  function detail(x,i){
+    const now=1790786400, geo=st.geo, q=encodeURIComponent(x.k);
+    const items=(NEWS[x.k]||[]).length?NEWS[x.k]:[0,1,2].map(n=>({title:`${x.k} 관련 기사 예시 ${n+1}`,src:SRC[(i+n)%SRC.length],url:"#",t:x.t+n*1800}));
+    const news=items.map(a=>{const c=COLORS[[...a.src].reduce((s,ch)=>s+ch.charCodeAt(0),0)%COLORS.length];
+      return `<a href="${esc(a.url)}" target="_blank" rel="noopener"><span class="th" style="background:${c}">${esc([...a.src.replace(/^www\./,"")][0]||"N")}</span><span><div class="tt">${esc(a.title)}</div><div class="src">${esc(a.src)} · ${ago(a.t)}</div></span></a>`;}).join("");
+    const rel=x.rel.filter(r=>r!==x.k);
+    const seen=Math.max(1,Math.min(12,Math.ceil((now-x.t)/7200)));
+    const endIdx=x.end?Math.max(0,12-Math.ceil((now-x.end)/7200)):12;
+    const bars=Array.from({length:12},(_,j)=>`<i class="${j>=12-seen&&j<endIdx?"on":""}"></i>`).join("");
+    const hl=geo==="KR"?"ko":geo==="JP"?"ja":"en";
+    return `<div class="detail"><div class="d-grid">
+      <div class="d-main">
+        <div class="d-sec">관련 뉴스 ${items.length}건</div>
+        <div class="news">${news}</div>
+        <a class="more" href="https://news.google.com/search?q=${q}&hl=${hl}&gl=${geo}" target="_blank" rel="noopener">“${esc(x.k)}” 뉴스 더보기 ↗</a>
+      </div>
+      <aside class="d-side">
+        <div class="d-sec">트렌드 정보</div>
+        <dl class="facts">
+          <dt>상태</dt><dd>${x.end?'<span class="pill">종료</span>':'<span class="pill ok">진행 중</span>'}</dd>
+          <dt>시작</dt><dd>${kst(x.t)} (${ago(x.t)})</dd>
+          <dt>${x.end?"종료":"경과"}</dt><dd>${x.end?`${kst(x.end)} · ${dur(x.end-x.t)} 지속`:dur(now-x.t)+"째"}</dd>
+          <dt>검색량</dt><dd>${fmtV(x.v)}</dd>
+          <dt>상승률</dt><dd style="color:var(--good)">↑ ${x.inc.toLocaleString()}%</dd>
+          <dt>카테고리</dt><dd>${x.cat.map(c=>CAT[c]).join(", ")}</dd>
+        </dl>
+        ${rel.length?`<div class="d-sec">관련 검색어</div><div class="rel">${rel.map(r=>`<button data-q="${esc(r)}">${esc(r)}</button>`).join("")}</div>`:""}
+        <div class="d-sec">수집 이력 (최근 24시간 · 2시간 단위)</div>
+        <div class="spark" title="파란 막대 = 해당 수집 시점에 목록에 있었음">${bars}</div>
+        <div class="spark-l">${seen}회 수집됨 · 처음 발견 ${kst(now-(seen-1)*7200-420)}</div>
+        <div class="d-act">
+          <a href="https://trends.google.co.kr/explore?q=${q}&geo=${geo}&date=now%207-d" target="_blank" rel="noopener">Google 트렌드에서 보기 ↗</a>
+          <a href="https://www.google.com/search?q=${q}" target="_blank" rel="noopener">Google 검색 ↗</a>
+        </div>
+      </aside>
+    </div></div>`;
+  }
+  function renderChips(){
+    const counts={};dataset().forEach(x=>x.cat.forEach(c=>counts[c]=(counts[c]||0)+1));
+    const keys=Object.keys(counts).map(Number).sort((a,b)=>counts[b]-counts[a]);
+    $("m-chips").innerHTML=`<button class="chip ${st.cat?"":"on"}" data-c="">전체 ${dataset().length}</button>`+
+      keys.map(c=>`<button class="chip ${st.cat===c?"on":""}" data-c="${c}">${CAT[c]} ${counts[c]}</button>`).join("");
+  }
+  function renderList(){
+    const d=filtered();
+    if(!d.length){$("m-list").innerHTML='<div class="empty">조건에 맞는 트렌드가 없습니다.</div>';return;}
+    $("m-list").innerHTML='<div class="row head"><span>#</span><span>검색어</span><span>검색량</span><span class="when">시작</span><span class="cat">카테고리</span></div>'+
+      d.map((x,i)=>{
+        const isNew=st.hist===23&&st.geo==="KR"&&NEWKW.has(x.k);
+        return `<div class="row ${st.open.has(x.k)?"open":""}" data-k="${esc(x.k)}">
+          <span class="rk">${i+1}</span>
+          <span class="kw"><span class="chev">▶</span>${esc(x.k)}${isNew?'<span class="new">NEW</span>':""}<small>${x.rel.filter(r=>r!==x.k).map(esc).join(" · ")||"&nbsp;"}</small></span>
+          <span class="vol">${fmtV(x.v)}<small>↑ ${x.inc.toLocaleString()}%</small></span>
+          <span class="when">${ago(x.t)}<br>${x.end?'<span class="pill">종료</span>':'<span class="pill ok">진행 중</span>'}</span>
+          <span class="cat"><span class="pill">${CAT[x.cat[0]]}</span></span>
+          ${st.open.has(x.k)?detail(x,i):'<div class="detail"></div>'}
+        </div>`;}).join("");
+  }
+  function render(){renderChips();renderList();
+    $("m-hist-label").textContent=st.hist===23?"현재":`${23-st.hist}시간 전`;}
+
+  $("m-hours").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;st.h=+b.dataset.h;st.cat=null;
+    [...$("m-hours").children].forEach(x=>x.classList.toggle("on",x===b));render();});
+  $("m-geo").addEventListener("change",e=>{st.geo=e.target.value;st.cat=null;render();});
+  $("m-q").addEventListener("input",e=>{st.q=e.target.value.trim();renderList();});
+  $("m-sort").addEventListener("change",e=>{st.sort=e.target.value;renderList();});
+  $("m-hist").addEventListener("input",e=>{st.hist=+e.target.value;render();});
+  $("m-chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;st.cat=b.dataset.c?+b.dataset.c:null;render();});
+  $("m-list").addEventListener("click",e=>{
+    const rb=e.target.closest(".rel button");
+    if(rb){st.q=rb.dataset.q;$("m-q").value=st.q;renderList();return;}
+    if(e.target.closest(".detail"))return;
+    const r=e.target.closest(".row:not(.head)");if(!r)return;
+    const k=r.dataset.k;st.open.has(k)?st.open.delete(k):st.open.add(k);renderList();});
+
+  function download(name,text,type){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+  $("m-csv").addEventListener("click",()=>{const rows=[["순위","검색어","검색량","상승률(%)","시작","상태","카테고리","관련 검색어"]].concat(
+    filtered().map((x,i)=>[i+1,x.k,x.v,x.inc,new Date(x.t*1000).toISOString(),x.end?"종료":"진행 중",CAT[x.cat[0]],x.rel.join(" | ")]));
+    download(`trends_${st.geo}_${st.h}h.csv`,"﻿"+rows.map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(",")).join("\n"),"text/csv");});
+  $("m-json").addEventListener("click",()=>download(`trends_${st.geo}_${st.h}h.json`,JSON.stringify(filtered(),null,2),"application/json"));
+
+  let left=300;setInterval(()=>{left=left<=0?300:left-1;$("m-countdown").textContent=`${Math.floor(left/60)}:${String(left%60).padStart(2,"0")}`;},1000);
+  // ===== 탐색 (실제 데이터, 2026-10-01 수집) =====
+  const EXP={"7d": {"top": [["날씨", 100, 0], ["네이버", 49, 0], ["디시", 42, 0], ["유튜브", 28, 0], ["내일 날씨", 27, 3], ["구글", 19, 1], ["제미 나이", 18, -1], ["애니", 16, null], ["gpt", 15, 0], ["아시안 게임", 14, 8], ["축구", 14, null], ["쿠팡", 13, -1], ["챗지 피티", 12, -3], ["인스 타", 11, -2], ["야구", 11, null], ["삼성 전자", 8, 6], ["다음", 8, -2], ["펨코", 7, -4], ["번역", 7, -2], ["피파", 6, null], ["한국 대 우루과이", 6, null], ["번역기", 6, -3], ["한국 대 에콰도르", 6, null], ["트위터", 6, 0], ["클로드", 6, -2]], "rising": [["한국 대 우루과이", 17950, "급등"], ["한국 대 에콰도르", 13250, "급등"], ["닛몰 캐쉬", 6300, "급등"], ["lg 대 kia", 4950, "+4,950%"], ["댈러스 대 엘에이 fc", 4700, "+4,700%"], ["왕 즈이", 3500, "+3,500%"], ["김수용", 2650, "+2,650%"], ["삼성 대 ssg", 1950, "+1,950%"], ["kt 대 kia", 1950, "+1,950%"], ["국군 의 날", 1000, "+1,000%"], ["금메달", 800, "+800%"], ["암살자 들", 750, "+750%"], ["모유", 600, "+600%"], ["삼전 닉스", 550, "+550%"], ["지게차", 500, "+500%"], ["시체", 450, "+450%"], ["손흥 민", 350, "+350%"], ["박위", 250, "+250%"], ["혈당", 250, "+250%"], ["재산", 170, "+170%"], ["장윤정", 160, "+160%"], ["안세영", 150, "+150%"], ["축구", 150, "+150%"], ["배드민턴", 140, "+140%"], ["할머니", 130, "+130%"]]}, "1m": {"top": [["날씨", 100, 0], ["네이버", 66, 0], ["유튜브", 45, 0], ["제미 나이", 27, 3], ["내일 날씨", 26, 0], ["삼성", 25, 0], ["gpt", 24, 1], ["게임", 24, 4], ["구글", 23, 0], ["챗지 피티", 19, 0], ["쿠팡", 17, 2], ["인스 타", 14, 2], ["민생 지원금", 12, -2], ["지도", 11, 4], ["다음", 10, 2], ["youtube", 9, 0], ["삼성 전자", 9, -2], ["야구", 8, null], ["펨코", 8, 1], ["연금", 8, 2], ["번역", 8, 4], ["번역기", 7, null], ["클로드", 7, null], ["챗 gpt", 7, 0], ["피파", 7, null]], "rising": [["용 혜인", 5550, "급등"], ["한국 대 에콰도르", 3750, "+3,750%"], ["아시안 게임", 1850, "+1,850%"], ["유웨이 어 플라이", 1100, "+1,100%"], ["이용 주", 650, "+650%"], ["진학사", 550, "+550%"], ["손예진", 350, "+350%"], ["추석", 300, "+300%"], ["민생 회복 소비 쿠폰", 180, "+180%"], ["네팔", 90, "+90%"], ["농지", 80, "+80%"], ["안세영", 70, "+70%"], ["시체", 70, "+70%"], ["엔트리", 70, "+70%"], ["롤체 지지", 60, "+60%"], ["캔바", 60, "+60%"], ["박위", 40, "+40%"]]}, "3m": {"top": [["날씨", 100, 0], ["네이버", 55, 0], ["유튜브", 43, 0], ["디시", 31, 0], ["내일 날씨", 28, 1], ["삼성", 24, 1], ["제미 나이", 22, -2], ["gpt", 19, 0], ["구글", 18, 0], ["게임", 15, null], ["쿠팡", 15, 3], ["챗지 피티", 15, 1], ["인스 타", 11, 3], ["삼성 전자", 10, 4], ["youtube", 10, -5], ["다음", 9, 1], ["지도", 9, null], ["민생 지원금", 8, null], ["펨코", 7, 3], ["sk 하이닉스", 7, null], ["월드컵", 7, -9], ["챗 gpt", 6, -2], ["연금", 6, 0], ["자동차", 6, 1], ["태풍", 6, null]], "rising": [["김부장", 500, "+500%"], ["민생 지원금", 500, "+500%"], ["태풍", 400, "+400%"], ["장윤정", 400, "+400%"], ["폭염", 300, "+300%"], ["뱀", 200, "+200%"], ["기초 노령 연금", 90, "+90%"], ["죽음", 80, "+80%"], ["피파", 70, "+70%"], ["환산 주 스탯", 60, "+60%"], ["잠수함", 60, "+60%"]]}, "12m": {"top": [["날씨", 100, 1], ["네이버", 74, -1], ["유튜브", 59, 0], ["디시", 50, 0], ["내일 날씨", 29, 2], ["gpt", 28, -1], ["구글", 23, -1], ["제미 나이", 22, null], ["삼성", 22, null], ["게임", 17, -2], ["챗지 피티", 17, 13], ["쿠팡", 17, -3], ["youtube", 16, 1], ["다음", 14, -3], ["인스 타", 13, -3], ["google", 13, 3], ["챗 gpt", 12, -7], ["펨코", 10, -5], ["chat gpt", 9, -2], ["번역", 9, -5], ["삼성 전자", 8, null], ["월드컵", 8, null], ["번역기", 8, -7], ["naver", 8, -2], ["주식", 7, null]], "rising": [["2026 fifa 월드컵", 7000, "급등"], ["아이온 2", 4250, "+4,250%"], ["아툴", 3700, "+3,700%"], ["sk 하이닉스", 1200, "+1,200%"], ["제미 나이", 900, "+900%"], ["재미 나이", 850, "+850%"], ["안세영", 800, "+800%"], ["코스피", 650, "+650%"], ["태풍", 600, "+600%"], ["클로드", 550, "+550%"], ["두산 에너 빌리티", 500, "+500%"], ["이강인", 350, "+350%"], ["월드컵", 300, "+300%"], ["삼성 전자", 300, "+300%"], ["gemini", 250, "+250%"], ["반도체", 250, "+250%"], ["민생 지원금", 250, "+250%"], ["연금", 170, "+170%"], ["토스 증권", 170, "+170%"], ["챗지 피티", 120, "+120%"], ["삼성", 110, "+110%"], ["지 피티", 110, "+110%"], ["instagram", 110, "+110%"], ["제타", 90, "+90%"], ["주식", 90, "+90%"]]}};
+  const PLABEL={"7d":["지난 1주","9/17–9/23","now 7-d"],"1m":["지난 1개월","8/1–8/31","today 1-m"],"3m":["지난 3개월","4/1–6/30","today 3-m"],"12m":["지난 1년","2024-10–2025-09","today 12-m"]};
+  const xs={p:"1m",more:{top:false,rise:false},open:null};
+  function exActs(q){const e=encodeURIComponent(q);
+    return `<div class="ex-act"><a href="https://trends.google.co.kr/explore?q=${e}&geo=KR&date=${encodeURIComponent(PLABEL[xs.p][2])}" target="_blank" rel="noopener">Google 트렌드에서 보기 ↗</a><a href="https://news.google.com/search?q=${e}&hl=ko&gl=KR" target="_blank" rel="noopener">뉴스 보기 ↗</a><a href="https://www.google.com/search?q=${e}" target="_blank" rel="noopener">Google 검색 ↗</a></div>`;}
+  function renderEx(){
+    const d=EXP[xs.p], L=PLABEL[xs.p];
+    $("x-top-sub").textContent=`대한민국 · ${L[0]} · 비교 기간 ${L[1]}`;
+    $("x-rise-sub").textContent=`대한민국 · ${L[0]} · ${d.rising.length}개`;
+    const top=xs.more.top?d.top:d.top.slice(0,10);
+    $("x-top").innerHTML='<div class="ex-row head"><span></span><span>검색어</span><span>검색 관심도</span><span class="chg">순위 변동</span></div>'+
+      top.map(([q,v,c],i)=>{
+        const chg=c===null?'<span class="newb">NEW</span>':c>0?`▲ ${c}`:c<0?`▼ ${-c}`:"–";
+        const cls=c===null?"":c>0?"up":c<0?"down":"same";
+        return `<div class="ex-row ${xs.open==="t"+q?"open":""}" data-o="t${esc(q)}"><span class="n">${i+1}</span><span class="q">${esc(q)}</span><span class="bar" title="${v}"><i style="width:${v}%"></i></span><span class="chg ${cls}">${chg}</span>${exActs(q)}</div>`;}).join("")+
+      (d.top.length>10?`<button class="ex-more" data-m="top">${xs.more.top?"접기":`더보기 (${d.top.length}개)`}</button>`:"");
+    const max=Math.log10(Math.max(...d.rising.map(r=>r[1]).filter(v=>v<50000),100));
+    const rise=xs.more.rise?d.rising:d.rising.slice(0,10);
+    $("x-rise").innerHTML='<div class="ex-row head"><span></span><span>검색어</span><span>증가율</span><span class="chg">변경</span></div>'+
+      rise.map(([q,v,f],i)=>{const hot=f==="급등";const w=hot?100:Math.max(6,Math.min(100,Math.log10(Math.max(v,1))/max*100));
+        return `<div class="ex-row ${xs.open==="r"+q?"open":""}" data-o="r${esc(q)}"><span class="n">${i+1}</span><span class="q">${esc(q)}</span><span class="bar rise"><i style="width:${w}%"></i></span><span class="chg up">${hot?'<span class="hot">급등</span>':"↑ "+esc(f.replace("+",""))}</span>${exActs(q)}</div>`;}).join("")+
+      (d.rising.length>10?`<button class="ex-more" data-m="rise">${xs.more.rise?"접기":`더보기 (${d.rising.length}개)`}</button>`:"");
+  }
+  $("m-view").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+    [...$("m-view").children].forEach(x=>x.classList.toggle("on",x===b));
+    $("v-rt").hidden=b.dataset.v!=="rt";$("v-ex").hidden=b.dataset.v!=="ex";if(b.dataset.v==="ex")renderEx();});
+  $("x-period").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;xs.p=b.dataset.p;xs.open=null;xs.more={top:false,rise:false};
+    [...$("x-period").children].forEach(x=>x.classList.toggle("on",x===b));renderEx();});
+  $("v-ex").addEventListener("click",e=>{
+    const m=e.target.closest(".ex-more");if(m){xs.more[m.dataset.m]=!xs.more[m.dataset.m];renderEx();return;}
+    if(e.target.closest(".ex-act"))return;
+    const r=e.target.closest(".ex-row:not(.head)");if(!r)return;xs.open=xs.open===r.dataset.o?null:r.dataset.o;renderEx();});
+  $("x-csv").addEventListener("click",()=>{const d=EXP[xs.p];
+    const rows=[["구분","순위","검색어","값","순위 변동/증가율"]].concat(d.top.map(([q,v,c],i)=>["상위",i+1,q,v,c===null?"NEW":c]),d.rising.map(([q,v,f],i)=>["급상승",i+1,q,v,f]));
+    download(`explore_KR_${xs.p}.csv`,"\ufeff"+rows.map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(",")).join("\n"),"text/csv");});
+  if(/view=explore/.test(location.hash)){$("m-view").children[1].click();setTimeout(()=>document.getElementById("mockup").scrollIntoView(),0);}
+  const m=location.hash.match(/^#open=(.+)$/);
+  if(m){st.open.add(decodeURIComponent(m[1]));setTimeout(()=>document.getElementById("mockup").scrollIntoView(),0);}
+  render();
+})();
+</script>
+</body>
+</html>

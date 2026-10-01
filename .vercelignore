@@ -1,0 +1,17 @@
+.venv
+.git
+.github
+.env*
+scripts
+tests
+docs
+state
+__pycache__
+requirements.txt
+requirements-dev.txt
+README.md
+server.js
+trends.js
+test-results
+
+archives
