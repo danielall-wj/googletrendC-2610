@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-02T05:31:23Z,top,weather,100,100,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,google,90,90,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,youtube,57,57,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,nfl,52,52,False,2,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,amazon,51,51,False,'-1,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,games,50,50,False,'-1,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,ai,35,35,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,news,35,35,False,'-1,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,reddit,33,33,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,walmart,30,30,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,gmail,25,25,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,wnba playoffs,24,24,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,mlb,23,23,False,8,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,facebook,23,23,False,'-1,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,chatgpt,22,22,False,'-3,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,translate,18,18,False,0,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,calculator,17,17,False,'-2,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,wordle,17,17,False,4,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,weather tomorrow,17,17,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,target,17,17,False,4,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,costco,17,17,False,'-1,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,flights,16,16,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,instagram,16,16,False,'-5,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,phillies,14,14,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,top,eagles,14,14,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,wnba playoffs,5950,Breakout,True,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,cornell 7,4300,"'+4,300%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,steelers vs browns,2900,"'+2,900%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,christa pike,2800,"'+2,800%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,eagles vs bears,2100,"'+2,100%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,fever vs aces,1900,"'+1,900%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,dante moore,1800,"'+1,800%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,phillies vs braves,1700,"'+1,700%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,england vs spain,1600,"'+1,600%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,google's birthday,1500,"'+1,500%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,ravens vs cowboys,1450,"'+1,450%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,rams vs broncos,1450,"'+1,450%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,chiefs vs dolphins,1350,"'+1,350%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,cornell university,1100,"'+1,100%",False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,ken urker,950,'+950%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,mexico vs colombia,900,'+900%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,bengals vs steelers,850,'+850%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,texas vs tennessee,800,'+800%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,acro,750,'+750%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,jj mccarthy,450,'+450%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,sud,400,'+400%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,denmark vs portugal,350,'+350%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,steelers,300,'+300%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,browns,200,'+200%,False,,2026-09-18 2026-09-24,ok
+US,7d,2026-10-02T05:31:23Z,rising,nations league,150,'+150%,False,,2026-09-18 2026-09-24,ok
