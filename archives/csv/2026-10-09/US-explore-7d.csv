@@ -1,0 +1,50 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-08T05:58:17Z,top,weather,100,100,False,0,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,google,91,91,False,0,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,amazon,61,61,False,2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,youtube,60,60,False,'-1,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,nfl,49,49,False,'-1,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,games,49,49,False,0,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,news,36,36,False,0,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,walmart,33,33,False,1,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,reddit,32,32,False,'-1,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,gmail,26,26,False,2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,mlb,26,26,False,2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,facebook,26,26,False,'-1,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,chatgpt,24,24,False,1,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,translate,19,19,False,2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,calculator,19,19,False,3,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,wordle,18,18,False,4,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,target,17,17,False,2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,instagram,16,16,False,5,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,costco,16,16,False,'-2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,dodgers,16,16,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,braves,16,16,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,weather tomorrow,15,15,False,0,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,netflix,13,13,False,2,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,christa pike,13,13,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,top,blooket,13,13,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,dodgers vs braves,3950,"'+3,950%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,padres vs brewers,1850,"'+1,850%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,falcons vs saints,1800,"'+1,800%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,cowboys vs texans,1600,"'+1,600%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,argentina vs benin,1600,"'+1,600%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,chiefs vs raiders,1550,"'+1,550%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,steelers vs browns,1400,"'+1,400%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,world space week 2026,1250,"'+1,250%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,rams vs eagles,1250,"'+1,250%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,broncos vs 49ers,1050,"'+1,050%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,mexico vs usa,1050,"'+1,050%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,patriots vs bills,1000,"'+1,000%",False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,east of eden,900,'+900%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,yankees vs rays,500,'+500%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,dodgers,200,'+200%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,brewers,180,'+180%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,braves,150,'+150%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,christa pike,120,'+120%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,verity,100,'+100%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,mlb playoffs,70,'+70%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,nba,60,'+60%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,bath and body works,50,'+50%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,padres,50,'+50%,False,,2026-09-24 2026-09-30,ok
+US,7d,2026-10-08T05:58:17Z,rising,steelers,50,'+50%,False,,2026-09-24 2026-09-30,ok
