@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-10T05:46:59Z,top,weather,100,100,False,0,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,google,84,84,False,0,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,amazon,59,59,False,2,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,youtube,58,58,False,'-1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,nfl,52,52,False,'-1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,games,46,46,False,0,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,news,36,36,False,2,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,reddit,31,31,False,0,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,walmart,29,29,False,1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,facebook,27,27,False,3,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,mlb,25,25,False,3,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,gmail,24,24,False,'-1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,chatgpt,22,22,False,2,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,cowboys,20,20,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,translate,17,17,False,1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,costco,17,17,False,1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,target,16,16,False,3,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,calculator,16,16,False,0,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,dodgers,16,16,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,wordle,15,15,False,'-1,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,instagram,15,15,False,2,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,weather tomorrow,14,14,False,0,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,netflix,13,13,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,yahoo,12,12,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,top,maps,12,12,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,hurricane isaias,8000,Breakout,True,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,world space week 2026,2950,"'+2,950%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,susan dell,2700,"'+2,700%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,buccaneers vs cowboys,2550,"'+2,550%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,dodgers vs braves,2450,"'+2,450%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,mike ditka,1650,"'+1,650%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,argentina vs benin,1550,"'+1,550%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,padres vs brewers,1450,"'+1,450%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,cowboys vs texans,1350,"'+1,350%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,yankees vs rays,1350,"'+1,350%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,chiefs vs raiders,1350,"'+1,350%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,broncos vs 49ers,1000,"'+1,000%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,rams vs eagles,1000,"'+1,000%",False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,lions vs panthers,950,'+950%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,patriots vs bills,850,'+850%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,mexico vs usa,700,'+700%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,hurricane tracker,600,'+600%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,brewers,350,'+350%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,dodgers,300,'+300%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,flood watch,200,'+200%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,white sox,80,'+80%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,cowboys,80,'+80%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,nba,70,'+70%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,cowboys game,70,'+70%,False,,2026-09-26 2026-10-02,ok
+US,7d,2026-10-10T05:46:59Z,rising,padres,60,'+60%,False,,2026-09-26 2026-10-02,ok

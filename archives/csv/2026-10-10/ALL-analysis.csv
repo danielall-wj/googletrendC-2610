@@ -1,0 +1,83 @@
+﻿국가,순위,단어,기사 수,순위 변동,신규,급부상,관련 검색량 합,관련 트렌드,분석기,기사 총수,원본 수집 UTC
+KR,1,mlb,5,,True,True,2000,시카고 컵스 / mlb,kiwi,142,2026-10-10T12:25:11Z
+KR,2,대구,4,,True,True,11000,중앙일보 / 대구 마트,kiwi,142,2026-10-10T12:25:11Z
+KR,3,암살자,4,,True,True,21000,홍혜걸 / 역사 왜곡,kiwi,142,2026-10-10T12:25:11Z
+KR,4,오타니,4,,True,True,400,오타니 쇼헤이 / 메이저 리그 베이스볼,kiwi,142,2026-10-10T12:25:11Z
+KR,5,천장,4,,True,True,11000,중앙일보 / 대구 마트,kiwi,142,2026-10-10T12:25:11Z
+KR,6,ps,3,,True,True,600,오타니 쇼헤이 / 메이저 리그 베이스볼 / 문보경,kiwi,142,2026-10-10T12:25:11Z
+KR,7,세계,3,7,False,False,21100,국채 / 관광지 / 마라톤,kiwi,142,2026-10-10T12:25:11Z
+KR,8,제동,3,,True,True,51500,돈 / 시카고 컵스 / 휴머노이드 로봇,kiwi,142,2026-10-10T12:25:11Z
+KR,9,피해,3,,True,True,23000,재산 / 서동주 / 흡연,kiwi,142,2026-10-10T12:25:11Z
+KR,10,ai,3,,True,True,1000,김현 / 우주,kiwi,142,2026-10-10T12:25:11Z
+KR,11,kia,3,'-2,False,False,300,문보경 / 구창모,kiwi,142,2026-10-10T12:25:11Z
+KR,12,가을,3,,True,True,21000,패션 / 관광지,kiwi,142,2026-10-10T12:25:11Z
+KR,13,경고,3,,True,False,21000,국채 / 흡연,kiwi,142,2026-10-10T12:25:11Z
+KR,14,우승,3,,True,True,20200,fc 서울 대 제주 / 맨유,kiwi,142,2026-10-10T12:25:11Z
+KR,15,컵스,3,,True,True,51000,돈 / 시카고 컵스,kiwi,142,2026-10-10T12:25:11Z
+KR,16,arsenal,3,,True,True,200,arsenal đấu với leeds,kiwi,142,2026-10-10T12:25:11Z
+KR,17,lanka,3,,True,True,1000,sri lanka vs pakistan,kiwi,142,2026-10-10T12:25:11Z
+KR,18,lg,3,'-14,False,False,200,문보경,kiwi,142,2026-10-10T12:25:11Z
+KR,19,postseason,3,,True,True,1000,mlb,kiwi,142,2026-10-10T12:25:11Z
+KR,20,skydance,3,,True,True,200,티비,kiwi,142,2026-10-10T12:25:11Z
+US,1,state,11,,True,True,220600,florida state vs louisville / florida a&m vs alabama state / stephen crowell indiana bowhunt / app state football / bowling green football,rules,133,2026-10-10T12:26:16Z
+US,2,october,9,5,False,False,431100,dream vs liberty / valkyries vs aces / florida a&m vs alabama state / penguins vs blue jackets / weather los angeles / elise mertens,rules,133,2026-10-10T12:26:16Z
+US,3,trump,7,0,False,False,1255000,mike ditka / katie zacharia / public executions in the us / where is talarico,rules,133,2026-10-10T12:26:16Z
+US,4,dream,6,,True,True,402000,dream vs liberty / valkyries vs aces / dewanna bonner,rules,133,2026-10-10T12:26:16Z
+US,5,con,5,,True,True,10400,instituto - boca juniors / instituto vs boca / electricidad / bolivia / comic con nyc,rules,133,2026-10-10T12:26:16Z
+US,6,lineups,5,,True,True,25200,rangers vs capitals / galatasaray vs kasımpaşa / swansea vs norwich city / real madrid schedule,rules,133,2026-10-10T12:26:16Z
+US,7,florida,5,,True,False,420000,post-tropical cyclone isaias / florida state vs louisville / florida a&m vs alabama state,rules,133,2026-10-10T12:26:16Z
+US,8,high,4,,True,True,207500,post-tropical cyclone isaias / coastal flood warning / pltr / weather los angeles,rules,133,2026-10-10T12:26:16Z
+US,9,oct,4,,True,False,415000,panama earthquake / valkyries vs aces / kraken vs red wings / galatasaray vs kasımpaşa,rules,133,2026-10-10T12:26:16Z
+US,10,wnba,4,,True,True,422000,dream vs liberty / valkyries vs aces / florida a&m vs alabama state / dewanna bonner,rules,133,2026-10-10T12:26:16Z
+US,11,open,4,3,False,False,5400,mrbeast / elise mertens / app state football,rules,133,2026-10-10T12:26:16Z
+US,12,san,4,,True,True,6500,where is talarico / blue angels sf / weather los angeles,rules,133,2026-10-10T12:26:16Z
+US,13,surf,4,,True,True,205500,post-tropical cyclone isaias / coastal flood warning / weather los angeles,rules,133,2026-10-10T12:26:16Z
+US,14,want,4,,True,True,7500,where is talarico / month / jason duval,rules,133,2026-10-10T12:26:16Z
+US,15,weekend,4,,True,True,5600,coastal flood warning / weather los angeles / comic con nyc,rules,133,2026-10-10T12:26:16Z
+US,16,airport,4,,True,True,202000,panama earthquake / riyadh airport,rules,133,2026-10-10T12:26:16Z
+US,17,killed,4,,True,True,2100,riyadh airport / new jersey 38,rules,133,2026-10-10T12:26:16Z
+US,18,sport,4,'-9,False,False,1200,felix auger aliassime / alex michelsen,rules,133,2026-10-10T12:26:16Z
+US,19,betting,3,,True,True,25200,florida a&m vs alabama state / galatasaray vs kasımpaşa / elise mertens,rules,133,2026-10-10T12:26:16Z
+US,20,coast,3,,True,False,405000,post-tropical cyclone isaias / panama earthquake / coastal flood warning,rules,133,2026-10-10T12:26:16Z
+JP,1,映画,9,,True,True,12500,鈴鹿央士 / 横浜流星 / 広瀬アリス / 生き続ける者,mecab,146,2026-10-10T12:27:13Z
+JP,2,スポーツ,7,18,False,False,18300,デーブ ロバーツ / 横浜流星 / 磯村 勇 斗 / 再生のウズメ / 紺野ぶるま / 名古屋グランパス,mecab,146,2026-10-10T12:27:13Z
+JP,3,俳優,7,,True,True,59500,飯豊まりえ / 横浜流星 / 俺たちの箱根駅伝 モデル / 磯村 勇 斗 / めざましじゃんけん,mecab,146,2026-10-10T12:27:13Z
+JP,4,東京,7,,True,True,20200,fc東京 対 浦和 / プレミアリーグ 試合 / 競走,mecab,146,2026-10-10T12:27:13Z
+JP,5,web,6,,True,True,18400,福岡 対 岡山 / 竜星涼 / スライドドア / 向井 パンサー / 上垣アナ / 波うららかにめおと日和ドラマ,mecab,146,2026-10-10T12:27:13Z
+JP,6,dena,5,,True,True,122000,巨人 対 dena / クライマックスシリーズ / ベイスターズ,mecab,146,2026-10-10T12:27:13Z
+JP,7,出演,5,,True,True,20400,俺たちの箱根駅伝 / バズリズム / 上垣アナ,mecab,146,2026-10-10T12:27:13Z
+JP,8,監督,5,4,False,False,12100,デーブ ロバーツ / ベイスターズ / 名古屋グランパス,mecab,146,2026-10-10T12:27:13Z
+JP,9,広瀬,5,,True,True,7000,横浜流星 / 広瀬アリス,mecab,146,2026-10-10T12:27:13Z
+JP,10,竜星涼,5,,True,True,5100,竜星涼 / ぐらんぶる,mecab,146,2026-10-10T12:27:13Z
+JP,11,日刊,4,,True,True,13200,デーブ ロバーツ / 磯村 勇 斗 / 再生のウズメ / 紺野ぶるま,mecab,146,2026-10-10T12:27:13Z
+JP,12,女性,4,,True,False,500,髙橋海人 炎上 / 巡査 / 詐欺,mecab,146,2026-10-10T12:27:13Z
+JP,13,原作者,4,,True,True,5100,横浜流星 / ぐらんぶる,mecab,146,2026-10-10T12:27:13Z
+JP,14,名古屋,4,,True,True,300,巡査 / 名古屋グランパス,mecab,146,2026-10-10T12:27:13Z
+JP,15,大阪,4,,True,True,22000,だんじり / 磯村 勇 斗,mecab,146,2026-10-10T12:27:13Z
+JP,16,岩井,4,,True,True,5200,鈴鹿央士 / 岩井勇気,mecab,146,2026-10-10T12:27:13Z
+JP,17,西武,4,,True,True,70000,西武 対 日本ハム / クライマックスシリーズ,mecab,146,2026-10-10T12:27:13Z
+JP,18,home,3,,True,True,12200,インフレーション / apple special event / sri lanka vs pakistan,mecab,146,2026-10-10T12:27:13Z
+JP,19,先発,3,,True,True,112000,巨人 対 dena / 福岡 対 岡山 / ベイスターズ,mecab,146,2026-10-10T12:27:13Z
+JP,20,初戦,3,,True,True,122000,巨人 対 dena / クライマックスシリーズ / ベイスターズ,mecab,146,2026-10-10T12:27:13Z
+ALL,,개념: 중국,6,,,,,KR 1 / US 2 / JP 3,,,
+ALL,,개념: 미국,4,,,,,KR 1 / US 2 / JP 1,,,
+ALL,,개념: 야구,8,,,,,KR 5 / US 0 / JP 3,,,
+ALL,,개념: 인공지능,6,,,,,KR 4 / US 2 / JP 0,,,
+ALL,,개념: 지진,6,,,,,KR 0 / US 3 / JP 3,,,
+ALL,,개념: 선거,2,,,,,KR 0 / US 1 / JP 1,,,
+ALL,,개념: 전쟁,2,,,,,KR 1 / US 1 / JP 0,,,
+ALL,,개념: 일본,4,,,,,KR 0 / US 0 / JP 4,,,
+ALL,,개념: OpenAI,2,,,,,KR 0 / US 2 / JP 0,,,
+ALL,,개념: 축구,2,,,,,KR 0 / US 0 / JP 2,,,
+ALL,,개념: 금리,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 한국,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 태풍,1,,,,,KR 0 / US 0 / JP 1,,,
+KR/US/JP,,공통: arsenal vs leeds,3,,,,53000,,,,
+KR/US/JP,,공통: sri lanka vs pakistan,3,,,,6200,,,,
+KR/US,,공통: icc,2,,,,11000,,,,
+KR/JP,,공통: psim vs persija jakarta,2,,,,1200,,,,
+KR/JP,,공통: india vs west indies,2,,,,700,,,,
+KR/JP,,공통: arsenal đấu với leeds,2,,,,400,,,,
+KR/US,,공통: pl,2,,,,300,,,,
+KR/US,,공통: bangladesh vs afghanistan,2,,,,300,,,,
+KR/JP,,공통: al nassr,2,,,,300,,,,
