@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-10-11T05:42:14Z,top,weather,100,100,False,0,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,google,91,91,False,0,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,youtube,60,60,False,0,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,amazon,53,53,False,0,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,nfl,51,51,False,6,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,iphone,36,36,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,reddit,33,33,False,1,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,walmart,30,30,False,1,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,facebook,25,25,False,1,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,gmail,23,23,False,2,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,chatgpt,23,23,False,2,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,mlb,19,19,False,10,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,calculator,18,18,False,8,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,translate,18,18,False,1,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,wordle,17,17,False,9,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,sports,17,17,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,weather tomorrow,15,15,False,3,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,blooket,13,13,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,netflix,13,13,False,6,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,minecraft,13,13,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,hurricane,11,11,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,eagles,10,10,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,cvs,9,9,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,docs,9,9,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,top,espn,9,9,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,wnba playoffs,3300,"'+3,300%",False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,hurricane isaias,2150,"'+2,150%",False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,nations league,1300,"'+1,300%",False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,steelers vs browns,850,'+850%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,georgia vs alabama,800,'+800%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,mike ditka,750,'+750%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,white sox vs guardians,650,'+650%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,susan dell,600,'+600%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,east of eden,550,'+550%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,other mommy,500,'+500%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,thursday night football,450,'+450%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,texas vs oklahoma,350,'+350%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,georgia alabama game,350,'+350%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,marvin harrison jr,300,'+300%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,nhl,200,'+200%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,barcelona getafe,200,'+200%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,real madrid villarreal,200,'+200%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,lsu vs kentucky,190,'+190%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,kentucky football,160,'+160%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,ohio state football,160,'+160%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,maryland vs ohio state,160,'+160%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,college football scores,150,'+150%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,eagles,150,'+150%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,indiana vs nebraska,150,'+150%,False,,2026-08-12 2026-09-10,ok
+US,1m,2026-10-11T05:42:14Z,rising,tennessee football,140,'+140%,False,,2026-08-12 2026-09-10,ok
