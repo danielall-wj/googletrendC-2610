@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-10-13T06:46:22Z,top,weather,100,100,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,google,87,87,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,youtube,61,61,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,nfl,54,54,False,6,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,amazon,53,53,False,'-1,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,news,37,37,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,iphone,34,34,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,reddit,32,32,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,walmart,30,30,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,facebook,25,25,False,1,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,word,24,24,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,gmail,24,24,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,chatgpt,21,21,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,mlb,19,19,False,10,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,translate,18,18,False,1,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,calculator,17,17,False,3,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,wordle,17,17,False,6,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,target,16,16,False,'-1,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,weather tomorrow,15,15,False,2,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,netflix,14,14,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,blooket,12,12,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,eagles,12,12,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,bills,11,11,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,yahoo,11,11,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,top,home depot,11,11,False,0,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,wnba playoffs,2950,"'+2,950%",False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,hurricane isaias,2300,"'+2,300%",False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,nations league,1400,"'+1,400%",False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,rj mitte,1300,"'+1,300%",False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,steelers vs browns,850,'+850%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,monday night football,800,'+800%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,bills vs rams,750,'+750%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,columbus day,650,'+650%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,nfl scores,550,'+550%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,nfl standings,450,'+450%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,falcons,400,'+400%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,verity movie,350,'+350%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,elision,350,'+350%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,giants vs commanders,350,'+350%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,bills game,300,'+300%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,texas vs oklahoma,300,'+300%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,selma blair,300,'+300%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,broncos,250,'+250%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,carrie tv show,250,'+250%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,nhl,250,'+250%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,dodgers vs braves,250,'+250%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,eagles,200,'+200%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,bills,200,'+200%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,alkylamide,200,'+200%,False,,2026-08-14 2026-09-12,ok
+US,1m,2026-10-13T06:46:22Z,rising,vikings,160,'+160%,False,,2026-08-14 2026-09-12,ok

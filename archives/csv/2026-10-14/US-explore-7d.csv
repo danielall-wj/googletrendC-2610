@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-13T06:46:13Z,top,weather,100,100,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,google,80,80,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,amazon,56,56,False,1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,youtube,54,54,False,'-1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,nfl,48,48,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,games,43,43,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,news,35,35,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,reddit,31,31,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,walmart,28,28,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,hurricane,27,27,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,facebook,24,24,False,'-1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,gmail,23,23,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,mlb,22,22,False,'-2,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,chatgpt,22,22,False,'-1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,dodgers,18,18,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,translate,17,17,False,'-1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,calculator,15,15,False,2,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,target,15,15,False,6,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,costco,15,15,False,3,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,wordle,15,15,False,'-4,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,instagram,14,14,False,0,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,weather tomorrow,14,14,False,1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,brewers,13,13,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,netflix,13,13,False,1,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,top,cowboys,13,13,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,hurricane isaias,9000,Breakout,True,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,rj mitte,5550,Breakout,True,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,susan dell,4000,"'+4,000%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,mike ditka,3200,"'+3,200%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,world space week 2026,2800,"'+2,800%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,buccaneers vs cowboys,2300,"'+2,300%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,dodgers vs brewers,2000,"'+2,000%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,bills vs rams,1750,"'+1,750%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,elision,1750,"'+1,750%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,eagles vs jaguars,1700,"'+1,700%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,ravens vs falcons,1700,"'+1,700%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,49ers vs seahawks,1450,"'+1,450%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,georgia vs alabama,1450,"'+1,450%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,texas vs oklahoma,1200,"'+1,200%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,selma blair,1100,"'+1,100%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,giants vs commanders,1050,"'+1,050%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,bears vs packers,1050,"'+1,050%",False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,rj mitte cause of death,850,'+850%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,hurricane tracker,750,'+750%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,hurricane,700,'+700%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,flood watch,350,'+350%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,other mommy,250,'+250%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,brewers,150,'+150%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,guardians,120,'+120%,False,,2026-09-29 2026-10-05,ok
+US,7d,2026-10-13T06:46:13Z,rising,dodgers,120,'+120%,False,,2026-09-29 2026-10-05,ok
