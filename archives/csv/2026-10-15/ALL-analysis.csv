@@ -1,0 +1,96 @@
+﻿국가,순위,단어,기사 수,순위 변동,신규,급부상,관련 검색량 합,관련 트렌드,분석기,기사 총수,원본 수집 UTC
+KR,1,ai,7,15,False,False,13200,로봇 / 띠별 운세 / 앤트로픽 / 한미약품,kiwi,185,2026-10-15T11:21:46Z
+KR,2,두산,7,,True,True,12200,sk그룹 / 두산 베어스 / 준플레이오프 예매 / 양의지,kiwi,185,2026-10-15T11:21:46Z
+KR,3,직원,7,,True,True,2200,기안84 / 멜론 / 장우혁 / 동대문구청,kiwi,185,2026-10-15T11:21:46Z
+KR,4,경찰,5,,True,True,5300,고양이 / 경찰관 / l g 에너지 솔루션,kiwi,185,2026-10-15T11:21:46Z
+KR,5,서울,5,'-4,False,False,20400,보증금 / 독도 / 동대문구청,kiwi,185,2026-10-15T11:21:46Z
+KR,6,lg,4,13,False,False,5300,두산 베어스 / 양의지 / l g 에너지 솔루션,kiwi,185,2026-10-15T11:21:46Z
+KR,7,미국,4,,True,True,3200,박성현 / 이란 / 대학 순위,kiwi,185,2026-10-15T11:21:46Z
+KR,8,acl,4,,True,False,5500,강원 대 프놈펜 크라운 fc / persib bandung vs viettel fc,kiwi,185,2026-10-15T11:21:46Z
+KR,9,lask,4,,True,True,10200,lask 대 리버풀 / lask,kiwi,185,2026-10-15T11:21:46Z
+KR,10,wc,4,,True,True,5200,두산 베어스 / 양의지,kiwi,185,2026-10-15T11:21:46Z
+KR,11,weather,4,,True,True,1500,weather / 天气,kiwi,185,2026-10-15T11:21:46Z
+KR,12,대학,4,,True,True,300,대학 순위 / 스테파니,kiwi,185,2026-10-15T11:21:46Z
+KR,13,승인,4,,True,True,600,원자력 발전소 / 셀트리온,kiwi,185,2026-10-15T11:21:46Z
+KR,14,트럼프,4,,True,True,1200,이란 / 그린란드,kiwi,185,2026-10-15T11:21:46Z
+KR,15,개최,3,,True,False,800,원자력 발전소 / 독도 / 세종특별자치시,kiwi,185,2026-10-15T11:21:46Z
+KR,16,검토,3,,True,True,6000,sk그룹 / 이란,kiwi,185,2026-10-15T11:21:46Z
+KR,17,경기,3,'-15,False,False,12000,lask 대 리버풀 / 준플레이오프 예매,kiwi,185,2026-10-15T11:21:46Z
+KR,18,날씨,3,,True,True,100200,기온 / 독도,kiwi,185,2026-10-15T11:21:46Z
+KR,19,단속,3,,True,True,4000,좌회전 / 준플레이오프 예매,kiwi,185,2026-10-15T11:21:46Z
+KR,20,대상,3,,True,True,4000,아시아나항공 / 좌회전,kiwi,185,2026-10-15T11:21:46Z
+US,1,city,9,,True,True,157000,new york city vs inter miami / psg / lincoln city vs west ham / orlando city vs toronto,rules,196,2026-10-15T11:22:53Z
+US,2,lineup,8,10,False,False,127000,new york city vs inter miami / christian yelich / lincoln city vs west ham / rbny vs d.c. united / atlanta united vs montréal / orlando city vs toronto,rules,196,2026-10-15T11:22:53Z
+US,3,brewers,8,,True,True,1041000,brewers - dodgers / jake bauers / christian yelich / trevor megill / pat murphy,rules,196,2026-10-15T11:22:53Z
+US,4,champion,8,,True,True,573000,roma vs real madrid / psg / aston villa vs fenerbahçe / madrid fc / bo nix stats,rules,196,2026-10-15T11:22:53Z
+US,5,nlcs,8,,True,True,1040200,brewers - dodgers / jake bauers / christian yelich / trevor megill / cleveland weather,rules,196,2026-10-15T11:22:53Z
+US,6,real madrid,8,,True,True,702000,roma vs real madrid / real madrid / madrid fc,rules,196,2026-10-15T11:22:53Z
+US,7,october,7,'-5,False,False,35000,stars vs avalanche / josh allen looking for hailee steinfeld / dengue / leylah fernandez / maria sakkari / nflx stock,rules,196,2026-10-15T11:22:53Z
+US,8,champions league,7,3,False,False,572000,roma vs real madrid / psg / aston villa vs fenerbahçe / madrid fc,rules,196,2026-10-15T11:22:53Z
+US,9,manager,7,1,False,False,22000,don mattingly / josh allen looking for hailee steinfeld / joe espada / pat murphy,rules,196,2026-10-15T11:22:53Z
+US,10,stock,7,,True,True,1400,nflx stock / nvda / api us crude oil inventory drop / be stock,rules,196,2026-10-15T11:22:53Z
+US,11,fox,7,,True,True,1010100,brewers - dodgers / megan fox / fox news poll public opinion trump,rules,196,2026-10-15T11:22:53Z
+US,12,inflation,7,,True,True,20700,inflation / 10 year treasury / nvda,rules,196,2026-10-15T11:22:53Z
+US,13,roma,7,,True,True,702000,roma vs real madrid / real madrid / madrid fc,rules,196,2026-10-15T11:22:53Z
+US,14,match,6,,True,True,140000,new york city vs inter miami / west indies vs india / charlotte vs columbus / lincoln city vs west ham / rbny vs d.c. united / atlanta united vs montréal,rules,196,2026-10-15T11:22:53Z
+US,15,oct,6,,True,True,13500,rbny vs d.c. united / atlanta united vs montréal / orlando city vs toronto / did anyone win the powerball last night / wayne,rules,196,2026-10-15T11:22:53Z
+US,16,netflix,6,,True,True,1500,nflx stock / leighton meester,rules,196,2026-10-15T11:22:53Z
+US,17,future,5,,True,True,26000,inflation / obama presidential center / jim nantz tony romo cbs / two minute drill / alex rodriguez,rules,196,2026-10-15T11:22:53Z
+US,18,dodgers,5,,True,True,1031000,brewers - dodgers / jake bauers / christian yelich / alex rodriguez,rules,196,2026-10-15T11:22:53Z
+US,19,midterm,5,,True,True,25300,inflation / house republican conference / hasan piker / fox news poll public opinion trump,rules,196,2026-10-15T11:22:53Z
+US,20,red,5,,True,True,7600,rbny vs d.c. united / florence pugh / michele tafoya / dylan larkin trade rumors nhl,rules,196,2026-10-15T11:22:53Z
+JP,1,cs,11,2,False,False,5800,ベイスターズ / トラ / 立石正広 / クライマックスシリーズ 結果 / dena / 巨人 監督,mecab,214,2026-10-15T11:23:52Z
+JP,2,監督,7,4,False,False,25000,佐藤輝明 / 佐々木朗希 / ベイスターズ / 巨人 監督 / ムーキー・ベッツ,mecab,214,2026-10-15T11:23:52Z
+JP,3,ドジャース,7,,True,True,504000,ドジャース 対 ブルワーズ / 佐々木朗希 / タリック・スクーバル,mecab,214,2026-10-15T11:23:52Z
+JP,4,スポーツ,6,,True,True,519000,ドジャース 対 ブルワーズ / 織田翔希 / ドラマ / 佐々木朗希 / 永久 輝 せ あ / 石川雅規,mecab,214,2026-10-15T11:23:52Z
+JP,5,掲載,6,,True,True,115500,遊佐浩二 / 帝国ホテル 展示 / 野崎守 / 岡村隆史 / 手間いらず株式会社 / 野村勇,mecab,214,2026-10-15T11:23:52Z
+JP,6,試合,6,7,False,False,3800,レアル・マドリード / 立石正広 / dena / 井上 拓真 / ファジアーノ,mecab,214,2026-10-15T11:23:52Z
+JP,7,dena,6,0,False,False,3500,ベイスターズ / トラ / dena,mecab,214,2026-10-15T11:23:52Z
+JP,8,万博,6,,True,True,600,アンゴラ / セレッソ,mecab,214,2026-10-15T11:23:52Z
+JP,9,プロ,5,'-8,False,False,3600,トラ / 立石正広 / 国債 / dena / 野村勇,mecab,214,2026-10-15T11:23:52Z
+JP,10,ai,5,,True,False,17000,人生シミュレーションゲーム / コアウィーブ / 国債 / トランスコスモス,mecab,214,2026-10-15T11:23:52Z
+JP,11,選手,5,,True,True,4200,ベイスターズ / 立石正広 / 石川雅規 / 山本祐大,mecab,214,2026-10-15T11:23:52Z
+JP,12,コラボ,5,,True,True,20600,バーチャルyoutuber / メドレー / gu ジョジョ,mecab,214,2026-10-15T11:23:52Z
+JP,13,ドラム,5,,True,True,30000,ローランド / 野崎守 / ドラマ,mecab,214,2026-10-15T11:23:52Z
+JP,14,巨人,5,,True,True,3000,ベイスターズ / 巨人 監督 / dena,mecab,214,2026-10-15T11:23:52Z
+JP,15,決定,5,,True,True,6000,フリーダムガンダム / クライマックスシリーズ 結果 / メドレー,mecab,214,2026-10-15T11:23:52Z
+JP,16,連敗,5,,True,False,502100,ドジャース 対 ブルワーズ / 佐々木朗希 / ファジアーノ,mecab,214,2026-10-15T11:23:52Z
+JP,17,流出,5,,True,True,20200,ソースネクスト / 手間いらず株式会社,mecab,214,2026-10-15T11:23:52Z
+JP,18,結婚,5,,True,True,110000,遊佐浩二 / ハ ジョンウ & チャ ジョン ウォン,mecab,214,2026-10-15T11:23:52Z
+JP,19,阪神,5,'-15,False,False,21000,佐藤輝明 / 立石正広,mecab,214,2026-10-15T11:23:52Z
+JP,20,女性,4,,True,True,5200,堺 雅人 / 松本 潤 / 視聴率 / 岡村隆史,mecab,214,2026-10-15T11:23:52Z
+ALL,,개념: 인공지능,14,,,,,KR 7 / US 2 / JP 5,,,
+ALL,,개념: 미국,12,,,,,KR 4 / US 5 / JP 3,,,
+ALL,,개념: 축구,3,,,,,KR 1 / US 1 / JP 1,,,
+ALL,,개념: 한국,11,,,,,KR 8 / US 0 / JP 3,,,
+ALL,,개념: 일본,6,,,,,KR 1 / US 0 / JP 5,,,
+ALL,,개념: 야구,5,,,,,KR 1 / US 0 / JP 4,,,
+ALL,,개념: 엔비디아,5,,,,,KR 2 / US 3 / JP 0,,,
+ALL,,개념: 석유,4,,,,,KR 3 / US 1 / JP 0,,,
+ALL,,개념: 전쟁,2,,,,,KR 1 / US 1 / JP 0,,,
+ALL,,개념: 인플레이션,7,,,,,KR 0 / US 7 / JP 0,,,
+ALL,,개념: 원자력,4,,,,,KR 4 / US 0 / JP 0,,,
+ALL,,개념: 구글,3,,,,,KR 0 / US 0 / JP 3,,,
+ALL,,개념: 태풍,2,,,,,KR 0 / US 0 / JP 2,,,
+ALL,,개념: 중국,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 기후,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 지진,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 선거,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 금리,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 러시아,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 삼성,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 반도체,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 관세,1,,,,,KR 0 / US 0 / JP 1,,,
+KR/US/JP,,공통: roma vs real madrid,3,,,,504000,,,,
+KR/US/JP,,공통: real madrid,3,,,,201200,,,,
+KR/US/JP,,공통: psg,3,,,,51500,,,,
+KR/US/JP,,공통: west indies vs india,3,,,,23000,,,,
+KR/US/JP,,공통: kospi,3,,,,13000,,,,
+US/JP,,공통: lask vs liverpool,2,,,,101000,,,,
+KR/JP,,공통: mlb,2,,,,6000,,,,
+US/JP,,공통: 李嘉诚,2,,,,5500,,,,
+KR/JP,,공통: man city vs psg,2,,,,4000,,,,
+KR/JP,,공통: persib bandung vs viettel fc,2,,,,2500,,,,
+KR/JP,,공통: uefa champions league,2,,,,1000,,,,
+KR/JP,,공통: klasemen as roma vs real madrid,2,,,,700,,,,
+KR/JP,,공통: man city đấu với psg,2,,,,300,,,,

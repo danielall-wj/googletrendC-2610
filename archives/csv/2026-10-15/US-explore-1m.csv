@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-10-15T04:32:33Z,top,weather,100,100,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,google,85,85,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,youtube,60,60,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,amazon,53,53,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,games,48,48,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,nfl,46,46,False,1,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,news,38,38,False,'-1,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,iphone,33,33,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,reddit,32,32,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,walmart,29,29,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,facebook,24,24,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,gmail,24,24,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,chatgpt,23,23,False,0,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,mlb,20,20,False,10,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,translate,19,19,False,3,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,calculator,17,17,False,3,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,target,16,16,False,'-1,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,wordle,16,16,False,5,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,weather tomorrow,15,15,False,3,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,minecraft,13,13,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,blooket,12,12,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,yahoo,11,11,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,dodgers,11,11,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,tiktok,11,11,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,top,home depot,11,11,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,wnba playoffs,3250,"'+3,250%",False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,christa pike,2650,"'+2,650%",False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,rj mitte,1850,"'+1,850%",False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,steelers vs browns,800,'+800%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,susan dell,800,'+800%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,chiefs vs raiders,800,'+800%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,east of eden,700,'+700%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,katie zacharia,600,'+600%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,east of eden netflix,400,'+400%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,roma real madrid,350,'+350%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,ind vs wi,350,'+350%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,nfl standings,350,'+350%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,brewers vs dodgers,350,'+350%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,verity movie,300,'+300%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,foment,300,'+300%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,texas vs oklahoma,300,'+300%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,giants vs commanders,300,'+300%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,nhl,250,'+250%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,nfl scores,180,'+180%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,falcons,170,'+170%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,roma vs real madrid,160,'+160%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,pope leo,120,'+120%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,raiders,120,'+120%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,google classroom,90,'+90%,False,,2026-08-16 2026-09-14,ok
+US,1m,2026-10-15T04:32:33Z,rising,guardians,90,'+90%,False,,2026-08-16 2026-09-14,ok
