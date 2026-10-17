@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-10-17T00:27:34Z,top,weather,100,100,False,0,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,google,85,85,False,0,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,youtube,57,57,False,0,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,amazon,51,51,False,0,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,nfl,47,47,False,3,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,games,46,46,False,'-1,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,reddit,32,32,False,2,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,walmart,30,30,False,2,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,facebook,24,24,False,2,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,gmail,23,23,False,2,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,chatgpt,22,22,False,2,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,mlb,21,21,False,11,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,translate,19,19,False,2,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,calculator,17,17,False,5,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,target,16,16,False,3,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,wordle,16,16,False,8,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,weather tomorrow,14,14,False,5,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,dodgers,13,13,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,minecraft,13,13,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,netflix,13,13,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,blooket,12,12,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,yahoo,11,11,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,gpt,11,11,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,home depot,10,10,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,top,gemini,10,10,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,wnba playoffs,3200,"'+3,200%",False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,christa pike,2900,"'+2,900%",False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,dodgers vs brewers,1700,"'+1,700%",False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,katie zacharia,1200,"'+1,200%",False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,steelers vs browns,900,'+900%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,seahawks vs broncos,850,'+850%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,susan dell,850,'+850%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,chiefs vs raiders,850,'+850%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,east of eden,750,'+750%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,tesla roadster,500,'+500%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,rays vs guardians,500,'+500%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,oregon shooting,400,'+400%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,east of eden netflix,400,'+400%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,texas vs oklahoma,300,'+300%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,giants vs commanders,300,'+300%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,nhl,250,'+250%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,oregon school shooting,250,'+250%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,press secretary,200,'+200%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,nfl scores,180,'+180%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,jimmy carter nashville broadcaster passes away,150,'+150%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,you can see everything,140,'+140%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,dodgers,140,'+140%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,cleveland guardians,120,'+120%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,raiders,120,'+120%,False,,2026-08-18 2026-09-16,ok
+US,1m,2026-10-17T00:27:34Z,rising,broncos,90,'+90%,False,,2026-08-18 2026-09-16,ok
