@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-18T00:03:15Z,top,weather,100,100,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,google,71,71,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,youtube,56,56,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,amazon,46,46,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,nfl,43,43,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,games,39,39,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,news,32,32,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,reddit,29,29,False,1,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,walmart,28,28,False,'-1,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,facebook,25,25,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,dodgers,23,23,False,11,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,gmail,22,22,False,'-1,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,brewers,22,22,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,chatgpt,22,22,False,'-1,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,mlb,20,20,False,'-3,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,translate,16,16,False,'-1,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,weather tomorrow,15,15,False,6,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,costco,15,15,False,'-1,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,wordle,15,15,False,2,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,instagram,14,14,False,0,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,calculator,14,14,False,'-2,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,target,14,14,False,'-4,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,netflix,13,13,False,2,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,tesla,13,13,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,top,seahawks,12,12,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,rj mitte,7550,Breakout,True,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,selma blair,2200,"'+2,200%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,seahawks vs broncos,2200,"'+2,200%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,tesla roadster,2200,"'+2,200%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,brewers vs dodgers,2100,"'+2,100%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,rays vs guardians,2000,"'+2,000%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,ohio state vs indiana,1700,"'+1,700%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,alabama vs tennessee,1550,"'+1,550%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,bills vs rams,1500,"'+1,500%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,auburn vs georgia,1300,"'+1,300%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,eagles vs jaguars,1250,"'+1,250%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,wnba finals,1200,"'+1,200%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,ravens vs falcons,1150,"'+1,150%",False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,49ers vs seahawks,900,'+900%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,giants vs commanders,850,'+850%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,betis vs barcelona,800,'+800%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,florida vs texas,800,'+800%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,penn state vs michigan,750,'+750%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,real betis barcelona,700,'+700%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,champions league,650,'+650%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,bears vs packers,650,'+650%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,katie zacharia,550,'+550%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,you can see everything,400,'+400%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,seahawks,170,'+170%,False,,2026-10-04 2026-10-10,ok
+US,7d,2026-10-18T00:03:15Z,rising,cleveland guardians,130,'+130%,False,,2026-10-04 2026-10-10,ok
