@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-23T00:40:28Z,top,weather,100,100,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,google,75,75,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,youtube,54,54,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,amazon,49,49,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,nfl,45,45,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,games,43,43,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,news,36,36,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,walmart,31,31,False,1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,reddit,30,30,False,'-1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,facebook,25,25,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,chatgpt,23,23,False,1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,gmail,22,22,False,'-1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,nba,18,18,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,translate,17,17,False,1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,tesla,17,17,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,calculator,16,16,False,6,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,wordle,16,16,False,'-1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,costco,16,16,False,3,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,target,15,15,False,4,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,instagram,14,14,False,'-1,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,weather tomorrow,14,14,False,'-3,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,mlb,13,13,False,'-8,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,college football,13,13,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,netflix,13,13,False,'-4,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,top,yahoo,12,12,False,0,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,kim jong un,2750,"'+2,750%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,cowboys vs packers,2400,"'+2,400%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,commanders vs 49ers,2100,"'+2,100%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,76ers vs knicks,2050,"'+2,050%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,psg vs barcelona,2000,"'+2,000%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,wnba finals,1800,"'+1,800%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,bills vs raiders,1450,"'+1,450%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,john anderson,1300,"'+1,300%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,chargers vs chiefs,1200,"'+1,200%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,tesla roadster,1200,"'+1,200%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,bears vs falcons,1150,"'+1,150%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,ohio state vs indiana,1000,"'+1,000%",False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,tom skerritt,900,'+900%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,warriors vs lakers,750,'+750%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,patriots vs bears,750,'+750%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,notre dame vs byu,650,'+650%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,you can see everything,550,'+550%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,elizabeth holmes,500,'+500%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,jalen hurts,350,'+350%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,crystal lake,200,'+200%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,victoria secret,200,'+200%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,nba scores,180,'+180%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,lakers,170,'+170%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,seahawks vs broncos,150,'+150%,False,,2026-10-09 2026-10-15,ok
+US,7d,2026-10-23T00:40:28Z,rising,tesla,150,'+150%,False,,2026-10-09 2026-10-15,ok

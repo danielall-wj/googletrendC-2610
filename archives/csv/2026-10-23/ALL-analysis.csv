@@ -1,0 +1,93 @@
+﻿국가,순위,단어,기사 수,순위 변동,신규,급부상,관련 검색량 합,관련 트렌드,분석기,기사 총수,원본 수집 UTC
+KR,1,kia,7,,True,True,1400,고종욱 / 김도영 / 카를로스 카라스코,kiwi,186,2026-10-23T13:22:15Z
+KR,2,미국,6,,True,True,28200,네이버 / 솔리다임 / 록히드 마틴 / hd현대 / 상장지수 펀드,kiwi,186,2026-10-23T13:22:15Z
+KR,3,ai,5,'-2,False,False,2500,나스닥 / 자격증 / 이세돌,kiwi,186,2026-10-23T13:22:15Z
+KR,4,상장,5,,True,True,25000,최태원 / 삼전 닉스 / 솔리다임,kiwi,186,2026-10-23T13:22:15Z
+KR,5,솔리다임,5,,True,True,25000,최태원 / 삼전 닉스 / 솔리다임,kiwi,186,2026-10-23T13:22:15Z
+KR,6,결혼,5,,True,False,10500,양홍원 / 이혼,kiwi,186,2026-10-23T13:22:15Z
+KR,7,SK하이닉스,4,,True,True,35000,레버리지 / 최태원 / 솔리다임,kiwi,186,2026-10-23T13:22:15Z
+KR,8,etf,4,,True,True,21200,레버리지 / 나스닥 / 상장지수 펀드,kiwi,186,2026-10-23T13:22:15Z
+KR,9,급등,4,,True,True,22200,레버리지 / 록히드 마틴 / 상장지수 펀드,kiwi,186,2026-10-23T13:22:15Z
+KR,10,ngày,4,,True,True,2500,thời tiết ngày mai / xsmb,kiwi,186,2026-10-23T13:22:15Z
+KR,11,김도영,4,,True,True,400,카를로스 카라스코 / 김도영,kiwi,186,2026-10-23T13:22:15Z
+KR,12,방출,4,,True,False,1500,고종욱 / 테오스카 에르난데스,kiwi,186,2026-10-23T13:22:15Z
+KR,13,재산,4,,True,True,10200,한고은 / 김태원,kiwi,186,2026-10-23T13:22:15Z
+KR,14,축구,4,,True,True,30000,박항서 / 홍명보,kiwi,186,2026-10-23T13:22:15Z
+KR,15,프로야구,4,5,False,False,2000,고종욱 / 김광삼,kiwi,186,2026-10-23T13:22:15Z
+KR,16,대학,3,,True,True,31000,이혜영 / 삼전 닉스 / 자격증,kiwi,186,2026-10-23T13:22:15Z
+KR,17,반등,3,,True,True,31000,레버리지 / 삼전 닉스 / 나스닥,kiwi,186,2026-10-23T13:22:15Z
+KR,18,불안,3,,True,True,1700,나스닥 / 테오스카 에르난데스 / 상장지수 펀드,kiwi,186,2026-10-23T13:22:15Z
+KR,19,전망,3,,True,True,3500,록히드 마틴 / 환율 / 형지글로벌,kiwi,186,2026-10-23T13:22:15Z
+KR,20,진출,3,,True,False,2400,조재호 / 금양 / 김도영,kiwi,186,2026-10-23T13:22:15Z
+US,1,bears,11,19,False,False,1216000,patriots / bears game / pats game / kyler gordon / nfc north,rules,185,2026-10-23T13:23:22Z
+US,2,patriots,8,,True,True,1230000,patriots / bears game / rhamondre stevenson / pats game,rules,185,2026-10-23T13:23:22Z
+US,3,nba,7,1,False,False,44000,britt mchenry / lebron james national anthem / charles barkley / thunder schedule,rules,185,2026-10-23T13:23:22Z
+US,4,night,6,,True,True,1117000,patriots / nuggets / pats game / dancing with the stars / thunder schedule,rules,185,2026-10-23T13:23:22Z
+US,5,best,6,7,False,False,322000,nuggets vs thunder / nuggets / demario douglas / betty gilpin,rules,185,2026-10-23T13:23:22Z
+US,6,europa league,6,,True,True,106000,europa league / europa conference league / armando gonzález,rules,185,2026-10-23T13:23:22Z
+US,7,fan,6,,True,True,21500,britt mchenry / oreo / avengers doomsday,rules,185,2026-10-23T13:23:22Z
+US,8,kardashian,6,,True,True,600,kourtney kardashian / khloe kardashian,rules,185,2026-10-23T13:23:22Z
+US,9,nuggets,6,,True,True,300000,nuggets vs thunder / nuggets,rules,185,2026-10-23T13:23:22Z
+US,10,thunder,6,,True,True,202000,nuggets vs thunder / thunder schedule,rules,185,2026-10-23T13:23:22Z
+US,11,football,5,,True,True,1042000,patriots / demario douglas / pats game / liberty vs kennesaw st / 49ers news,rules,185,2026-10-23T13:23:22Z
+US,12,lead,5,,True,True,511000,cavaliers vs 76ers / walmart fruit cocktail lead recall / qqq / elena rybakina,rules,185,2026-10-23T13:23:22Z
+US,13,brown,5,,True,True,206000,bears game / bernie kosar / nfc north standings,rules,185,2026-10-23T13:23:22Z
+US,14,judge,5,,True,True,2400,doj seeks judges recusal immigration cases / rebel wilson / d4vd,rules,185,2026-10-23T13:23:22Z
+US,15,stock,5,,True,True,27000,moderna stock / qqq / cathie wood bargain stocks bought,rules,185,2026-10-23T13:23:22Z
+US,16,ers,5,,True,True,502000,cavaliers vs 76ers / 49ers news,rules,185,2026-10-23T13:23:22Z
+US,17,trump,5,'-15,False,False,40000,lebron james national anthem / britt mchenry,rules,185,2026-10-23T13:23:22Z
+US,18,come,4,,True,True,12100,world series game 1 / juventus / heated rivalry theaters / khloe kardashian,rules,185,2026-10-23T13:23:22Z
+US,19,even,4,,True,True,100600,nuggets / brazil / hilary duff / quinta brunson,rules,185,2026-10-23T13:23:22Z
+US,20,share,4,,True,True,505700,tom skerritt / bernie kosar / gma deals and steals / hilary duff,rules,185,2026-10-23T13:23:22Z
+JP,1,選手,11,5,False,False,75500,水卜麻美 / 中華人民 共和国 / 松岡洸希 / 日ハム 戦力外 / ユヴェントス 対 レンヌ / ニューヨーク・メッツ,mecab,190,2026-10-23T13:24:18Z
+JP,2,週間,9,,True,True,55500,無印良品 / ニュース to / 低気圧 / ミゲル ロハス / ラヴィット! / 間宮祥太朗,mecab,190,2026-10-23T13:24:18Z
+JP,3,天気,7,,True,True,512000,明日の天気 / 低気圧 / 横浜 天気,mecab,190,2026-10-23T13:24:18Z
+JP,4,世界,6,,True,True,54200,水卜麻美 / 興行収入 / 阪急 / 原神 予告番組 / 体重超過,mecab,190,2026-10-23T13:24:18Z
+JP,5,東京,6,,True,True,230000,村上龍 / 今日の気温 / mステ / 東京湾大華火祭,mecab,190,2026-10-23T13:24:18Z
+JP,6,一覧,6,,True,True,24000,中華人民 共和国 / 松岡洸希 / 日ハム 戦力外,mecab,190,2026-10-23T13:24:18Z
+JP,7,戦力外,6,,True,True,4000,松岡洸希 / 日ハム 戦力外,mecab,190,2026-10-23T13:24:18Z
+JP,8,映画,5,,True,False,27200,トムクルーズ / 小野 賢 章 / 興行収入 / 水沢林太郎,mecab,190,2026-10-23T13:24:18Z
+JP,9,アナ,5,,True,True,62000,水卜麻美 / ニュース to / 山崎育三郎オーディション,mecab,190,2026-10-23T13:24:18Z
+JP,10,過去,5,,True,False,212000,松井秀喜 / 東京湾大華火祭 / 横浜 天気,mecab,190,2026-10-23T13:24:18Z
+JP,11,スポニチアネックス,4,,True,True,60500,やす子 子ども食堂 / ラヴィット! / ウォーレン バフェット / 間宮祥太朗,mecab,190,2026-10-23T13:24:18Z
+JP,12,スポーツ,4,0,False,False,103000,瀬戸康史 / 水卜麻美 / 山崎育三郎オーディション / 唐津競艇,mecab,190,2026-10-23T13:24:18Z
+JP,13,出演,4,,True,True,17500,mステ / ラヴィット! / 山崎育三郎オーディション / デジタルハリウッド大学 cm,mecab,190,2026-10-23T13:24:18Z
+JP,14,披露,4,,True,True,11200,mステ / 石川雅規 / デジタルハリウッド大学 cm / 水沢林太郎,mecab,190,2026-10-23T13:24:18Z
+JP,15,新作,4,,True,False,7600,マックチキン / 興行収入 / デジタルハリウッド大学 cm / cod mw4,mecab,190,2026-10-23T13:24:18Z
+JP,16,瞬間,4,,True,False,260500,松井秀喜 / 水卜麻美 / 低気圧 / 間宮祥太朗,mecab,190,2026-10-23T13:24:18Z
+JP,17,ai,4,,True,False,5700,muse / 円 / spcx,mecab,190,2026-10-23T13:24:18Z
+JP,18,おそれ,4,,True,True,22000,低気圧 / 今日の気温 / 阪急,mecab,190,2026-10-23T13:24:18Z
+JP,19,ドラマ,4,,True,True,55200,水卜麻美 / 小栗旬 / 会社員 ドラマ,mecab,190,2026-10-23T13:24:18Z
+JP,20,引退,4,,True,True,12500,ミゲル ロハス / 日ハム 戦力外 / 石川雅規,mecab,190,2026-10-23T13:24:18Z
+ALL,,개념: 야구,14,,,,,KR 11 / US 0 / JP 3,,,
+ALL,,개념: 인공지능,9,,,,,KR 5 / US 0 / JP 4,,,
+ALL,,개념: 한국,7,,,,,KR 6 / US 0 / JP 1,,,
+ALL,,개념: 일본,14,,,,,KR 0 / US 0 / JP 14,,,
+ALL,,개념: 축구,6,,,,,KR 6 / US 0 / JP 0,,,
+ALL,,개념: 미국,6,,,,,KR 6 / US 0 / JP 0,,,
+ALL,,개념: 금리,4,,,,,KR 4 / US 0 / JP 0,,,
+ALL,,개념: 태풍,4,,,,,KR 0 / US 0 / JP 4,,,
+ALL,,개념: 반도체,3,,,,,KR 3 / US 0 / JP 0,,,
+ALL,,개념: 인플레이션,2,,,,,KR 0 / US 0 / JP 2,,,
+ALL,,개념: 중국,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 지진,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 선거,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 엔비디아,1,,,,,KR 0 / US 1 / JP 0,,,
+ALL,,개념: 석유,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 삼성,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 월드컵,1,,,,,KR 0 / US 0 / JP 1,,,
+KR/US/JP,,공통: england cricket team vs sri lanka national cricket team standings,3,,,,6500,,,,
+US/JP,,공통: tom skerritt,2,,,,500100,,,,
+US/JP,,공통: 村上龍,2,,,,200200,,,,
+US/JP,,공통: nasdaq,2,,,,20200,,,,
+US/JP,,공통: flamengo,2,,,,10100,,,,
+KR/JP,,공통: weather,2,,,,7000,,,,
+KR/US,,공통: qqq,2,,,,5100,,,,
+KR/JP,,공통: thời tiết ngày mai,2,,,,4000,,,,
+US/JP,,공통: soxl,2,,,,3000,,,,
+US/JP,,공통: al-faisaly vs al-nassr,2,,,,2200,,,,
+KR/JP,,공통: สภาพอากาศ,2,,,,1200,,,,
+KR/US,,공통: zimbabwe vs afghanistan,2,,,,1100,,,,
+KR/JP,,공통: cve-2026-91403,2,,,,600,,,,
+KR/JP,,공통: 76ers vs cavaliers,2,,,,400,,,,
+KR/JP,,공통: spcx,2,,,,400,,,,

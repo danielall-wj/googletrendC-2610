@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-10-23T00:40:37Z,top,weather,100,100,False,0,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,google,86,86,False,0,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,youtube,53,53,False,0,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,amazon,51,51,False,0,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,nfl,49,49,False,2,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,walmart,30,30,False,4,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,credit,27,27,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,facebook,24,24,False,3,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,gmail,23,23,False,3,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,chatgpt,22,22,False,4,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,mlb,21,21,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,calculator,18,18,False,4,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,translate,18,18,False,2,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,wordle,17,17,False,9,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,chat,17,17,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,email,16,16,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,weather tomorrow,15,15,False,5,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,wnba,14,14,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,minecraft,13,13,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,dodgers,12,12,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,yahoo,12,12,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,blooket,11,11,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,bears,11,11,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,home depot,11,11,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,top,gpt,11,11,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,wnba finals,2550,"'+2,550%",False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,hurricane isaias,2300,"'+2,300%",False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,dodgers vs brewers,1600,"'+1,600%",False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,katie zacharia,1400,"'+1,400%",False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,rays vs guardians,1150,"'+1,150%",False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,susan dell,950,'+950%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,you can see everything,450,'+450%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,wnba,350,'+350%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,krillion,300,'+300%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,nba games,300,'+300%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,john anderson,250,'+250%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,nba scores,250,'+250%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,giants vs commanders,250,'+250%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,warriors vs lakers,250,'+250%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,you can see everything showtimes,250,'+250%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,patriots vs bears,200,'+200%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,atlanta dream,170,'+170%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,timberwolves,150,'+150%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,raiders,130,'+130%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,halloween costumes,130,'+130%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,email marketing for restaurants,130,'+130%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,best budget smartphone,120,'+120%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,tom skerritt,120,'+120%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,nfl scores,110,'+110%,False,,2026-08-24 2026-09-22,ok
+US,1m,2026-10-23T00:40:37Z,rising,bears game,110,'+110%,False,,2026-08-24 2026-09-22,ok
