@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-24T04:32:31Z,top,weather,100,100,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,google,85,85,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,youtube,63,63,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,amazon,58,58,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,games,48,48,False,1,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,nfl,48,48,False,'-1,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,news,38,38,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,walmart,33,33,False,2,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,reddit,33,33,False,'-1,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,facebook,28,28,False,1,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,nba,26,26,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,gmail,26,26,False,2,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,chatgpt,25,25,False,'-1,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,translate,19,19,False,2,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,bears,19,19,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,calculator,18,18,False,2,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,costco,18,18,False,3,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,wordle,18,18,False,1,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,target,17,17,False,4,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,instagram,16,16,False,2,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,flights,15,15,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,weather tomorrow,15,15,False,'-5,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,college football,14,14,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,netflix,14,14,False,0,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,top,cowboys,13,13,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,kim jong un,2950,"'+2,950%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,patriots vs bears,2550,"'+2,550%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,cowboys vs packers,2300,"'+2,300%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,john anderson,2300,"'+2,300%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,76ers vs knicks,2150,"'+2,150%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,commanders vs 49ers,2000,"'+2,000%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,psg vs barcelona,1700,"'+1,700%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,wnba finals,1650,"'+1,650%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,bills vs raiders,1400,"'+1,400%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,tom skerritt,1400,"'+1,400%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,knicks vs celtics,1200,"'+1,200%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,bears vs falcons,1100,"'+1,100%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,chargers vs chiefs,1100,"'+1,100%",False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,ohio state vs indiana,850,'+850%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,76ers,650,'+650%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,rockets vs spurs,550,'+550%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,rays vs brewers,400,'+400%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,nba scores,250,'+250%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,jalen hurts,250,'+250%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,nba games,250,'+250%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,elizabeth holmes,250,'+250%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,lakers,250,'+250%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,you can see everything,200,'+200%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,cowboys,200,'+200%,False,,2026-10-10 2026-10-16,ok
+US,7d,2026-10-24T04:32:31Z,rising,victoria secret,180,'+180%,False,,2026-10-10 2026-10-16,ok

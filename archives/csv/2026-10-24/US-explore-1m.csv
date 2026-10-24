@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-10-24T04:32:41Z,top,weather,100,100,False,0,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,google,85,85,False,0,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,youtube,60,60,False,0,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,amazon,53,53,False,0,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,nfl,49,49,False,1,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,reddit,31,31,False,4,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,walmart,31,31,False,2,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,facebook,26,26,False,4,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,gmail,26,26,False,4,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,chatgpt,23,23,False,4,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,mlb,21,21,False,12,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,translate,19,19,False,3,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,calculator,19,19,False,3,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,wordle,17,17,False,7,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,target,16,16,False,3,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,email,16,16,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,weather tomorrow,16,16,False,5,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,minecraft,14,14,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,bears,13,13,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,yahoo,12,12,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,nba,12,12,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,blooket,12,12,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,home depot,11,11,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,gemini,10,10,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,top,cvs,10,10,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,wnba finals,2550,"'+2,550%",False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,hurricane isaias,2350,"'+2,350%",False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,dodgers vs brewers,1500,"'+1,500%",False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,katie zacharia,1400,"'+1,400%",False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,susan dell,1000,"'+1,000%",False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,patriots vs bears,750,'+750%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,john anderson,450,'+450%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,you can see everything,450,'+450%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,clayface,400,'+400%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,nba games,400,'+400%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,76ers,400,'+400%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,nba scores,350,'+350%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,krillion,300,'+300%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,brewers game,250,'+250%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,texas vs oklahoma,250,'+250%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,rays vs brewers,250,'+250%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,celtics,250,'+250%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,tom skerritt,250,'+250%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,knicks vs celtics,200,'+200%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,timberwolves,200,'+200%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,tampa bay rays,190,'+190%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,world series,160,'+160%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,world series 2026,130,'+130%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,lakers,130,'+130%,False,,2026-08-25 2026-09-23,ok
+US,1m,2026-10-24T04:32:41Z,rising,nfl scores,130,'+130%,False,,2026-08-25 2026-09-23,ok
