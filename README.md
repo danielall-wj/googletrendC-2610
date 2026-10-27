@@ -107,11 +107,11 @@ cp .env.example .env.local  # 최초 설정 시에만; 이미 설정된 파일�
 
 ## GitHub / Vercel 연결
 
-**코덱스 전용 비공개 저장소와 Vercel 프로젝트를 연결했습니다.**
+**코덱스 전용 공개 저장소와 Vercel 프로젝트를 연결했습니다.** (2026-10-27 `frontierall` → `danielall-wj` 계정으로 이전, public 전환)
 
-- GitHub: https://github.com/frontierall/googletrendC-2610
+- GitHub: https://github.com/danielall-wj/googletrendC-2610
 - 사이트: https://googletrendc-2610.vercel.app
-- Actions: https://github.com/frontierall/googletrendC-2610/actions
+- Actions: https://github.com/danielall-wj/googletrendC-2610/actions
 
 `googletrend-2610` 클로드 프로젝트와 별개입니다. 자동 수집·18시 CSV 보관·19시 발송은 이 새 저장소에서 실행됩니다. 아래는 설정 재현 방법입니다.
 
