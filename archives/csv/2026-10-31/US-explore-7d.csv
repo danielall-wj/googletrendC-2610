@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-10-30T05:41:16Z,top,google,100,100,False,1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,weather,98,98,False,'-1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,youtube,73,73,False,0,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,amazon,63,63,False,0,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,nfl,57,57,False,0,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,games,55,55,False,0,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,ai,45,45,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,brewers,44,44,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,news,43,43,False,'-2,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,walmart,40,40,False,'-2,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,reddit,37,37,False,'-2,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,facebook,32,32,False,'-2,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,nba,31,31,False,0,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,gmail,30,30,False,'-2,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,chatgpt,29,29,False,'-4,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,world series,28,28,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,translate,22,22,False,'-3,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,wordle,21,21,False,'-1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,costco,20,20,False,'-1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,target,20,20,False,'-1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,calculator,20,20,False,'-6,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,mlb,19,19,False,'-1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,instagram,18,18,False,'-1,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,cowboys,17,17,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,top,eagles,16,16,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,patrick stewart,7900,Breakout,True,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,irs 5000 dollar adoption refund,3500,"'+3,500%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,brewers vs rays,3200,"'+3,200%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,cowboys vs eagles,2400,"'+2,400%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,donnie iris,2150,"'+2,150%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,chiefs vs seahawks,1850,"'+1,850%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,panthers vs packers,1850,"'+1,850%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,49ers vs falcons,1600,"'+1,600%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,packers vs lions,1250,"'+1,250%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,troy aikman lawrence mccutcheon tribute,1250,"'+1,250%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,ballon d'or,1200,"'+1,200%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,steelers vs saints,1050,"'+1,050%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,israel elections,1000,"'+1,000%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,barcelona vs real madrid,1000,"'+1,000%",False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,brewers game,950,'+950%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,sir patrick stewart,650,'+650%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,brewers,550,'+550%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,milwaukee brewers,300,'+300%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,world series 2026,250,'+250%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,world series,250,'+250%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,seahawks,190,'+190%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,clayface,120,'+120%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,spirit halloween,90,'+90%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,nba scores,90,'+90%,False,,2026-10-16 2026-10-22,ok
+US,7d,2026-10-30T05:41:16Z,rising,eagles,50,'+50%,False,,2026-10-16 2026-10-22,ok
