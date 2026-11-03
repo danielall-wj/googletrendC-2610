@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-11-03T06:42:17Z,top,weather,100,100,False,0,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,google,85,85,False,0,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,youtube,64,64,False,0,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,amazon,56,56,False,0,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,nfl,52,52,False,1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,halloween,50,50,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,walmart,34,34,False,2,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,apple,34,34,False,'-1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,facebook,28,28,False,1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,gmail,25,25,False,1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,chatgpt,24,24,False,1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,nba,19,19,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,translate,19,19,False,0,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,brewers,18,18,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,wordle,17,17,False,3,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,costco,17,17,False,'-2,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,calculator,17,17,False,'-2,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,instagram,17,17,False,1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,email,17,17,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,sports,16,16,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,target,16,16,False,'-1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,weather tomorrow,16,16,False,'-1,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,bears,13,13,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,minecraft,13,13,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,top,yahoo,13,13,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,wnba finals,3150,"'+3,150%",False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,native american heritage month,2700,"'+2,700%",False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,brewers vs rays,1700,"'+1,700%",False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,jack campbell,1200,"'+1,200%",False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,nba scores,900,'+900%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,learjet,700,'+700%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,cowboys vs eagles,700,'+700%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,76ers,700,'+700%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,nba games,650,'+650%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,bears vs seahawks,650,'+650%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,barcelona vs real madrid,600,'+600%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,world series 2026,600,'+600%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,plane crash florida,500,'+500%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,you can see everything,500,'+500%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,knicks,500,'+500%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,brewers game,500,'+500%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,jack campbell injury,400,'+400%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,lakers,350,'+350%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,where to vote,300,'+300%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,brewers,250,'+250%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,nba,250,'+250%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,spirit halloween,200,'+200%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,learjet 60,200,'+200%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,tornado watch,200,'+200%,False,,2026-09-02 2026-10-02,ok
+US,1m,2026-11-03T06:42:17Z,rising,halloween,170,'+170%,False,,2026-09-02 2026-10-02,ok

@@ -1,0 +1,88 @@
+﻿국가,순위,단어,기사 수,순위 변동,신규,급부상,관련 검색량 합,관련 트렌드,분석기,기사 총수,원본 수집 UTC
+KR,1,ai,7,0,False,False,21400,중앙일보 / 저기압 / 주차 / 뇌 / 김제시 / mu,kiwi,155,2026-11-03T16:10:11Z
+KR,2,삼성,6,10,False,False,126000,삼성 대 kt / 김자연 / 옌스 카스트로프 / 야구중계,kiwi,155,2026-11-03T16:10:11Z
+KR,3,개발,6,'-1,False,False,1600,뇌 / 교수 / 제네시스 gv90,kiwi,155,2026-11-03T16:10:11Z
+KR,4,경기,5,0,False,False,105400,삼성 대 kt / 안세영 / 지소연 / 코너 맥그리거,kiwi,155,2026-11-03T16:10:11Z
+KR,5,중계,5,,True,True,101000,삼성 대 kt / 야구중계,kiwi,155,2026-11-03T16:10:11Z
+KR,6,U.S.,4,,True,True,500,vix / small business / midterm elections 2026,kiwi,155,2026-11-03T16:10:11Z
+KR,7,글로벌,4,2,False,False,21000,비야 디 / 원자로 / 버추얼 아이돌,kiwi,155,2026-11-03T16:10:11Z
+KR,8,기술,4,'-3,False,False,1300,뇌 / 삼성중공업 / 제네시스 gv90,kiwi,155,2026-11-03T16:10:11Z
+KR,9,small,4,,True,True,400,사토시 / small business,kiwi,155,2026-11-03T16:10:11Z
+KR,10,stock,4,'-4,False,False,400,mu / tqqq,kiwi,155,2026-11-03T16:10:11Z
+KR,11,부동산,4,,True,True,700,폰지 사기 / 종합부동산세,kiwi,155,2026-11-03T16:10:11Z
+KR,12,인도,4,'-4,False,False,5200,안세영 / 삼성중공업,kiwi,155,2026-11-03T16:10:11Z
+KR,13,로봇,3,'-3,False,False,5600,주차 / 월악산 / 제네시스 gv90,kiwi,155,2026-11-03T16:10:11Z
+KR,14,실적,3,'-1,False,False,3500,창신메모리테크놀로지 / 잠수함 / 나스닥 100,kiwi,155,2026-11-03T16:10:11Z
+KR,15,애플,3,,True,False,4500,창신메모리테크놀로지 / 폴더 블 스마트 폰 / 나스닥 100,kiwi,155,2026-11-03T16:10:11Z
+KR,16,businesses,3,,True,True,400,사토시 / small business,kiwi,155,2026-11-03T16:10:11Z
+KR,17,kt,3,,True,True,100100,삼성 대 kt / 이재현,kiwi,155,2026-11-03T16:10:11Z
+KR,18,결혼,3,,True,True,20200,김자연 / 김원훈,kiwi,155,2026-11-03T16:10:11Z
+KR,19,급락,3,,True,False,1500,필라델피아 반도체 지수 / 나스닥 100,kiwi,155,2026-11-03T16:10:11Z
+KR,20,서비스,3,,True,False,25000,테슬라 모델 y / 주차,kiwi,155,2026-11-03T16:10:11Z
+US,1,midterm,11,,True,True,754700,midterm elections results / tornado watch / texas senate race / prop 43 / voting centers near me / scott colom,rules,135,2026-11-03T16:11:18Z
+US,2,november,10,'-1,False,False,1260700,seahawks vs bears / suns vs warriors / jazz vs spurs / sports / disney+ / robin montgomery,rules,135,2026-11-03T16:11:18Z
+US,3,monday,7,0,False,False,1127500,seahawks vs bears / thunder vs cavaliers / golden knights vs bruins / anthem / dow jones industrial average / robin montgomery,rules,135,2026-11-03T16:11:18Z
+US,4,senate,7,,True,True,552500,midterm elections results / texas senate race / senate election results today / scott colom,rules,135,2026-11-03T16:11:18Z
+US,5,midterm election,6,,True,True,504700,midterm elections results / voting centers near me / prop 43 / scott colom / how to vote online,rules,135,2026-11-03T16:11:18Z
+US,6,bears,6,'-4,False,False,1006000,seahawks vs bears / anthem / khalil mack,rules,135,2026-11-03T16:11:18Z
+US,7,ballot,5,,True,True,6200,senate election results today / prop 43 / where can i drop off my ballot / how to vote online,rules,135,2026-11-03T16:11:18Z
+US,8,open,5,,True,False,5000,wvu basketball / voting centers near me / robin montgomery / scott colom,rules,135,2026-11-03T16:11:18Z
+US,9,polls,5,,True,True,552500,midterm elections results / texas senate race / voting centers near me / scott colom,rules,135,2026-11-03T16:11:18Z
+US,10,state,5,,True,False,303000,tornado watch / suns vs warriors / prop 43 / mta,rules,135,2026-11-03T16:11:18Z
+US,11,dies,5,,True,True,500000,matt wright / rhabdomyolysis / jesus de miguel,rules,135,2026-11-03T16:11:18Z
+US,12,election results,5,,True,True,502500,midterm elections results / senate election results today / scott colom,rules,135,2026-11-03T16:11:18Z
+US,13,market,5,'-6,False,False,12200,disney+ / dow jones industrial average / jil teichmann,rules,135,2026-11-03T16:11:18Z
+US,14,seahawks,5,5,False,False,1005000,seahawks vs bears / anthem,rules,135,2026-11-03T16:11:18Z
+US,15,guide,4,,True,True,102700,jazz vs spurs / voting centers near me / scott colom / how to vote online,rules,135,2026-11-03T16:11:18Z
+US,16,during,4,,True,True,500000,dancing with the stars / rhabdomyolysis / jesus de miguel,rules,135,2026-11-03T16:11:18Z
+US,17,fan,4,,True,False,15200,nba standings / novak djokovic / dead by daylight,rules,135,2026-11-03T16:11:18Z
+US,18,match,4,'-7,False,False,250000,jazz vs spurs / jesus de miguel / newcastle vs everton,rules,135,2026-11-03T16:11:18Z
+US,19,million,4,'-7,False,False,51200,texas senate race / khalil mack / california lottery,rules,135,2026-11-03T16:11:18Z
+US,20,voting,4,,True,True,202500,tornado watch / where can i drop off my ballot / scott colom,rules,135,2026-11-03T16:11:18Z
+JP,1,歌謡祭,6,,True,True,50500,fns歌謡祭 / ベストヒット歌謡祭 2026,mecab,124,2026-11-03T16:12:15Z
+JP,2,登場,5,,True,False,22600,キングギドラ / 湯浅大 / 首里城復興祭 / apex アプデ,mecab,124,2026-11-03T16:12:15Z
+JP,3,tbs,5,3,False,False,2000,ラヴィット レギュラー / 齋藤慎太郎,mecab,124,2026-11-03T16:12:15Z
+JP,4,天気,5,3,False,False,10200,早期天候情報 / 晴れの特異日,mecab,124,2026-11-03T16:12:15Z
+JP,5,映画,5,7,False,False,120000,泉ピン子 / キングギドラ,mecab,124,2026-11-03T16:12:15Z
+JP,6,販売,4,,True,True,23500,マック新作 / ぞうさんパクパクよしたか トラブル / アソビュー / ローソンチケット,mecab,124,2026-11-03T16:12:15Z
+JP,7,チケット,4,,True,True,2000,アソビュー / ベストヒット歌謡祭 2026 / ローソンチケット,mecab,124,2026-11-03T16:12:15Z
+JP,8,人気,4,,True,True,900,天王寺動物園 / 井戸田潤 / 平子祐希,mecab,124,2026-11-03T16:12:15Z
+JP,9,披露,4,,True,True,1200,首里城復興祭 / ベストヒット歌謡祭 2026 / 井戸田潤,mecab,124,2026-11-03T16:12:15Z
+JP,10,サイト,3,,True,True,1700,アソビュー / ローソンチケット / リセンヌ,mecab,124,2026-11-03T16:12:15Z
+JP,11,スポニチアネックス,3,,True,False,21500,ベティママ / 齋藤慎太郎 / 防府競輪,mecab,124,2026-11-03T16:12:15Z
+JP,12,出演,3,'-1,False,False,22200,結婚発表 / 役所広司 / めざましテレビ,mecab,124,2026-11-03T16:12:15Z
+JP,13,大会,3,2,False,False,21500,全日本剣道選手権大会 / 齋藤慎太郎 / 防府競輪,mecab,124,2026-11-03T16:12:15Z
+JP,14,掲載,3,2,False,False,3100,ぞうさんパクパクよしたか トラブル / ラヴィット レギュラー / yoh,mecab,124,2026-11-03T16:12:15Z
+JP,15,決定,3,'-7,False,False,21200,全日本剣道選手権大会 / 元木大介 / めざましテレビ,mecab,124,2026-11-03T16:12:15Z
+JP,16,注意,3,,True,False,900,ベストヒット歌謡祭 2026 / ランピースキン病 / 晴れの特異日,mecab,124,2026-11-03T16:12:15Z
+JP,17,移籍,3,,True,False,3200,j3 順位 / 中日 戦力外 / 平子祐希,mecab,124,2026-11-03T16:12:15Z
+JP,18,解説,3,1,False,False,13000,早期天候情報 / 野村證券 / 原田美枝子,mecab,124,2026-11-03T16:12:15Z
+JP,19,th,3,,True,False,400,nepal premier league / リセンヌ,mecab,124,2026-11-03T16:12:15Z
+JP,20,なし,3,,True,True,1200,スペイン列車衝突事故 / ランピースキン病,mecab,124,2026-11-03T16:12:15Z
+ALL,,개념: 일본,16,,,,,KR 0 / US 1 / JP 15,,,
+ALL,,개념: 인공지능,9,,,,,KR 8 / US 0 / JP 1,,,
+ALL,,개념: 야구,5,,,,,KR 3 / US 0 / JP 2,,,
+ALL,,개념: 미국,5,,,,,KR 2 / US 3 / JP 0,,,
+ALL,,개념: 농구,4,,,,,KR 0 / US 3 / JP 1,,,
+ALL,,개념: 중국,4,,,,,KR 3 / US 0 / JP 1,,,
+ALL,,개념: 러시아,3,,,,,KR 2 / US 1 / JP 0,,,
+ALL,,개념: 축구,2,,,,,KR 1 / US 1 / JP 0,,,
+ALL,,개념: 선거,17,,,,,KR 0 / US 17 / JP 0,,,
+ALL,,개념: 삼성,9,,,,,KR 9 / US 0 / JP 0,,,
+ALL,,개념: 한국,8,,,,,KR 8 / US 0 / JP 0,,,
+ALL,,개념: 원자력,4,,,,,KR 4 / US 0 / JP 0,,,
+ALL,,개념: 비트코인,3,,,,,KR 3 / US 0 / JP 0,,,
+ALL,,개념: 반도체,3,,,,,KR 3 / US 0 / JP 0,,,
+ALL,,개념: 기후,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 인플레이션,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 대만,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 태풍,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 우크라이나,1,,,,,KR 0 / US 1 / JP 0,,,
+ALL,,개념: 전쟁,1,,,,,KR 1 / US 0 / JP 0,,,
+KR/US/JP,,공통: jesus de miguel,3,,,,103000,,,,
+KR/US/JP,,공통: cnn,3,,,,51500,,,,
+US/JP,,공통: newcastle vs everton,2,,,,50200,,,,
+KR/JP,,공통: where to vote,2,,,,2200,,,,
+US/JP,,공통: karlo matković,2,,,,2200,,,,
+US/JP,,공통: meleek thomas,2,,,,2200,,,,
+KR/JP,,공통: pakhtakor fc vs al-nassr standings,2,,,,400,,,,
