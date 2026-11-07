@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,3m,2026-11-07T00:08:37Z,top,you,100,100,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,weather,42,42,False,0,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,google,36,36,False,0,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,youtube,24,24,False,1,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,amazon,22,22,False,'-1,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,nfl,16,16,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,news,16,16,False,0,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,apple,15,15,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,walmart,14,14,False,3,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,reddit,13,13,False,0,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,facebook,11,11,False,2,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,gmail,10,10,False,5,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,chatgpt,10,10,False,5,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,costco,7,7,False,8,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,translate,7,7,False,10,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,calculator,7,7,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,target,7,7,False,4,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,mlb,7,7,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,instagram,7,7,False,0,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,wordle,7,7,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,weather tomorrow,6,6,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,netflix,6,6,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,maps,5,5,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,yahoo,5,5,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,top,home depot,5,5,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,nfl scores,2350,"'+2,350%",False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,wnba playoffs,1650,"'+1,650%",False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,hayden panettiere,1400,"'+1,400%",False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,dolly parton,1350,"'+1,350%",False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,nfl games,1250,"'+1,250%",False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,lindsay clancy,800,'+800%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,spirit halloween,700,'+700%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,nfl standings,650,'+650%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,college football,550,'+550%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,alabama football,550,'+550%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,nfl schedule,500,'+500%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,nfl,500,'+500%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,election results,500,'+500%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,cowboys,450,'+450%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,steelers,400,'+400%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,labor day,400,'+400%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,google classroom,350,'+350%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,patriots,350,'+350%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,eagles,300,'+300%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,blooket join,200,'+200%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,desmos,200,'+200%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,blooket,200,'+200%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,ap classroom,200,'+200%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,clever,190,'+190%,False,,2026-05-07 2026-08-06,ok
+US,3m,2026-11-07T00:08:37Z,rising,dallas cowboys,190,'+190%,False,,2026-05-07 2026-08-06,ok
