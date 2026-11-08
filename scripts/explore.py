@@ -4,6 +4,7 @@ import argparse
 import calendar
 import json
 import sys
+import time
 from datetime import timedelta
 from pathlib import Path
 from common import BASE, GEOS, ROOT, Client, decode_json, load_json, write_json, stamp, utcnow
@@ -46,7 +47,20 @@ def parse_ranked(payload):
     return lists
 
 
-def related(client, geo, time_range):
+def related(client, geo, time_range, attempts=3):
+    # The first call after the cookie-priming page load sometimes returns a non-JSON or widget-less
+    # body on CI runners; retry after a pause instead of failing the whole period.
+    for attempt in range(attempts):
+        try:
+            return _related_once(client, geo, time_range)
+        except ValueError as exc:
+            if attempt == attempts - 1:
+                raise
+            print(f'Retry Explore {geo} {time_range}: {type(exc).__name__}: {str(exc)[:80]}', file=sys.stderr, flush=True)
+            time.sleep(4 * (attempt + 1))
+
+
+def _related_once(client, geo, time_range):
     request = {'comparisonItem': [{'geo': geo, 'time': time_range}], 'category': 0, 'property': ''}
     raw = client.get(BASE + '/trends/api/explore', params={'hl': GEOS[geo][0], 'tz': -540, 'req': json.dumps(request, separators=(',', ':'))})
     widgets = decode_json(raw).get('widgets', [])
@@ -105,7 +119,7 @@ def main():
                 print(f'Saved {geo}/{period}: top {len(top)}, rising {len(rising)}', flush=True)
             except Exception as exc:
                 errors.append({'source': 'explore', 'geo': geo, 'period': period, 'error': type(exc).__name__})
-                print(f'FAILED Explore {geo}/{period}: {type(exc).__name__}', file=sys.stderr, flush=True)
+                print(f'FAILED Explore {geo}/{period}: {type(exc).__name__}: {str(exc)[:120]}', file=sys.stderr, flush=True)
     old_errors = (load_json(args.output / 'index.json', {}) or {}).get('errors', [])
     build_index(args.output, [e for e in old_errors if not e['source'].startswith('explore')] + errors)
     return 1 if errors else 0
