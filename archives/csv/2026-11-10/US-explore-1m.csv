@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-11-09T06:14:45Z,top,weather,100,100,False,1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,google,79,79,False,'-1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,youtube,59,59,False,0,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,amazon,53,53,False,1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,nfl,49,49,False,'-1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,election,44,44,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,halloween,43,43,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,walmart,34,34,False,2,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,election results,27,27,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,facebook,27,27,False,2,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,chatgpt,24,24,False,2,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,gmail,24,24,False,'-1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,nba,20,20,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,translate,18,18,False,1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,calculator,17,17,False,1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,chat,17,17,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,target,16,16,False,2,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,wordle,16,16,False,2,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,weather tomorrow,15,15,False,3,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,bears,14,14,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,netflix,13,13,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,home depot,12,12,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,gpt,11,11,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,blooket,10,10,False,'-1,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,top,gemini,10,10,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,election results,8350,Breakout,True,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,2026 us election results,4850,"'+4,850%",False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,mississippi senate race,2550,"'+2,550%",False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,brewers vs rays,1700,"'+1,700%",False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,voting results,1600,"'+1,600%",False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,election,1300,"'+1,300%",False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,2026 united states elections,1150,"'+1,150%",False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,nba scores,900,'+900%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,abdul el-sayed,650,'+650%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,76ers,600,'+600%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,cowboys vs eagles,550,'+550%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,barcelona vs real madrid,550,'+550%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,world series 2026,550,'+550%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,you can see everything,500,'+500%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,cowboys vs colts,400,'+400%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,lakers,400,'+400%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,nba standings,400,'+400%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,israel elections,350,'+350%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,packers vs patriots,300,'+300%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,buccaneers vs bears,300,'+300%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,diwali,300,'+300%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,raiders vs 49ers,300,'+300%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,bengals vs falcons,300,'+300%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,giants vs eagles,250,'+250%,False,,2026-09-08 2026-10-08,ok
+US,1m,2026-11-09T06:14:45Z,rising,nba,250,'+250%,False,,2026-09-08 2026-10-08,ok

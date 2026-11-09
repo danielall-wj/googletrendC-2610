@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-11-09T06:14:36Z,top,election,100,100,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,election results,74,74,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,weather,54,54,False,'-2,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,google,46,46,False,'-1,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,youtube,36,36,False,'-1,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,amazon,32,32,False,'-1,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,nfl,29,29,False,0,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,games,28,28,False,'-2,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,news,27,27,False,'-1,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,election results 2026,22,22,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,ai,22,22,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,walmart,20,20,False,'-3,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,reddit,19,19,False,'-2,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,facebook,16,16,False,'-1,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,trump,15,15,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,gmail,15,15,False,0,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,chatgpt,14,14,False,'-2,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,nba,14,14,False,'-4,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,2026 us election results,13,13,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,bears,13,13,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,costco,11,11,False,'-2,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,target,11,11,False,0,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,translate,11,11,False,'-5,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,midterm elections,11,11,False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,top,wordle,11,11,False,'-5,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,2026 us election results,20500,Breakout,True,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,election results 2026,9700,Breakout,True,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,mississippi senate race,8950,Breakout,True,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,election results,5300,Breakout,True,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,mississippi election results,4900,"'+4,900%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,2026 united states elections,4250,"'+4,250%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,election results so far,4000,"'+4,000%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,texas election results,3700,"'+3,700%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,midterm election results,3250,"'+3,250%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,michigan election results,3100,"'+3,100%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,2026 united states senate elections,2750,"'+2,750%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,raiders vs 49ers,2000,"'+2,000%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,scott colom,1900,"'+1,900%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,buccaneers vs bears,1850,"'+1,850%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,packers vs patriots,1700,"'+1,700%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,cowboys vs colts,1650,"'+1,650%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,giants vs eagles,1550,"'+1,550%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,democratic party,1550,"'+1,550%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,bears vs seahawks,1550,"'+1,550%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,alaska senate race,1550,"'+1,550%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,gina hinojosa,1300,"'+1,300%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,russell brand,1250,"'+1,250%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,browns vs saints,1250,"'+1,250%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,bengals vs falcons,1200,"'+1,200%",False,,2026-10-26 2026-11-01,ok
+US,7d,2026-11-09T06:14:36Z,rising,broncos vs panthers,1150,"'+1,150%",False,,2026-10-26 2026-11-01,ok

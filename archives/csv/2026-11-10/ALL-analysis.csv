@@ -1,0 +1,92 @@
+﻿국가,순위,단어,기사 수,순위 변동,신규,급부상,관련 검색량 합,관련 트렌드,분석기,기사 총수,원본 수집 UTC
+KR,1,계약,5,0,False,False,23100,도란 / 뉴진스 / 데이터 센터 / 트로이 왓슨,kiwi,150,2026-11-09T18:43:26Z
+KR,2,행사,5,,True,True,200700,이준호 / 숲 / 버거킹,kiwi,150,2026-11-09T18:43:26Z
+KR,3,데이터센터,5,0,False,False,1200,데이터 센터 / 골드만삭스,kiwi,150,2026-11-09T18:43:26Z
+KR,4,우승,5,16,False,False,21000,김도영 / 박승규,kiwi,150,2026-11-09T18:43:26Z
+KR,5,연예,4,,True,False,222000,이준호 / 김연아 / 윤여정,kiwi,150,2026-11-09T18:43:26Z
+KR,6,우려,4,0,False,False,8000,잠수함 / 뉴진스 / 경제,kiwi,150,2026-11-09T18:43:26Z
+KR,7,현실,4,,True,False,5600,잠수함 / 의약품 / 1인당 국민소득,kiwi,150,2026-11-09T18:43:26Z
+KR,8,fa,4,4,False,False,20100,홍창기 / 트로이 왓슨,kiwi,150,2026-11-09T18:43:26Z
+KR,9,뉴진스,4,5,False,False,7000,한남더힐 아파트 / 뉴진스,kiwi,150,2026-11-09T18:43:26Z
+KR,10,반등,4,,True,True,40000,닥터x: 하얀 마피아의 시대 / 코스피,kiwi,150,2026-11-09T18:43:26Z
+KR,11,ceo,3,,True,True,70200,엔비디아 주가 / 최태원 / 골드만삭스,kiwi,150,2026-11-09T18:43:26Z
+KR,12,lg,3,'-5,False,False,20300,홍창기 / 부산 kcc 이지스 / 트로이 왓슨,kiwi,150,2026-11-09T18:43:26Z
+KR,13,가족,3,,True,True,1300,고양이 / 버거킹 / 대한민국 해군,kiwi,150,2026-11-09T18:43:26Z
+KR,14,미국,3,'-12,False,False,1300,데이터 센터 / 골드만삭스 / 트로이 왓슨,kiwi,150,2026-11-09T18:43:26Z
+KR,15,아파트,3,4,False,False,7200,압구정동 / 매일경제신문 / 용산공원,kiwi,150,2026-11-09T18:43:26Z
+KR,16,전망,3,,True,True,1700,고양이 / 의약품 / 골드만삭스,kiwi,150,2026-11-09T18:43:26Z
+KR,17,투자,3,,True,False,2200,경제 / 데이터 센터 / 골드만삭스,kiwi,150,2026-11-09T18:43:26Z
+KR,18,lpl,3,,True,False,25000,도란 / blg,kiwi,150,2026-11-09T18:43:26Z
+KR,19,도전,3,'-11,False,False,2500,매일경제신문 / 로켓,kiwi,150,2026-11-09T18:43:26Z
+KR,20,마음,3,,True,True,25000,김도영 / 김장훈,kiwi,150,2026-11-09T18:43:26Z
+US,1,nfl,12,0,False,False,551500,chargers / 49ers / browns / baker mayfield / jonathan taylor trade / davon godchaux,rules,141,2026-11-09T18:44:31Z
+US,2,return,9,,True,True,25000,detroit / ncis origins season 3 ending / carson beck / dianna russini / princess of wales / jamal musiala,rules,141,2026-11-09T18:44:31Z
+US,3,basketball,6,,True,True,3000,juju watkins / college basketball rankings / ap top 25 basketball,rules,141,2026-11-09T18:44:31Z
+US,4,trade deadline,5,,True,True,420500,cowboys / 49ers / jonathan taylor trade / budda baker,rules,141,2026-11-09T18:44:31Z
+US,5,buccaneers,5,,True,False,1220000,buccaneers vs bears / nfc south standings / baker mayfield,rules,141,2026-11-09T18:44:31Z
+US,6,power,5,13,False,False,500700,atlético vs barcelona / college basketball rankings / rings of power season 3 release date,rules,141,2026-11-09T18:44:31Z
+US,7,kings,5,3,False,False,100500,heat vs kings / zach lavine,rules,141,2026-11-09T18:44:31Z
+US,8,despite,4,,True,True,201700,nfc south standings / paul bettany visionquest marvel / clayface box office / rings of power season 3 release date,rules,141,2026-11-09T18:44:31Z
+US,9,claim,4,,True,True,501100,atlético vs barcelona / paul bettany visionquest marvel / car accident lawyer,rules,141,2026-11-09T18:44:31Z
+US,10,eye,4,,True,True,1400,ozempic zepbound eye risk warnings / claressa shields / caroline dubois,rules,141,2026-11-09T18:44:31Z
+US,11,bears,4,'-8,False,False,1020000,buccaneers vs bears / baker mayfield,rules,141,2026-11-09T18:44:31Z
+US,12,jonathan taylor,4,,True,True,20500,jonathan taylor trade / budda baker,rules,141,2026-11-09T18:44:31Z
+US,13,linette,4,,True,False,2000,janice tjen / magda linette,rules,141,2026-11-09T18:44:31Z
+US,14,nfc south,4,,True,True,220000,nfc south standings / baker mayfield,rules,141,2026-11-09T18:44:31Z
+US,15,nfl trade,4,,True,False,200500,49ers / budda baker,rules,141,2026-11-09T18:44:31Z
+US,16,patriots,4,,True,False,500500,patriots / budda baker,rules,141,2026-11-09T18:44:31Z
+US,17,poll,4,,True,True,1000,college basketball rankings / ap top 25 basketball,rules,141,2026-11-09T18:44:31Z
+US,18,ranking,4,,True,True,1000,college basketball rankings / ap top 25 basketball,rules,141,2026-11-09T18:44:31Z
+US,19,short,4,,True,True,1002000,buccaneers vs bears / ncis origins season 3 ending,rules,141,2026-11-09T18:44:31Z
+US,20,women,4,,True,False,2500,juju watkins / ap top 25 basketball,rules,141,2026-11-09T18:44:31Z
+JP,1,スポーツ,6,11,False,False,71100,vivant 野崎 / 中村ゆり / 水卜アナ / 和田由紀子 / 嶺井博希,mecab,145,2026-11-09T18:45:25Z
+JP,2,調査,6,,True,True,45200,エヌビディア / nvidia / 活断層 / 太田光,mecab,145,2026-11-09T18:45:25Z
+JP,3,天気,6,7,False,False,20200,今日の天気 / 長崎天気,mecab,145,2026-11-09T18:45:25Z
+JP,4,新聞,5,1,False,False,40500,瑠璃花夏 / 舎人ライナー / 杉田かおる / クマ / 硤合憲三,mecab,145,2026-11-09T18:45:25Z
+JP,5,時事,5,,True,True,71000,エヌビディア / 海溝 / 瑠璃花夏 / 三井化学 / 若 隆景 化粧 まわし,mecab,145,2026-11-09T18:45:25Z
+JP,6,映画,5,'-5,False,False,5300,浜辺美波 / 織田 裕二 / ジェイソン・ステイサム,mecab,145,2026-11-09T18:45:25Z
+JP,7,ゴジラ,5,,True,True,6000,浜辺美波 / グランドシネマサンシャイン 池袋,mecab,145,2026-11-09T18:45:25Z
+JP,8,度目,5,,True,True,600,でっぱりん / ジェイソン・ステイサム,mecab,145,2026-11-09T18:45:25Z
+JP,9,通信,4,,True,True,70000,エヌビディア / 海溝 / 瑠璃花夏 / 三井化学,mecab,145,2026-11-09T18:45:25Z
+JP,10,女子,4,,True,False,21000,ちいかわ 映画 特典 / 渋野日向子 / 和田由紀子,mecab,145,2026-11-09T18:45:25Z
+JP,11,捕手,4,,True,True,1300,嶺井 / 太田光 / 嶺井博希,mecab,145,2026-11-09T18:45:25Z
+JP,12,最終日,4,,True,True,1600,嶺井 / 渋野日向子 / 嶺井博希,mecab,145,2026-11-09T18:45:25Z
+JP,13,決定,4,,True,True,40200,中村ゆり / 瑠璃花夏 / スーパーフォーミュラ,mecab,145,2026-11-09T18:45:25Z
+JP,14,行使,4,,True,True,1300,嶺井 / 太田光 / 嶺井博希,mecab,145,2026-11-09T18:45:25Z
+JP,15,fa,4,,True,True,1100,嶺井 / 嶺井博希,mecab,145,2026-11-09T18:45:25Z
+JP,16,nvidia,4,,True,True,20200,nvidia / nvda,mecab,145,2026-11-09T18:45:25Z
+JP,17,vi,4,,True,True,1200,gta6 / the elder scrolls,mecab,145,2026-11-09T18:45:25Z
+JP,18,スパイ,4,,True,True,40000,エヌビディア / nvidia,mecab,145,2026-11-09T18:45:25Z
+JP,19,中国,4,,True,True,40000,エヌビディア / ちいかわ 映画 特典,mecab,145,2026-11-09T18:45:25Z
+JP,20,感謝,4,,True,True,2500,佐々木大光 / 水卜アナ,mecab,145,2026-11-09T18:45:25Z
+ALL,,개념: 엔비디아,13,,,,,KR 3 / US 3 / JP 7,,,
+ALL,,개념: 중국,8,,,,,KR 3 / US 1 / JP 4,,,
+ALL,,개념: 한국,12,,,,,KR 11 / US 0 / JP 1,,,
+ALL,,개념: 일본,10,,,,,KR 3 / US 0 / JP 7,,,
+ALL,,개념: 농구,7,,,,,KR 1 / US 6 / JP 0,,,
+ALL,,개념: 지진,7,,,,,KR 3 / US 0 / JP 4,,,
+ALL,,개념: 인공지능,4,,,,,KR 2 / US 0 / JP 2,,,
+ALL,,개념: 반도체,4,,,,,KR 2 / US 0 / JP 2,,,
+ALL,,개념: 미국,4,,,,,KR 3 / US 1 / JP 0,,,
+ALL,,개념: OpenAI,3,,,,,KR 1 / US 0 / JP 2,,,
+ALL,,개념: 선거,2,,,,,KR 2 / US 0 / JP 0,,,
+ALL,,개념: 삼성,2,,,,,KR 2 / US 0 / JP 0,,,
+ALL,,개념: ChatGPT,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 석유,1,,,,,KR 0 / US 0 / JP 1,,,
+ALL,,개념: 러시아,1,,,,,KR 1 / US 0 / JP 0,,,
+ALL,,개념: 관세,1,,,,,KR 1 / US 0 / JP 0,,,
+KR/US/JP,,공통: nvidia,3,,,,1030000,,,,
+KR/US/JP,,공통: atlético vs barcelona,3,,,,504000,,,,
+KR/US/JP,,공통: atlético madrid vs fc barcelona standings,3,,,,53000,,,,
+KR/JP,,공통: weather,2,,,,12000,,,,
+US/JP,,공통: 黄仁勋,2,,,,11000,,,,
+KR/US,,공통: f1,2,,,,10200,,,,
+US/JP,,공통: barca vs,2,,,,10100,,,,
+US/JP,,공통: playstation plus,2,,,,7000,,,,
+KR/JP,,공통: blg,2,,,,5500,,,,
+US/JP,,공통: 黃仁勳,2,,,,4000,,,,
+KR/JP,,공통: pak vs sl,2,,,,2000,,,,
+KR/JP,,공통: thời tiết,2,,,,2000,,,,
+KR/JP,,공통: gta6,2,,,,1500,,,,
+KR/JP,,공통: สภาพอากาศ,2,,,,1200,,,,
+KR/JP,,공통: thứ hạng của man utd gặp aston villa,2,,,,1000,,,,
