@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-11-14T06:13:41Z,top,weather,100,100,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,google,79,79,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,youtube,61,61,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,amazon,54,54,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,nfl,48,48,False,5,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,games,47,47,False,3,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,news,40,40,False,0,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,walmart,39,39,False,6,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,outlook,33,33,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,reddit,32,32,False,3,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,flights,31,31,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,microsoft,30,30,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,facebook,27,27,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,gmail,25,25,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,chatgpt,24,24,False,2,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,nba,22,22,False,3,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,nvidia,21,21,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,costco,20,20,False,4,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,wordle,19,19,False,4,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,target,19,19,False,4,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,translate,19,19,False,0,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,calculator,17,17,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,gta 6,16,16,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,instagram,16,16,False,1,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,top,faa,16,16,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,microsoft outage,10100,Breakout,True,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,outlook outage,7700,Breakout,True,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,ground stop,7150,Breakout,True,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,flights grounded,7000,Breakout,True,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,jensen huang,6250,Breakout,True,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,faa ground stop,5500,Breakout,True,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,faa,2400,"'+2,400%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,is outlook still down,2300,"'+2,300%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,alice huang,1950,"'+1,950%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,buccaneers vs bears,1700,"'+1,700%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,nationwide ground stop,1700,"'+1,700%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,betterballen foods llc frozen meat warning,1550,"'+1,550%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,is microsoft still down,1450,"'+1,450%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,bills vs vikings,1450,"'+1,450%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,cowboys vs colts,1400,"'+1,400%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,packers vs patriots,1300,"'+1,300%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,raiders vs 49ers,1300,"'+1,300%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,veterans day 2026,1250,"'+1,250%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,sam hartman,1200,"'+1,200%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,giants vs eagles,1200,"'+1,200%",False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,oregon vs ohio state,900,'+900%,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,argentina vs uruguay,650,'+650%,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,nvidia,600,'+600%,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,nvidia stock,550,'+550%,False,,2026-10-31 2026-11-06,ok
+US,7d,2026-11-14T06:13:41Z,rising,microsoft,350,'+350%,False,,2026-10-31 2026-11-06,ok

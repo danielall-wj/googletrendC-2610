@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,3m,2026-11-14T06:13:57Z,top,you,100,100,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,weather,39,39,False,0,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,google,33,33,False,0,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,youtube,23,23,False,1,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,amazon,20,20,False,'-1,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,nfl,16,16,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,news,14,14,False,0,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,reddit,14,14,False,2,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,apple,13,13,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,walmart,13,13,False,2,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,facebook,10,10,False,2,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,chatgpt,9,9,False,6,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,gmail,9,9,False,4,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,translate,7,7,False,10,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,costco,7,7,False,7,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,calculator,7,7,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,target,6,6,False,4,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,wordle,6,6,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,instagram,6,6,False,0,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,mlb,6,6,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,weather tomorrow,6,6,False,4,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,netflix,5,5,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,maps,5,5,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,yahoo,5,5,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,top,home depot,5,5,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,nfl scores,2650,"'+2,650%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,hayden panettiere,1650,"'+1,650%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,wnba playoffs,1600,"'+1,600%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,2026 us election results,1350,"'+1,350%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,dolly parton,1300,"'+1,300%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,nfl games today,1150,"'+1,150%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,nfl games,1000,"'+1,000%",False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,nfl standings,800,'+800%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,ncaa football,600,'+600%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,college football,600,'+600%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,alabama football,550,'+550%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,election results,500,'+500%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,nfl,500,'+500%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,nfl schedule,450,'+450%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,cowboys,400,'+400%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,google classroom,400,'+400%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,patriots,400,'+400%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,steelers,400,'+400%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,blooket join,350,'+350%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,eagles,300,'+300%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,labor day,300,'+300%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,lindsay clancy,300,'+300%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,blooket,250,'+250%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,ap classroom,250,'+250%,False,,2026-05-14 2026-08-13,ok
+US,3m,2026-11-14T06:13:57Z,rising,desmos,250,'+250%,False,,2026-05-14 2026-08-13,ok

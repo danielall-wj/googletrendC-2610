@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-11-14T06:13:50Z,top,weather,100,100,False,1,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,google,87,87,False,'-1,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,youtube,63,63,False,0,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,amazon,54,54,False,1,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,games,48,48,False,1,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,election,47,47,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,nfl,46,46,False,'-3,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,news,43,43,False,0,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,halloween,40,40,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,walmart,35,35,False,'-1,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,reddit,31,31,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,election results,30,30,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,facebook,27,27,False,'-2,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,gmail,26,26,False,'-4,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,chatgpt,25,25,False,'-3,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,nba,23,23,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,translate,19,19,False,'-3,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,costco,18,18,False,'-1,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,wordle,18,18,False,0,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,calculator,17,17,False,'-4,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,weather tomorrow,14,14,False,0,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,brewers,14,14,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,microsoft,13,13,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,bears,13,13,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,top,blooket,12,12,False,'-2,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,election results,9500,Breakout,True,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,2026 us election results,5000,"'+5,000%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,mississippi senate race,3400,"'+3,400%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,microsoft outage,2050,"'+2,050%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,veterans day 2026,1700,"'+1,700%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,outlook outage,1650,"'+1,650%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,senate election results,1550,"'+1,550%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,flights grounded,1500,"'+1,500%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,alaska senate race,1350,"'+1,350%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,ground stop,1300,"'+1,300%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,election,1250,"'+1,250%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,2026 united states elections,1250,"'+1,250%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,jensen huang,1100,"'+1,100%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,faa ground stop,1050,"'+1,050%",False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,is outlook down,950,'+950%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,scott colom,900,'+900%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,nba scores,750,'+750%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,midterm elections,750,'+750%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,democratic party,700,'+700%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,abdul el-sayed,550,'+550%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,faa,500,'+500%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,all flights grounded,450,'+450%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,planes grounded,450,'+450%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,nba games,450,'+450%,False,,2026-09-13 2026-10-13,ok
+US,1m,2026-11-14T06:13:50Z,rising,is outlook still down,400,'+400%,False,,2026-09-13 2026-10-13,ok
