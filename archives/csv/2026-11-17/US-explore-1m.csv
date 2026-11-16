@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-11-16T06:19:42Z,top,weather,100,100,False,0,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,google,84,84,False,0,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,youtube,62,62,False,0,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,amazon,54,54,False,1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,nfl,51,51,False,1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,election,48,48,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,news,42,42,False,1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,halloween,40,40,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,walmart,35,35,False,1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,reddit,34,34,False,'-1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,election results,30,30,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,facebook,27,27,False,0,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,gmail,25,25,False,'-2,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,chatgpt,25,25,False,'-1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,nba,23,23,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,translate,19,19,False,'-1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,wordle,18,18,False,2,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,trump,17,17,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,calendar,17,17,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,weather tomorrow,15,15,False,2,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,cowboys,13,13,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,bears,13,13,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,blooket,11,11,False,1,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,tesla,11,11,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,top,gemini,10,10,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,election results,9100,Breakout,True,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,2026 us election results,5000,"'+5,000%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,mississippi senate race,3400,"'+3,400%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,outlook outage,1600,"'+1,600%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,alaska senate race,1600,"'+1,600%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,election,1350,"'+1,350%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,jensen huang,1300,"'+1,300%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,2026 united states elections,1250,"'+1,250%",False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,nba scores,750,'+750%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,cowboys vs 49ers,750,'+750%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,nba standings,550,'+550%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,abdul el-sayed,500,'+500%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,celtics,400,'+400%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,lakers,400,'+400%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,patriots vs lions,350,'+350%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,seahawks vs raiders,300,'+300%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,warriors,250,'+250%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,chiefs vs falcons,250,'+250%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,rams vs cardinals,250,'+250%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,gta 6,250,'+250%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,raiders vs 49ers,250,'+250%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,nba,200,'+200%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,cartesian,200,'+200%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,godzilla minus zero,190,'+190%,False,,2026-09-15 2026-10-15,ok
+US,1m,2026-11-16T06:19:42Z,rising,octonion,190,'+190%,False,,2026-09-15 2026-10-15,ok
