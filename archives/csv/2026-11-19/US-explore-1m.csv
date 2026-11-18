@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,1m,2026-11-18T07:19:01Z,top,weather,100,100,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,google,86,86,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,youtube,65,65,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,amazon,55,55,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,nfl,51,51,False,1,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,election,49,49,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,news,44,44,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,walmart,37,37,False,2,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,halloween,37,37,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,election results,32,32,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,facebook,28,28,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,gmail,25,25,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,chatgpt,25,25,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,nba,24,24,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,translate,19,19,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,costco,19,19,False,4,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,target,19,19,False,4,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,wordle,19,19,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,calculator,18,18,False,'-3,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,trump,17,17,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,weather tomorrow,15,15,False,1,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,home depot,12,12,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,maps,12,12,False,1,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,gta 6,11,11,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,top,blooket,11,11,False,0,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,election results,9850,Breakout,True,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,2026 us election results,4850,"'+4,850%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,mississippi senate race,3350,"'+3,350%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,native american heritage month,2550,"'+2,550%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,microsoft outage,2200,"'+2,200%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,alaska senate race,1800,"'+1,800%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,senate election results,1700,"'+1,700%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,outlook outage,1550,"'+1,550%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,jensen huang,1450,"'+1,450%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,veterans day 2026,1450,"'+1,450%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,2026 united states elections,1300,"'+1,300%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,election,1250,"'+1,250%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,where to vote,1150,"'+1,150%",False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,nba scores,650,'+650%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,mexico vs jamaica,650,'+650%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,nba standings,550,'+550%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,abdul el-sayed,500,'+500%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,76ers,450,'+450%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,spurs,400,'+400%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,chargers vs ravens,350,'+350%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,lakers,350,'+350%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,gta 6,350,'+350%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,when does gta 6 come out,300,'+300%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,krillion,300,'+300%,False,,2026-09-17 2026-10-17,ok
+US,1m,2026-11-18T07:19:01Z,rising,raiders vs 49ers,250,'+250%,False,,2026-09-17 2026-10-17,ok

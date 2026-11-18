@@ -1,0 +1,51 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,7d,2026-11-18T07:18:53Z,top,weather,100,100,False,3,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,google,73,73,False,3,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,youtube,55,55,False,3,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,amazon,51,51,False,3,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,games,48,48,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,nfl,41,41,False,2,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,news,40,40,False,2,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,walmart,35,35,False,4,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,flights,32,32,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,outlook,32,32,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,reddit,29,29,False,3,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,microsoft,29,29,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,gta 6,25,25,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,facebook,24,24,False,1,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,gmail,23,23,False,1,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,chatgpt,22,22,False,1,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,nvidia,20,20,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,nba,19,19,False,2,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,costco,19,19,False,3,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,weather tomorrow,19,19,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,target,18,18,False,0,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,wordle,18,18,False,1,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,translate,18,18,False,1,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,faa,17,17,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,top,calculator,15,15,False,0,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,microsoft outage,9750,Breakout,True,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,flights grounded,9450,Breakout,True,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,outlook outage,7800,Breakout,True,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,faa ground stop,6700,Breakout,True,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,faa,2850,"'+2,850%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,is outlook still down,2300,"'+2,300%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,49ers vs cowboys,2250,"'+2,250%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,mexico vs jamaica,2150,"'+2,150%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,chargers vs ravens,1750,"'+1,750%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,steelers vs bengals,1500,"'+1,500%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,commanders vs giants,1250,"'+1,250%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,patriots vs lions,1250,"'+1,250%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,seahawks vs raiders,1000,"'+1,000%",False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,knicks vs raptors,950,'+950%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,robert pattinson,800,'+800%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,northwestern vs ohio state,800,'+800%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,argentina vs costa rica,600,'+600%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,outlook,350,'+350%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,microsoft,350,'+350%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,veterans day 2026,250,'+250%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,flood watch,200,'+200%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,nvidia stock,190,'+190%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,nvidia,170,'+170%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,nvda,160,'+160%,False,,2026-11-04 2026-11-10,ok
+US,7d,2026-11-18T07:18:53Z,rising,ao3,140,'+140%,False,,2026-11-04 2026-11-10,ok

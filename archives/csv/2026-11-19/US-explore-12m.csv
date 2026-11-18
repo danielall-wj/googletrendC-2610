@@ -1,0 +1,49 @@
+﻿국가,기간,수집 UTC,유형,검색어,원본 값,표시값,급등,순위 변동,비교 기간,비교 상태
+US,12m,2026-11-18T07:19:15Z,top,weather,100,100,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,google,77,77,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,youtube,59,59,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,amazon,53,53,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,news,43,43,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,games,42,42,False,1,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,reddit,36,36,False,'-1,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,walmart,30,30,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,nfl,29,29,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,facebook,28,28,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,nba,21,21,False,7,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,chatgpt,21,21,False,5,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,gmail,21,21,False,0,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,calculator,18,18,False,1,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,flights,18,18,False,5,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,instagram,18,18,False,3,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,trump,18,18,False,'-5,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,translate,17,17,False,'-4,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,target,17,17,False,2,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,costco,16,16,False,3,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,wordle,14,14,False,1,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,weather tomorrow,14,14,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,yahoo,12,12,False,1,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,home depot,12,12,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,top,maps,11,11,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,claude,350,'+350%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,krillion,350,'+350%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,2026 us election results,350,'+350%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,midterm elections,300,'+300%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,claude ai,250,'+250%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,veterans day 2026,200,'+200%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,mississippi senate race,200,'+200%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,gta 6,190,'+190%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,election results,180,'+180%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,76ers,160,'+160%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,where to vote,150,'+150%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,gemini,140,'+140%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,abdul el-sayed,130,'+130%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,jensen huang,110,'+110%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,microsoft outage,90,'+90%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,election,80,'+80%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,patriots,80,'+80%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,product,80,'+80%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,alaska senate race,70,'+70%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,senate election results,60,'+60%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,outlook outage,50,'+50%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,democratic party,40,'+40%,False,,2024-11-18 2025-11-17,ok
+US,12m,2026-11-18T07:19:15Z,rising,godzilla minus zero,40,'+40%,False,,2024-11-18 2025-11-17,ok
